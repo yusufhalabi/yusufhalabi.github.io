@@ -64,6 +64,14 @@
 	}
 }
 
+@media (min-width: 800px) {
+	.header-content.on-dark,
+	.header-content.on-dark a,
+	.header-content.on-dark .header-title {
+		color: #000;
+	}
+}
+
 /* ===== HEADER STYLING ===== */
 
 .header a {
