@@ -1,0 +1,35 @@
+{% extends "page.html" %}
+{% block content %}
+
+<section class="main"><div class="container escape-header">
+	<h2 class="serif">Writing</h2>
+	<p class="main-copy">
+		Sometimes I write things about technology, research, or life as a sleepy/angsty teenager.
+	</p>
+
+	<ul class="post-list">
+			{% for post in posts %}
+				<li class="row">
+					<div class="col-inline one-eighth">
+						<a href='/{{ post.path }}'><aside class="dates">{{ post.date|date:"M j" }}<br>{{ post.date|date:"Y" }}</aside></a>
+					</div>
+					<div class="col seven-eighths">
+						<a href='/{{ post.path }}'>
+							<h3 class="serif-tight post-title">{{ post.title }}</h3>
+							<h4 class="post-headline">{{ post.headline }}</h4>
+						</a>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+
+		<!-- archive link -->
+		<!--
+		<div class="post-list-footer">
+			<a id="archive-link" href="archive.html"> <span class="arrow">&larr;</span> Archive</a>
+		</div>
+		-->
+	
+</div></section>
+	
+{% endblock content %}

@@ -1,0 +1,15 @@
+title: Project Six
+thumbnail: /static/images/image-thumbnail.jpg
+tags: Image 
+date: 27-10-2013
+
+{% extends "project.html" %}
+{% block body %}
+{% filter markdown %}
+
+<img class="featured 2x" src="{% static '/images/image-full.jpg' %}"/>
+
+Displays images in a grid, with individual pages optionally describing the image in detail, or displaying more images. Images have a max-width of 400 pixels by default.
+
+{% endfilter %}
+{% endblock body %}
