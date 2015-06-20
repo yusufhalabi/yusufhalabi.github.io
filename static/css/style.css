@@ -1300,7 +1300,7 @@ h2.post-title, h2.article-title {
     text-indent: 4rem; }
 
 @media (min-width: 550px) {
-  .post {
+  .post-article {
     width: 80%;
     display: block;
     margin: 0 auto; }
