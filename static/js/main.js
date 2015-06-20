@@ -116,6 +116,50 @@ $(function() {
 });
 
 // *******************************************
+// CONTACT FORM HANDLER
+// ******************************************/
+
+//guestbook sending
+function sendMessage() {
+	$('#contact').on('submit', function(){
+		var nameVal = $('#entry_367070669').val();
+		var emailVal = $('#entry_52027613').val();
+		var msgVal = $('#entry_1707629466').val();
+		
+		if (validateInput() == true) { //fix this soon
+			var name = encodeURIComponent(nameVal);
+			var email = encodeURIComponent(emailVal);
+			var msg = encodeURIComponent(msgVal);
+
+			var nameID = "entry.367070669";
+			var emailID = "entry.52027613";
+			var msgID = "entry.1707629466";
+
+			var baseURL = 'https://docs.google.com/forms/d/1Ol5ykSAqSMjDZ8ykryZ8rEkosA6LtJimGszphld7zz8/formResponse?';
+
+			var submitRef = '&submit=Submit';
+			var submitURL = (baseURL + nameID + "=" + name + "&" + emailID + "=" + email + "&" + msgID + "=" + msg + submitRef);
+			console.log(submitURL);
+			$(this)[0].action = submitURL;
+			$(".submit-error").hide();
+			$(".submit-confirm").show();
+		}
+		else return;
+	})
+}
+
+//input validation
+function validateInput(name, message) {
+	val = $('.input-val').val();
+	if (val == "10") {
+		return true;
+	}
+	else {
+		$(".submit-error").show();
+	}
+}
+
+// *******************************************
 // DOCUMENT READY
 // ******************************************/
 
@@ -124,5 +168,5 @@ $(document).ready(function() {
 	randomFeature();
 	retina();
 	headerStyle();
-	growHeart();
+	sendMessage();
 });

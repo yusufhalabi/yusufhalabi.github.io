@@ -209,8 +209,13 @@ a {
   font-style: italic;
 }
 
+.submit-error {
+  @extend .submit-confirm;
+}
+
 @media (min-width: 600px) {
-  .submit-confirm {
+  .submit-confirm,
+  .submit-error {
     text-align: left;
   }
 }

@@ -37,17 +37,17 @@
 	</p>
 	<hr class="divider-part">
 	<div class="contact-form">
-		<form id="contact" action="" method="POST" class="form-group">
+		<form id="contact" action="" method="POST" target="no-target" class="form-group">
 			<div class="row clearfix">
 				<div class="col one-half col-inline">
-					<input type="text" name="required_name" class="input-text" placeholder="Name*" required>
+					<input type="text" name="entry.367070669" id="entry_367070669" class="input-text" placeholder="Name*" required>
 				</div>
 				<div class="col one-half col-inline">
-					<input type="email" name="required_email" class="input-text" placeholder="Email*" required>
+					<input type="email" name="entry.52027613" id="entry_52027613" class="input-text" placeholder="Email*" required>
 				</div>
 			</div>
 			<div class="row clearfix">
-				<textarea rows="5" name="required_msg" class="input-textarea textarea-vertical" placeholder="Message*" required></textarea>
+				<textarea rows="5" name="entry.1707629466" id="entry_1707629466" class="input-textarea textarea-vertical" placeholder="Message*" required></textarea>
 			</div>
 			<div class="row clearfix">
 				<div class="col one-third">
@@ -55,10 +55,13 @@
 				</div>
 			</div>
 			<div class="row clearfix">
-				<button class="btn btn-primary input-submit">Shall we?</button>
+				<input type="submit" name="submit" value="Submit" class="btn btn-primary input-submit">
 				<p class="submit-confirm">Submitted. Thanks!</p>
+				<p class="submit-error">Please double-check to make sure all fields are completed and correct!</p>
 			</div>
 		</form>
+
+		<iframe src="#" id="no-target" name="no-target" style="display:none"></iframe>
 	</div>
 	
 </div></section>
