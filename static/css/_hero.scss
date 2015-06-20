@@ -17,7 +17,6 @@
 .hero,
 .about-hero {
 	position: relative;
-	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #d6dadf;
@@ -25,6 +24,7 @@
 
 .hero {
 	height: 100vh;
+	background-position: center center;
 	background-image: url(../images/sl.jpg);
 }
 
@@ -32,7 +32,9 @@
 	height: 75vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
 									  rgba(0, 0, 0, 0.5)),
-					  url(../images/sl_about.jpg);
+					  url(../images/about-alt.jpg);
+
+	background-position: center left;
 	transition: all 0.6s ease;
 }
 
@@ -84,6 +86,14 @@
 	content: "\201d";
 }
 
+@media (min-width: 550px) {
+	.feature-header,
+	.about-header {
+		font-size: 4.0rem;
+		line-height: 1.4;
+	}
+}
+
 @media (min-width: 600px) {
 	.feature {
 		width: 100%;
@@ -92,21 +102,24 @@
 		width: 50%;
 		top: 25%;
 	}
-	.feature-header,
-	.about-header {
-		font-size: 4.0rem;
-		line-height: 1.4;
-	}
 }
 
 @media (min-width: 800px) {
+	//remove grey tint
+	.about-hero {
+		background-image: url(../images/about-alt.jpg);
+		background-position: center top;
+	}
 	.feature {
 		width: 100%;
 	}
 	.about-feature {
-		width: 50%;
-		top: 35%;
+		color: #000;
+		width: 40%;
+		top: 30%;
+		left: 70%;
 	}
+	
 	.feature-header,
 	.about-header {
 		font-size: 4.0rem;
