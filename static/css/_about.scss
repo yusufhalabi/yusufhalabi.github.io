@@ -1,0 +1,68 @@
+/****************************************
+* MAIN
+****************************************/
+
+/* ===== DIVIDER ===== */
+
+.divider-full {
+	border-top: 1px solid #ecf0f1;
+	margin: 0 auto;
+}
+
+.divider-part {
+	@extend .divider-full;
+	width: 65%;
+}
+
+/* ===== HEADLINE ===== */
+
+.headline {
+	padding: 3rem 0;
+}
+
+.headline-heading {
+	font-size: 3.0rem;
+	font-family: 'Playfair Display', $serif-stack;
+	text-transform: none;
+	margin-bottom: 1.5rem;
+}
+
+.headline-subheading {
+	@extend .headline-heading;
+	font-size: 2.4rem;
+	margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+	.headline {
+		padding: 4rem 0;
+	}
+	.headline-heading {
+		font-size: 4.0rem;
+	}
+	.headline-subheading {
+		font-size: 2.8rem;
+	}
+}
+
+/* ===== INTRO ===== */
+
+.intro {
+	padding: 3rem 0;
+	/* background-color: #ecf0f1; */
+}
+
+.intro-heading {
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
+}
+
+.read-more {
+	margin-top: 1.5rem;
+}
+
+@media (min-width: 550px) {
+	.intro {
+		padding: 4rem 0;
+	}
+}

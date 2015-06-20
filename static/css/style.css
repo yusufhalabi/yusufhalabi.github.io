@@ -1,0 +1,1428 @@
+/******************************
+* Site: sarahlim.com
+* Author: Sarah Lim
+* Last Updated: 17 June 2015
+******************************/
+/* business */
+/****************************************
+* RESET
+****************************************/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* base styles */
+/*******************************************
+* BASE STYLES
+*******************************************/
+/* stonewashed theme */
+/* light grey */
+/* 7e9bab */
+/* flat UI theme
+$light: #ecf0f1; /* offwhite
+$dark: #2c3e50; /* navy
+$primary: #e74d3c; /* red */
+/* light blue */
+/* slightly darker blue */
+/* nautical theme
+$light: #fff; /* white
+$dark: #2c3e50; /* navy
+$primary: #fc4349; /* red
+$secondary: #6dbcdb; /* blue
+$tertiary: #d7dadb; /* grey
+*/
+/* ===== SIZING ===== */
+/* set rem measurements based on 10px sizing, e.g. 1.5rem = 15px */
+html {
+  font-size: 62.5%; }
+
+/* ===== COLORS ===== */
+body {
+  background: #fff;
+  color: #000; }
+
+*::selection {
+  background: #e74d3c;
+  color: #fff; }
+
+*::-moz-selection {
+  background: #e74d3c;
+  color: #fff; }
+
+*::-webkit-selection {
+  background: #e74d3c;
+  color: #fff; }
+
+/* ===== LINKS ===== */
+a {
+  color: #e74d3c;
+  text-decoration: none; }
+
+a:hover,
+.active {
+  color: #d64638; }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -10rem;
+  visibility: hidden; }
+
+/* ===== BUTTONS ===== */
+.btn, .btn-default, .btn-inverted, .btn-primary, .btn-secondary {
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem 3rem;
+  border: 2px solid;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.btn-default {
+  background-color: transparent;
+  color: #000; }
+
+.btn-default:hover {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff; }
+
+.btn-inverted {
+  background-color: transparent;
+  color: #fff; }
+
+.btn-inverted:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000; }
+
+.btn-primary {
+  border-color: #e74d3c;
+  background-color: #e74d3c;
+  color: #fff; }
+
+.btn-primary:hover {
+  border-color: #d64638;
+  background-color: #d64638; }
+
+.btn-secondary {
+  border-color: #3498db;
+  background-color: #3498db;
+  color: #fff; }
+
+.btn-secondary:hover {
+  border-color: #2980b9;
+  background-color: #2980b9; }
+
+/* ===== FORMS ===== */
+.contact-form {
+  margin-top: 2rem; }
+
+.input-text,
+.input-textarea,
+.input-select,
+.input-val {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  height: auto;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+  font-size: 1.4rem; }
+
+.input-text:focus,
+.input-textarea:focus,
+.input-select:focus,
+.input-val:focus,
+.input-radio,
+.input-check {
+  outline: 1px solid #e74d3c; }
+
+.input-text:focus,
+.input-textarea:focus,
+.input-val:focus {
+  background-color: #fff; }
+
+/***/
+.input-textarea {
+  display: block; }
+
+.textarea-vertical {
+  resize: vertical; }
+
+.input-submit {
+  margin: 0 auto 1rem auto;
+  display: block; }
+
+@media (min-width: 600px) {
+  .contact-form {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .input-submit {
+    margin: 0 0 1rem 0; } }
+/***/
+.input-radio,
+.input-check {
+  background-color: #bdbdbd;
+  border: none;
+  margin-right: 1rem; }
+
+/***/
+.submit-confirm {
+  display: none;
+  text-align: center;
+  color: #e74d3c;
+  font-style: italic; }
+
+@media (min-width: 600px) {
+  .submit-confirm {
+    text-align: left; } }
+/****************************************
+* GRID
+****************************************/
+/* ===== FLOATS AND CLEARFIX ===== */
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.clearfix:after, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* ===== GRID ===== */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box; }
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; } }
+.row {
+  overflow: auto; }
+
+.col, .col-inline, .project {
+  width: 100%;
+  float: left;
+  margin-bottom: 2rem;
+  -webkit-box-sizing: border-box; }
+
+.col:last-child, .col-inline:last-child, .project:last-child {
+  margin-bottom: 0; }
+
+/* for elements using the grid for positioning, don't add a lower margin */
+.col-inline {
+  margin-bottom: 0; }
+
+/* activate the grid for larger screens */
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+    padding: 0; }
+
+  .col, .col-inline, .project {
+    margin-left: 4%;
+    margin-bottom: 0; }
+
+  .col:first-child, .col-inline:first-child, .project:first-child {
+    margin-left: 0; }
+
+  .col.one-quarter, .one-quarter.col-inline, .one-quarter.project {
+    width: 22%; }
+
+  .col.three-quarters, .three-quarters.col-inline, .three-quarters.project {
+    width: 74%; }
+
+  .col.one-half, .one-half.col-inline, .one-half.project {
+    width: 48%; }
+
+  .col.one-eighth, .one-eighth.col-inline, .one-eighth.project {
+    width: 9%; }
+
+  .col.seven-eighths, .seven-eighths.col-inline, .seven-eighths.project {
+    width: 87%; }
+
+  .col.one-third, .one-third.col-inline, .one-third.project {
+    width: 30.66666667%; }
+
+  .col.two-thirds, .two-thirds.col-inline, .two-thirds.project {
+    width: 74.333333%; } }
+/*******************************************
+* TYPOGRAPHY
+*******************************************/
+/*******************************************
+* @FONT-FACE IMPORTS
+*******************************************/
+/* ===== WHITNEY ===== */
+/* - Book 400
+** - Book Italic 400
+** - Medium 500
+** - Medium Italic 500
+** - Bold  700
+*/
+@font-face {
+  font-family: 'Whitney';
+  src: url("fonts/whitney/whitney-book.woff2") format("woff2"), url("fonts/whitney/whitney-book.woff") format("woff"), url("fonts/whitney/whitney-book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Whitney';
+  src: url("fonts/whitney/whitney-bookitalic.woff2") format("woff2"), url("fonts/whitney/whitney-bookitalic.woff") format("woff"), url("fonts/whitney/whitney-bookitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Whitney';
+  src: url("fonts/whitney/whitney-medium.woff2") format("woff2"), url("fonts/whitney/whitney-medium.woff") format("woff"), url("fonts/whitney/whitney-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Whitney';
+  src: url("fonts/whitney/whitney-mediumitalic.woff2") format("woff2"), url("fonts/whitney/whitney-mediumitalic.woff") format("woff"), url("fonts/whitney/whitney-mediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Whitney';
+  src: url("fonts/whitney/whitney-bold.woff2") format("woff2"), url("fonts/whitney/whitney-bold.woff") format("woff"), url("fonts/whitney/whitney-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+/* ===== MONTSERRAT ===== */
+/* - Light 200
+** - Regular 400
+** - SemiBold 600
+*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/montserrat/montserrat-regular.woff2") format("woff2"), url("fonts/montserrat/montserrat-regular.woff") format("woff"), url("fonts/montserrat/montserrat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url("fonts/montserrat/montserrat-light.woff2") format("woff2"), url("fonts/montserrat/montserrat-light.woff") format("woff"), url("fonts/montserrat/montserrat-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url("fonts/montserrat/montserrat-semibold.woff2") format("woff2"), url("fonts/montserrat/montserrat-semibold.woff") format("woff"), url("fonts/montserrat/montserrat-semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* ===== NITTI GROTESK ===== */
+/* - SemiLight 300
+** - Normal 400
+** - Normal Italic 400
+** - Bold 700
+*/
+@font-face {
+  font-family: 'Nitti Grotesk';
+  src: url("fonts/NittiGrotesk/NittiGrotesk-Normal.woff2") format("woff2"), url("fonts/NittiGrotesk/NittiGrotesk-Normal.woff") format("woff"), url("fonts/NittiGrotesk/NittiGrotesk-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nitti Grotesk';
+  src: url("fonts/NittiGrotesk/NittiGrotesk-SemiLight.woff2") format("woff2"), url("fonts/NittiGrotesk/NittiGrotesk-SemiLight.woff") format("woff"), url("fonts/NittiGrotesk/NittiGrotesk-SemiLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nitti Grotesk';
+  src: url("fonts/NittiGrotesk/NittiGrotesk-NormalItalic.woff2") format("woff2"), url("fonts/NittiGrotesk/NittiGrotesk-NormalItalic.woff") format("woff"), url("fonts/NittiGrotesk/NittiGrotesk-NormalItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Nitti Grotesk';
+  src: url("fonts/NittiGrotesk/NittiGrotesk-Bold.woff2") format("woff2"), url("fonts/NittiGrotesk/NittiGrotesk-Bold.woff") format("woff"), url("fonts/NittiGrotesk/NittiGrotesk-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+/* ===== RALEWAY ===== */
+/* - Medium 500
+** - SemiBold 600
+*/
+@font-face {
+  font-family: 'Raleway';
+  src: url("fonts/raleway/raleway-medium.woff2") format("woff2"), url("fonts/raleway/raleway-medium.woff") format("woff"), url("fonts/raleway/raleway-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("fonts/raleway/raleway-semibold.woff2") format("woff2"), url("fonts/raleway/raleway-semibold.woff") format("woff"), url("fonts/raleway/raleway-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+/* ===== PLAYFAIR DISPLAY ===== */
+/* - Regular 400
+** - Bold 700
+** - Bold Italic 700
+*/
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("fonts/PlayfairDisplay/playfairdisplay-regular.woff2") format("woff2"), url("fonts/PlayfairDisplay/playfairdisplay-regular.woff") format("woff"), url("fonts/PlayfairDisplay/playfairdisplay-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("fonts/PlayfairDisplay/playfairdisplay-bold.woff2") format("woff2"), url("fonts/PlayfairDisplay/playfairdisplay-bold.woff") format("woff"), url("fonts/PlayfairDisplay/playfairdisplay-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("fonts/PlayfairDisplay/playfairdisplay-bolditalic.woff2") format("woff2"), url("fonts/PlayfairDisplay/playfairdisplay-bolditalic.woff") format("woff"), url("fonts/PlayfairDisplay/playfairdisplay-bolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+/* ===== STACKS ===== */
+/* ===== STACKS ===== */
+body {
+  font-size: 1.6rem;
+  /* 1.8rem */
+  line-height: 1.6;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.3; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase; }
+
+/*
+h1 { font-size: 4.8rem; line-height: 1.1; letter-spacing: .08rem; }
+h2 { font-size: 3.6rem; line-height: 1.1; letter-spacing: -.05rem; }
+h3 { font-size: 2.8rem; line-height: 1.1; letter-spacing: -.05rem; }
+h4 { font-size: 1.8rem; line-height: 1.2; letter-spacing: -.05rem; }
+h5 { font-size: 1.8rem; line-height: 1.3; letter-spacing: -.04rem; }
+h6 { font-size: 1.8rem; line-height: 1.4; letter-spacing: 0; }
+
+*/
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -0.03rem; }
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.03rem; }
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  letter-spacing: 0.125rem; }
+
+h4 {
+  font-size: 2.0rem;
+  line-height: 1.35;
+  letter-spacing: 0.08rem; }
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem; }
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem; }
+
+.serif, .serif-tight {
+  font-family: "Playfair Display", Georgia, serif; }
+
+.serif-tight {
+  letter-spacing: -0.03rem; }
+
+/* ===== LISTS ===== */
+.list-inline li {
+  display: inline-block;
+  margin-left: 1rem; }
+
+.list-inline li:first-child {
+  margin-left: 0; }
+
+@media (min-width: 550px) {
+  .list-inline li {
+    margin-left: 2rem; } }
+/* section styles */
+/****************************************
+* HEADER AND FOOTER
+****************************************/
+/* ===== HEADER STRUCTURE ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 1.5rem 0;
+  transition: all 0.6s ease;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.header-title-wrapper {
+  text-align: center; }
+
+.header-nav-wrapper {
+  text-align: center; }
+
+.header-title {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 3.0rem; }
+
+.header-nav li {
+  line-height: 3.0rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem; }
+
+@media (min-width: 600px) {
+  .header {
+    padding: 2.5rem 0; }
+
+  .header-title-wrapper {
+    float: left;
+    margin-bottom: 0; }
+
+  .header-nav-wrapper {
+    float: right; }
+
+  .header-title {
+    font-size: 2.6rem; }
+
+  .header-nav li {
+    font-size: 1.6rem; } }
+/* ===== HEADER STYLING ===== */
+.header a {
+  color: #000; }
+
+.header a:hover {
+  color: #e74d3c; }
+
+.on-dark,
+.on-dark a,
+.on-dark .header-title {
+  color: #fff; }
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  transition: all 0.6s ease;
+  color: #000; }
+
+.scrolled.header a {
+  color: #000; }
+
+/* ===== FOOTER ===== */
+.footer, .footer a {
+  text-align: center;
+  color: #bdbdbd; }
+
+.footer-content {
+  padding: 3rem 0;
+  font-size: 1.4rem;
+  line-height: 2.0rem; }
+
+.footer-content:before {
+  content: "";
+  display: block;
+  padding-bottom: 3rem;
+  line-height: 1px;
+  border-top: 1px solid #ecf0f1; }
+
+.footer a:hover {
+  color: #e74d3c; }
+
+/*****/
+.footer-sub {
+  display: block; }
+
+.heart {
+  color: #e74d3c;
+  margin: 0 0.1rem; }
+
+@media (min-width: 800px) {
+  .footer-sub {
+    display: inline; }
+
+  .footer-content {
+    padding: 4rem 0 6rem 0; }
+
+  .footer-content:before {
+    padding-bottom: 4rem; } }
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+  margin-bottom: 1rem; }
+
+.social-links li {
+  padding-left: 1.5rem; }
+
+.social-links li:first-child {
+  padding-left: 0; }
+
+.social-links a:before {
+  font-family: FontAwesome;
+  font-size: 2.0rem; }
+
+.social-link-text {
+  display: none;
+  margin-left: 0.3rem;
+  /* to space the FA icons */ }
+
+.email:before {
+  content: '\f003'; }
+
+.twitter:before {
+  content: '\f099'; }
+
+.github:before {
+  content: '\f113'; }
+
+.instagram:before {
+  content: '\f16d'; }
+
+.linkedin:before {
+  content: '\f0e1'; }
+
+@media (min-width: 800px) {
+  .social-links,
+  .footer-copy {
+    display: inline-block;
+    line-height: 1.5rem; }
+
+  .footer-copy {
+    float: left; }
+
+  .social-links {
+    float: right;
+    margin-bottom: 0; } }
+/****************************************
+* HERO
+****************************************/
+/* ===== DEV ===== */
+/* ===== BACKGROUND ===== */
+.hero,
+.about-hero {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d6dadf; }
+
+.hero {
+  height: 100vh;
+  background-image: url(../images/sl.jpg); }
+
+.about-hero {
+  height: 75vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sl_about.jpg);
+  transition: all 0.6s ease; }
+
+/* ===== HOMEPAGE / ABOUT PAGE FEATURES ===== */
+.feature,
+.about-feature {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  width: 85%;
+  text-align: center; }
+
+.feature {
+  top: 25%; }
+
+.about-feature {
+  color: #fff;
+  top: 35%; }
+
+.feature-header,
+.about-header {
+  margin: 0;
+  text-align: center;
+  font-size: 3.0rem;
+  text-transform: none;
+  line-height: 1.3; }
+
+.about-header {
+  font-weight: 700; }
+
+.feature-header {
+  font-style: italic; }
+
+.feature-header:before {
+  content: '\201c'; }
+
+.feature-header:after {
+  content: "\201d"; }
+
+@media (min-width: 600px) {
+  .feature {
+    width: 100%; }
+
+  .about-feature {
+    width: 50%;
+    top: 25%; }
+
+  .feature-header,
+  .about-header {
+    font-size: 4.0rem;
+    line-height: 1.4; } }
+@media (min-width: 800px) {
+  .feature {
+    width: 100%; }
+
+  .about-feature {
+    width: 50%;
+    top: 35%; }
+
+  .feature-header,
+  .about-header {
+    font-size: 4.0rem;
+    line-height: 1.4; } }
+/* ===== DOWN ARROW ===== */
+.down-arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  height: 4rem;
+  width: 5rem;
+  background-color: #fff;
+  mask-image: url(../images/down.svg);
+  -webkit-mask-image: url(../images/down.svg); }
+
+.down-arrow:hover {
+  background-color: #000;
+  /* 7e9bab */ }
+
+/****************************************
+* MAIN
+****************************************/
+/* ===== DIVIDER ===== */
+.divider-full, .divider-part, .article-body hr {
+  border-top: 1px solid #ecf0f1;
+  margin: 3rem auto; }
+
+.divider-part, .article-body hr {
+  width: 65%; }
+
+/* ===== CONTENT ===== */
+.escape-header {
+  padding-top: 8rem; }
+
+@media (min-width: 600px) {
+  .escape-header {
+    padding-top: 6rem; } }
+.main {
+  padding: 2.0rem 0; }
+
+.main h1,
+.main h2 {
+  text-transform: capitalize;
+  margin-top: 2rem; }
+
+.main h1:first-child {
+  margin-top: 0rem; }
+
+.main h2:first-child {
+  margin-top: 0rem; }
+
+.main-copy, .article-body p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6; }
+
+.main-copy:last-child, .article-body p:last-child {
+  margin-bottom: 0; }
+
+@media (min-width: 600px) {
+  .main {
+    padding: 4.0rem 0; } }
+/* ===== ERROR PAGE ===== */
+/* ===== HEADLINE ===== */
+.headline {
+  padding: 3rem 0 1rem 0; }
+
+.headline-heading, .headline-subheading {
+  font-size: 3.0rem;
+  font-family: "Playfair Display", Georgia, serif;
+  text-transform: none;
+  margin-bottom: 1.5rem; }
+
+.headline-subheading {
+  font-size: 2.4rem;
+  margin-bottom: 0; }
+
+@media (min-width: 600px) {
+  .headline {
+    padding: 4rem 0 2rem 0; }
+
+  .headline-heading, .headline-subheading {
+    font-size: 4.0rem; }
+
+  .headline-subheading {
+    font-size: 2.8rem; } }
+/* ===== HOMEPAGE INTRO ===== */
+.intro {
+  padding: 0;
+  /* background-color: #ecf0f1; */ }
+
+.intro-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem; }
+
+.read-more {
+  margin-top: 1.5rem; }
+
+@media (min-width: 550px) {
+  .intro {
+    padding-top: 1rem; } }
+/*******************************************
+* BLOG
+*******************************************/
+/* ===== POST LIST ===== */
+.post-list {
+  list-style: none;
+  margin-top: 3rem; }
+
+.post-list li {
+  margin-bottom: 1rem; }
+
+.post-list li:last-child {
+  margin-bottom: 0; }
+
+.dates, .article-date {
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #000; }
+
+@media (min-width: 600px) {
+  .dates, .article-date {
+    text-align: right;
+    margin-top: 0.3rem; } }
+.post-title, .article-title,
+.post-headline {
+  color: #000; }
+
+.post-title a:hover, .article-title a:hover {
+  color: #d64638; }
+
+.post-title, .article-title {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize; }
+
+h2.post-title, h2.article-title {
+  margin-top: 0; }
+
+.post-headline {
+  font-size: 1.8rem;
+  letter-spacing: 0.03rem;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none; }
+
+/* ===== ARTICLE MAIN VIEW ===== */
+.article-title {
+  margin-bottom: 0; }
+
+.article-date {
+  font-style: italic;
+  marign-bottom: 2rem; }
+
+.article-headline {
+  font-size: 1.6rem;
+  letter-spacing: 0.03rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+  color: #e74d3c;
+  text-transform: uppercase; }
+
+.article-body {
+  margin: 2rem 0 4rem 0; }
+  .article-body p {
+    font-family: "Calluna", Georgia, serif;
+    line-height: 1.8;
+    text-indent: 4rem; }
+
+@media (min-width: 550px) {
+  .post {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
+
+  .article-body {
+    font-size: 1.8rem; } }
+/* ===== ARTICLE FOOTER ===== */
+.article-meta {
+  padding: 2rem 0;
+  border-top: 1px solid #ecf0f1; }
+
+.article-meta-date,
+.article-meta-author,
+.article-tags {
+  display: inline-block; }
+  .article-meta-date span,
+  .article-meta-author span,
+  .article-tags span {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.article-meta-author, .article-tags {
+  margin-left: 3rem; }
+
+.prev,
+.next {
+  display: inline; }
+
+.prev {
+  float: left; }
+
+.next {
+  float: right; }
+
+/*******************************************
+* PORTFOLIO
+*******************************************/
+/* ===== THUMBNAILS ===== */
+.thumbnails {
+  margin: 2rem 0; }
+
+/*
+@media (min-width: 600px) {
+	.project {
+		width: 48%;
+		margin-top: 4%;
+		margin-left: 4%;
+	}
+
+	// no top margin for first row
+	.project:nth-child(1),
+	.project:nth-child(2) {
+		margin-top: 0;
+	}
+
+	// no left margin for first of every row
+	.project:nth-child(4n) {
+		margin-left: 4%;
+	}
+	.project:nth-child(3n) {
+		margin-left: 0;
+	}
+}
+*/
+@media (min-width: 600px) {
+  .project {
+    width: 30.66666667%;
+    margin-top: 4%;
+    margin-left: 4%; }
+
+  .project:nth-child(1),
+  .project:nth-child(2),
+  .project:nth-child(3) {
+    margin-top: 0; }
+
+  .project:nth-child(3n) {
+    margin-left: 4%; }
+
+  .project:nth-child(4n) {
+    margin-left: 0; } }
+.project {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.project img {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: auto; }
+
+.project-name {
+  color: #999;
+  display: inline-block;
+  display: none;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0; }
+
+.project:hover {
+  opacity: .85; }
+
+.project:hover .project-title {
+  opacity: 1;
+  visibility: visible; }
+
+/* ===== PROJECT DETAIL VIEW ===== */
+.project-title {
+  margin-bottom: 2rem; }
+
+.project-body p {
+  margin-bottom: 2rem; }
+.project-body .featured {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin-bottom: 2rem; }
+.project-body .featured:last-child {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
