@@ -654,7 +654,11 @@ a:hover,
     width: 85%;
     padding: 0; } }
 .row {
+  padding-bottom: 2rem;
   overflow: auto; }
+
+.row:last-child {
+  padding-bottom: 0; }
 
 .col, .col-inline, .project {
   width: 100%;
@@ -674,6 +678,9 @@ a:hover,
   .container {
     width: 80%;
     padding: 0; }
+
+  .row {
+    padding-bottom: 3rem; }
 
   .col, .col-inline, .project {
     margin-left: 4%;
@@ -1158,7 +1165,7 @@ h6 {
   background-color: #fff;
   mask-image: url(../images/down.svg);
   -webkit-mask-image: url(../images/down.svg);
-  -moz-mask-image: url(../images/down.svg); }
+  mask: url(../images/down.svg); }
 
 .down-arrow:hover {
   background-color: #000;
@@ -1436,6 +1443,9 @@ h2.post-title, h2.article-title {
   height: auto;
   width: 100%;
   margin-bottom: 2rem; }
+.project-body .featured.part-width {
+  margin: 0 auto;
+  width: 60%; }
 .project-body .featured:last-child {
   margin-bottom: 0; }
 

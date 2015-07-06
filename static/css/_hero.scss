@@ -143,7 +143,7 @@
 	background-color: #fff;
 	mask-image: url(../images/down.svg);
 	-webkit-mask-image: url(../images/down.svg);
-       -moz-mask-image: url(../images/down.svg);
+	mask: url(../images/down.svg);
 }
 
 .down-arrow:hover {

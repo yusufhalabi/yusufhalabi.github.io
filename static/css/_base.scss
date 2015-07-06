@@ -257,7 +257,11 @@ a {
 
 .row {
   @extend .clearfix;
+  padding-bottom: 2rem;
   overflow: auto;
+}
+.row:last-child {
+  padding-bottom: 0;
 }
 
 .col {
@@ -281,6 +285,9 @@ a {
     .container {
       width: 80%;
       padding: 0; }
+    .row {
+      padding-bottom: 3rem;
+    }
     .col {
       margin-left: 4%; 
       margin-bottom: 0; }
