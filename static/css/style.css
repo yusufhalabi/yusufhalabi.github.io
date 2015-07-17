@@ -1079,7 +1079,7 @@ h6 {
   background-image: url(../images/sl.jpg); }
 
 .about-hero {
-  height: 75vh;
+  height: 65vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/unsplash-hero.jpg);
   background-position: center left;
   transition: all 0.6s ease; }

@@ -44,7 +44,7 @@ function retina() {
 function heroHeight() {
   function setHeight() {
     var WindowHeight = $(window).innerHeight();
-    var AboutHeight = WindowHeight * 0.75;
+    var AboutHeight = WindowHeight * 0.65;
     $('.hero').css('min-height', WindowHeight);
     $('.about-hero').css('min-height', AboutHeight);
   };
@@ -80,7 +80,7 @@ function transformHeader() {
  }
 
 // *******************************************
-// RANDOM FEATURE GENERATOR
+// RANDOM BLURB GENERATOR
 // ******************************************/
 
 function randomFeature() {
