@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
     <url>
-        <loc>/404/</loc>
+        <loc>/404.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/about/</loc>
+        <loc>/about.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/archive/</loc>
+        <loc>/archive.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/blog/</loc>
+        <loc>/blog.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/contact/</loc>
+        <loc>/contact.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/</loc>
+        <loc>/index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/never-stop-dancing/</loc>
+        <loc>/posts/never-stop-dancing.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projects/c4nn/</loc>
+        <loc>/projects/c4nn.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projects/debate/</loc>
+        <loc>/projects/debate.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projects/eccl/</loc>
+        <loc>/projects/eccl.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projects/fair-elections/</loc>
+        <loc>/projects/fair-elections.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projects/poker-night/</loc>
+        <loc>/projects/poker-night.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projects/sv/</loc>
+        <loc>/projects/sv.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/work/</loc>
+        <loc>/work.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
