@@ -1388,22 +1388,40 @@ h2.post-title, h2.article-title {
 	}
 }
 */
+/* NEW */
+
 @media (min-width: 600px) {
+  .project {
+    width: 48%;
+    margin-top: 4%;
+    margin-left: 4%; }
+
+  .project:nth-child(1),
+  .project:nth-child(2) {
+    margin-top: 0; }
+
+  .project:nth-child(2n+1) {
+    margin-left: 0; }
+ }
+
+@media (min-width: 800px) {
   .project {
     width: 30.66666667%;
     margin-top: 4%;
     margin-left: 4%; }
 
-  .project:nth-child(1),
-  .project:nth-child(2),
   .project:nth-child(3) {
     margin-top: 0; }
 
   .project:nth-child(3n) {
     margin-left: 4%; }
 
+  .project:nth-child(2n+3) {
+    margin-left: 4%; }
+
   .project:nth-child(4n) {
     margin-left: 0; } }
+
 .project {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
