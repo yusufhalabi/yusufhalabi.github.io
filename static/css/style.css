@@ -1365,30 +1365,8 @@ h2.post-title, h2.article-title {
 .thumbnails {
   margin: 2rem 0; }
 
-/*
-@media (min-width: 600px) {
-	.project {
-		width: 48%;
-		margin-top: 4%;
-		margin-left: 4%;
-	}
-
-	// no top margin for first row
-	.project:nth-child(1),
-	.project:nth-child(2) {
-		margin-top: 0;
-	}
-
-	// no left margin for first of every row
-	.project:nth-child(4n) {
-		margin-left: 4%;
-	}
-	.project:nth-child(3n) {
-		margin-left: 0;
-	}
-}
-*/
-/* NEW */
+.project {
+  position: relative; }
 
 @media (min-width: 600px) {
   .project {
@@ -1422,33 +1400,48 @@ h2.post-title, h2.article-title {
   .project:nth-child(4n) {
     margin-left: 0; } }
 
-.project {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
-
 .project img {
   display: block;
-  background: #fff;
   width: 100%;
   height: auto; }
 
+.project-overlay {
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%; }
+
+.project-name-wrapper {
+  position: absolute;
+  display: table;
+  text-align: center;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
 .project-name {
-  color: #999;
-  display: inline-block;
-  display: none;
-  font-size: 15px;
-  font-weight: 400;
-  margin: 20px 0; }
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2rem;
+  color: #fff;
+}
 
-.project:hover {
-  opacity: .85; }
-
-.project:hover .project-title {
-  opacity: 1;
-  visibility: visible; }
+.project:hover .project-overlay {
+  opacity: 1; }
 
 /* ===== PROJECT DETAIL VIEW ===== */
 .project-title {
