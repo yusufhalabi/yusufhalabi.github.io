@@ -60,10 +60,10 @@ function heroHeight() {
 // ******************************************/
 
 function transformHeader() {
-  HeaderHeight = $('.header').height();
-  ScrollPos = $(document).scrollTop();
+  headerHeight = $('.header').height();
+  scrollPosition = $(document).scrollTop();
 
-  if (ScrollPos > HeaderHeight) {
+  if (scrollPosition > headerHeight) {
     $('.header').addClass('scrolled');
   }
   else {
@@ -106,9 +106,9 @@ $(function() {
 //guestbook sending
 function sendMessage() {
     $('#contact').on('submit', function(){
-        var nameVal = $('#entry_367070669').val();
-        var emailVal = $('#entry_52027613').val();
-        var msgVal = $('#entry_1707629466').val();
+        var nameVal = $('#entry_367070669').val(),
+            emailVal = $('#entry_52027613').val(),
+            msgVal = $('#entry_1707629466').val();
         
         if (validateInput() == true) {
             var name = encodeURIComponent(nameVal),

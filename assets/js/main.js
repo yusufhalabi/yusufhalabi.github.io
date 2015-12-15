@@ -60,10 +60,10 @@ function heroHeight() {
 // ******************************************/
 
 function transformHeader() {
-  HeaderHeight = $('.header').height();
-  ScrollPos = $(document).scrollTop();
+  headerHeight = $('.header').height();
+  scrollPosition = $(document).scrollTop();
 
-  if (ScrollPos > HeaderHeight) {
+  if (scrollPosition > headerHeight) {
     $('.header').addClass('scrolled');
   }
   else {
