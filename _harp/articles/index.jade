@@ -1,0 +1,17 @@
+section.main
+    .container.escape-header
+        h2.serif Writing
+        p.main-copy On occasion, I write about technology, research, or life as a sleepy and angsty teenager.
+
+        .ul.post-list
+            for article, slug in public.articles._data 
+                li.row
+                    .col-inline.one-eighth
+                        a(href="/articles/#{ slug }")
+                            aside.dates.
+                                #{ article.date }
+                                #{ article.year }
+                    .col.seven-eighths
+                        a(href="/articles/#{ slug }")
+                            h3.serif-tight.post-title #{ article.title }
+                            h4.post-headline #{ article.headline }
