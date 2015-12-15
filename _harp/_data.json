@@ -1,0 +1,18 @@
+{
+    "CNAME": {
+        "layout": false
+    },
+    "index": {
+        "title": "Sarah Lim"
+    },
+    "about": {
+        "title": "About",
+        "headerInverted": true
+    },
+    "contact": {
+        "title": "Contact"
+    },
+    "404": {
+        "title": "Page Not Found"
+    }
+}

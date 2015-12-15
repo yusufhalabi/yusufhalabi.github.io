@@ -1,0 +1,57 @@
+section.main
+    .container.escape-header
+        h2.serif Contact Me
+        p.main-copy.
+            I'd love to help with your latest web or design project. If you'd like to work together, or just want to say hi, complete the following form or reach out via any of my
+            #[a(href="http://twitter.com/soylentqueen") other]
+            #[a(href="http://linkedin.com/in/sarahclim") social]
+            #[a(href="http://github.com/sarahlim") channels], and I'll get back to you as soon as possible. Thanks!
+
+        hr.divider-part
+
+        .contact-form
+            form(
+                id="contact"
+                action=""
+                method="POST"
+                target="no-target"
+                class="form-group")
+                
+                .row.clearfix
+                    .col.one-half.col-inline
+                        input(
+                            type="text"
+                            name="entry.367070669"
+                            id="entry_367070669"
+                            class="input-text"
+                            placeholder="Name*"
+                            required)
+                    .col.one-half.col-inline
+                        input(
+                            type="email" name="entry.52027613"
+                            id="entry_52027613"
+                            class="input-text" placeholder="Email*"
+                            required)
+                .row.clearfix
+                    textarea(
+                        rows="5"
+                        name="entry.1707629466"
+                        id="entry_1707629466"
+                        class="input-textarea textarea-vertical"
+                        placeholder="Message*"
+                        required)
+
+                .row.clearfix
+                    input(
+                        type="submit"
+                        name="submit"
+                        value="Submit"
+                        class="btn btn-primary input-submit")
+                    p.submit-confirm Submitted. Thanks!
+                    p.submit-error Please double-check to make sure all fields are completed and correct!
+
+            iframe(
+                src="#"
+                id="no-target"
+                name="no-target"
+                style="display:none")

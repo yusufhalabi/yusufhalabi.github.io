@@ -1,0 +1,50 @@
+{
+    "c4nn": {
+        "id": 0,
+        "title": "Chicago for Net Neutrality",
+        "assets": "../assets/images/projects/c4nn/",
+        "tags": ["publicity", "logo"],
+        "date": "Oct 20",
+        "year": "2014"
+    },
+    "debate": {
+        "id": 1,
+        "title": "Debate Shirts",
+        "assets": "../assets/images/projects/debate/",
+        "tags": ["illustration"],
+        "date": "Sep 21",
+        "year": "2014"
+    },
+    "eccl": {
+        "id": 2,
+        "title": "Early Childhood Cognition Lab",
+        "assets": "../assets/images/projects/eccl/",
+        "tags": ["web"],
+        "date": "May 3",
+        "year": "2014"
+    },
+    "fair-elections": {
+        "id": 3,
+        "title": "Fair Elections Illinois",
+        "assets": "../assets/images/projects/fair-elections/",
+        "tags": ["publicity"],
+        "date": "Jan 21",
+        "year": "2015"
+    },
+    "poker-night": {
+        "id": 4,
+        "title": "Poker Night",
+        "assets": "../assets/images/projects/poker-night/",
+        "tags": ["publicity"],
+        "date": "Jun 10",
+        "year": "2015"
+    },
+    "sv": {
+        "id": 5,
+        "title": "St Vincent Debate Camp",
+        "assets": "../assets/images/projects/sv/",
+        "tags": ["illustration"],
+        "date": "Jun 13",
+        "year": "2014"
+    }
+}
