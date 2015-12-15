@@ -1,0 +1,10 @@
+# Go to the _harp directory
+# if [ ${PWD##*/} != "_harp" ]; then
+#   cd _src
+# fi
+
+# Compile current directory to root
+harp compile ./ ../
+
+# Move and rename _README.md
+cp _README.md ../README.md
