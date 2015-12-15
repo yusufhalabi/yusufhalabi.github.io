@@ -6,35 +6,35 @@
 // and add a <image-name>@2x.png image. Assumes jquery is loaded.
  
 function isRetina() {
-	var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
-					  (min--moz-device-pixel-ratio: 1.5),\
-					  (-o-min-device-pixel-ratio: 3/2),\
-					  (min-resolution: 1.5dppx)";
+    var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
+                      (min--moz-device-pixel-ratio: 1.5),\
+                      (-o-min-device-pixel-ratio: 3/2),\
+                      (min-resolution: 1.5dppx)";
  
-	if (window.devicePixelRatio > 1)
-		return true;
+    if (window.devicePixelRatio > 1)
+        return true;
  
-	if (window.matchMedia && window.matchMedia(mediaQuery).matches)
-		return true;
+    if (window.matchMedia && window.matchMedia(mediaQuery).matches)
+        return true;
  
-	return false;
+    return false;
 };
  
  
 function retina() {
-	
-	if (!isRetina())
-		return;
-	
-	$("img.2x").map(function(i, image) {
-		
-		var path = $(image).attr("src");
-		
-		path = path.replace(".png", "@2x.png");
-		path = path.replace(".jpg", "@2x.jpg");
-		
-		$(image).attr("src", path);
-	});
+    
+    if (!isRetina())
+        return;
+    
+    $("img.2x").map(function(i, image) {
+        
+        var path = $(image).attr("src");
+        
+        path = path.replace(".png", "@2x.png");
+        path = path.replace(".jpg", "@2x.jpg");
+        
+        $(image).attr("src", path);
+    });
 };
 
 // *******************************************
@@ -44,7 +44,7 @@ function retina() {
 function heroHeight() {
   function setHeight() {
     var WindowHeight = $(window).innerHeight();
-    var AboutHeight = WindowHeight * 0.65;
+    var AboutHeight = WindowHeight * 0.4;
     $('.hero').css('min-height', WindowHeight);
     $('.about-hero').css('min-height', AboutHeight);
   };
@@ -64,36 +64,20 @@ function transformHeader() {
   ScrollPos = $(document).scrollTop();
 
   if (ScrollPos > HeaderHeight) {
-  	$('.header').addClass('scrolled');
+    $('.header').addClass('scrolled');
   }
   else {
-  	$('.header').removeClass('scrolled');
+    $('.header').removeClass('scrolled');
   }
  }
 
  function headerStyle() {
- 	transformHeader();
- 	
- 	$(window).scroll(function() {
- 		transformHeader();
- 	});
+    transformHeader();
+    
+    $(window).scroll(function() {
+        transformHeader();
+    });
  }
-
-// *******************************************
-// RANDOM BLURB GENERATOR
-// ******************************************/
-
-function randomFeature() {
-	features = ['Sk8er Boi was a pretty good song',
-				'Did somebody say \'fonts\'',
-				'(bird noises)',
-				'Moving is very difficult'];
-	max = features.length;
-	i = Math.floor(Math.random() * max);
-	result = features[i];
-
-	$('.feature-header').text(result);
-}
 
 // *******************************************
 // SMOOTH SCROLLING
@@ -121,42 +105,42 @@ $(function() {
 
 //guestbook sending
 function sendMessage() {
-	$('#contact').on('submit', function(){
-		var nameVal = $('#entry_367070669').val();
-		var emailVal = $('#entry_52027613').val();
-		var msgVal = $('#entry_1707629466').val();
-		
-		if (validateInput() == true) { //fix this soon
-			var name = encodeURIComponent(nameVal);
-			var email = encodeURIComponent(emailVal);
-			var msg = encodeURIComponent(msgVal);
+    $('#contact').on('submit', function(){
+        var nameVal = $('#entry_367070669').val();
+        var emailVal = $('#entry_52027613').val();
+        var msgVal = $('#entry_1707629466').val();
+        
+        if (validateInput() == true) {
+            var name = encodeURIComponent(nameVal),
+                email = encodeURIComponent(emailVal),
+                msg = encodeURIComponent(msgVal);
 
-			var nameID = "entry.367070669";
-			var emailID = "entry.52027613";
-			var msgID = "entry.1707629466";
+            var nameId = "entry.367070669",
+                emailId = "entry.52027613",
+                msgId = "entry.1707629466";
 
-			var baseURL = 'https://docs.google.com/forms/d/1Ol5ykSAqSMjDZ8ykryZ8rEkosA6LtJimGszphld7zz8/formResponse?';
+            var baseUrl = 'https://docs.google.com/forms/d/1Ol5ykSAqSMjDZ8ykryZ8rEkosA6LtJimGszphld7zz8/formResponse?';
 
-			var submitRef = '&submit=Submit';
-			var submitURL = (baseURL + nameID + "=" + name + "&" + emailID + "=" + email + "&" + msgID + "=" + msg + submitRef);
-			console.log(submitURL);
-			$(this)[0].action = submitURL;
-			$(".submit-error").hide();
-			$(".submit-confirm").show();
-		}
-		else return;
-	})
+            var submitRef = '&submit=Submit';
+            var submitUrl = (baseUrl + nameId + "=" + name + "&" + emailId + "=" + email + "&" + msgId + "=" + msg + submitRef);
+            console.log(submitUrl);
+            $(this)[0].action = submitUrl;
+            $(".submit-error").hide();
+            $(".submit-confirm").show();
+        }
+        else return;
+    })
 }
 
 //input validation
 function validateInput(name, message) {
-	val = $('.input-val').val();
-	if (val == "10") {
-		return true;
-	}
-	else {
-		$(".submit-error").show();
-	}
+    val = $('.input-val').val();
+    if (val == "10") {
+        return true;
+    }
+    else {
+        $(".submit-error").show();
+    }
 }
 
 // *******************************************
@@ -164,9 +148,8 @@ function validateInput(name, message) {
 // ******************************************/
 
 $(document).ready(function() {
-	heroHeight();
-	randomFeature();
-	retina();
-	headerStyle();
-	sendMessage();
+    heroHeight();
+    retina();
+    headerStyle();
+    sendMessage();
 });

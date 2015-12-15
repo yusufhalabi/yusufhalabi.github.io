@@ -23,13 +23,13 @@
 }
 
 .hero {
-	height: 100vh;
+	height: 100vh;  // Need to also edit main.js
 	background-position: center center;
 	background-image: url(../images/sl.jpg);
 }
 
 .about-hero {
-	height: 65vh;
+	height: 40vh; // Need to also edit main.js
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
 									  rgba(0, 0, 0, 0.5)),
 					  url(../images/unsplash-hero.jpg);
@@ -58,7 +58,7 @@
 
 .about-feature {
 	color: #fff;
-	top: 35%;
+	top: 45%;
 }
 
 .feature-header,
@@ -82,11 +82,11 @@
 .feature-header:before {
 	content: '\201c';
 }
-
 .feature-header:after {
 	content: "\201d";
 }
 
+// Make the font bigger when necessary
 @media (min-width: 550px) {
 	.feature-header,
 	.about-header {
@@ -95,13 +95,14 @@
 	}
 }
 
+// Adjust positioning for larger viewports
 @media (min-width: 600px) {
 	.feature {
 		width: 100%;
 	}
 	.about-feature {
-		width: 50%;
-		top: 25%;
+		width: 70%;
+		top: 40%;
 	}
 }
 
@@ -116,8 +117,8 @@
 	}
 	.about-feature {
 		/* color: #000; */
-		width: 50%; //40%
-		top: 30%;
+		width: 70%; //40%
+		top: 40%;
 		//left: 70%; offset horizontally
 	}
 	
