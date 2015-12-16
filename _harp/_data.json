@@ -2,6 +2,9 @@
     "CNAME": {
         "layout": false
     },
+    "work": {
+        "layout": false
+    },
     "index": {
         "title": "Sarah Lim"
     },
