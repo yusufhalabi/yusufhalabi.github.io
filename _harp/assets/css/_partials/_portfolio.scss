@@ -116,12 +116,15 @@
         width: 100%;
         margin-bottom: 2rem;
     }
+    .featured:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 600px) {
     .featured.part-width {
         margin: 0 auto;
         width: 60%;
-    }
-    .featured:last-child {
-        margin-bottom: 0;
     }
 }
 

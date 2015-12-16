@@ -17,7 +17,7 @@
 /* ===== CONTENT ===== */
 
 .escape-header {
-	padding-top: 8rem;
+	padding-top: 9rem;
 }
 
 @media (min-width: 600px) {
@@ -46,7 +46,7 @@
 	margin-bottom: 1.5rem;
 	line-height: 1.6;
 }
-.main-copy:last-child {
+.main-copy p:last-child {
 	margin-bottom: 0;
 }
 

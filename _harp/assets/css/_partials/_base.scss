@@ -305,3 +305,32 @@ a {
     .col.one-third  { width: 30.66666667%; }
     .col.two-thirds  { width: 74.333333%; }
   }
+
+/****************************************
+* SCROLLBAR
+****************************************/
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.6rem;
+}
+::-moz-scrollbar {
+  width: 0.8rem;
+  height: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+::-moz-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #e5e5e5;
+}
+::-moz-scrollbar-thumb {
+  border-radius: 0;
+  background: #e5e5e5;
+}
