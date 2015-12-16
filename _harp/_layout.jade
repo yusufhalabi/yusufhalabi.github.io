@@ -18,23 +18,23 @@ html
     title= title
   body
     //- Header
-    != partial("./_partials/header")
+    != partial("./assets/_partials/header")
 
 
     //- Main content
     if current.path[0] === "articles" && current.path[1] != "index"
         //- Render article decorator if needed
-        != partial("./_partials/article")
+        != partial("./assets/_partials/article")
     else if current.path[0] === "projects" && current.path[1] != "index"
         //- Render project decorator if needed
-        != partial("./_partials/project")
+        != partial("./assets/_partials/project")
     else 
         //- Otherwise load content normally
         != yield
 
 
     //- Footer
-    != partial("./_partials/footer")
+    != partial("./assets/_partials/footer")
 
     //- Scripts
-    != partial("./_partials/scripts")
+    != partial("./assets/_partials/scripts")
