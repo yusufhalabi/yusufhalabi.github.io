@@ -1,3 +1,3 @@
-Movie poster for the film [Poker Night](http://www.imdb.com/title/tt4958758/), written and directed by Jack Forbes.
+I designed the poster for [Poker Night](http://www.imdb.com/title/tt4958758/), a short film written and directed by Jack Forbes. Jack wanted a photorealistic depiction of the physical coin used in the movie. Using a photograph of the coin for reference, I reconstructed it in Illustrator and then used Photoshop blending options to mimic the texture and lighting of the physical version.
 
-<img class="featured part-width 2x" src="../assets/images/projects/poker-night/poker-night-full.jpg"/>
+<img class="featured part-width 2x" title="Poker Night poster" src="../assets/images/projects/poker-night/poker-night-full.jpg"/>
