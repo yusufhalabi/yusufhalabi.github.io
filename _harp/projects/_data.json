@@ -1,4 +1,13 @@
 {
+    "commentator": {
+        "id": 6,
+        "url": "https://github.com/sarahlim/commentator",
+        "title": "Commentator",
+        "assets": "../assets/images/projects/commentator/",
+        "tags": ["js"],
+        "date": "Jul 20",
+        "year": "2015"
+    },
     "poker-night": {
         "id": 5,
         "title": "Poker Night",
