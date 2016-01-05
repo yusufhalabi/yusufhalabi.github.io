@@ -28,16 +28,18 @@ The contents of the main directory, from top to bottom:
 
 
 Harp’s [documentation for deploying to GitHub Pages](http://harpjs.com/docs/deployment/github-pages) provides the appropriate command for compiling to the root:
-    harp compile _harp ./
+```sh
+$ harp compile _harp ./
+```
 
 Easy enough, right? Well, not quite. Since `harp compile` wipes the output directory and rebuilds it anew each time, any CNAME or README.md files I placed in the root directory were deleted every time I compiled a new build.
 [Conor O’Neill](http://conoroneill.net/the-nitty-gritty-of-moving-from-wordpress-to-harpjs/)’s blog post has a quick fix for the CNAME problem. I simply moved the file into `_harp/`, and modified `_harp/_data.json` by adding the following property:
-```
+```sh
 "CNAME": { "layout": false }
 ```
 
 The README.md problem was slightly tricker. I couldn’t just move it into my app directory and exempt it from layouts, because Harp would still auto-compile Markdown to HTML. I ended up adding two files to `_harp/`: my README, with the filename prefixed with an underscore (Harp ignores these during compilation), and a shell script containing the following command:
-```
+```sh
 harp compile ./ ../ && cp _README.md ../README.md
 ```
 
@@ -47,13 +49,13 @@ Instead of running `harp compile`, I run this script, and it automatically copie
 Cactus had awesome auto-refresh. I was surprised to find that even though `harp server` tracks file changes to manage asset re-compilation, Harp lacks native support for live reloading. [This](https://github.com/sintaxi/harp/issues/80) GitHub discussion proposes several solutions, ranging from custom bash scripts to auto-launch [LiveReloadX](http://nitoyon.github.io/livereloadx/) along with `harp server`, to forks integrating Harp with the various reload libraries-of-the-moment. After trying several solutions with varied success, I ended up adopting the KISS approach [suggested by Alexander Prinzhorn](https://github.com/sintaxi/harp/issues/80#issuecomment-58925661).
 
 Install [browser-sync](https://www.browsersync.io/) if you haven’t already:
-```
-npm install -g browser-sync
+```sh
+$ npm install -g browser-sync
 ```
 
 Then, from the main directory of your Harp application, run the following command:
-```
-browser-sync start --proxy 'localhost:9000' --files ‘.jade, .scss’
+```sh
+$ browser-sync start --proxy 'localhost:9000' --files ‘.jade, .scss’
 ```
 
 (Obviously, you should modify the port and file extensions accordingly. For instance, if you use LESS, replace `*.scss` with `*.less`.)
@@ -75,7 +77,7 @@ Harp’s [documentation on nested layouts](http://harpjs.com/docs/development/la
 > If you are taking advantage of Harp’s built-in support for Jade, you may use Jade’s Block and Extends features to create nested layouts.
 
 From that line, I naïvely assumed I could just create the following layouts:
-```
+```jade
 //- _harp/_layout.jade
 
 // ...header stuff here
@@ -86,7 +88,7 @@ block main
 // ...footer stuff here
 ```
 
-```
+```jade
 //- _harp/articles/_layout.jade
 
 extends ../_layout
@@ -97,7 +99,7 @@ block main
 ```
 
 Except, I found out, you can’t actually combine Jade blocks and extensions with Harp’s `yield`-based includes. So I ended up writing a single `_layout`, using conditional statements with Harp’s `current` object (documented [here](http://harpjs.com/docs/development/current)), like so:
-```
+```jade
 //- _harp/_layout.jade
 
 // ...header stuff here
