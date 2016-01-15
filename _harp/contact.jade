@@ -12,34 +12,42 @@ section.main
         .contact-form
             form(
                 id="contact"
-                action=""
+                action="http://formspree.io/sarah@sarahlim.com"
                 method="POST"
-                target="no-target"
                 class="form-group")
                 
                 .row.clearfix
                     .col.one-half.col-inline
                         input(
                             type="text"
-                            name="entry.367070669"
-                            id="entry_367070669"
+                            name="name"
+                            id="name"
                             class="input-text"
                             placeholder="Name*"
                             required)
                     .col.one-half.col-inline
                         input(
-                            type="email" name="entry.52027613"
-                            id="entry_52027613"
-                            class="input-text" placeholder="Email*"
+                            type="email"
+                            name="_replyto"
+                            class="input-text"
+                            placeholder="Email*"
                             required)
+                        input(
+                            type="hidden"
+                            name="_subject"
+                            value="New contact submission")
                 .row.clearfix
                     textarea(
                         rows="5"
-                        name="entry.1707629466"
-                        id="entry_1707629466"
+                        name="message"
+                        id="message"
                         class="input-textarea textarea-vertical"
                         placeholder="Message*"
                         required)
+                    input(
+                        type="text"
+                        name="_gotcha"
+                        id="gotcha")
 
                 .row.clearfix
                     input(
@@ -49,6 +57,7 @@ section.main
                         class="btn btn-primary input-submit")
                     p.submit-confirm Submitted. Thanks!
                     p.submit-error Please double-check to make sure all fields are completed and correct!
+                    p.submit-process Submitting...
 
             iframe(
                 src="#"

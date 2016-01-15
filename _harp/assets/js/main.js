@@ -6,25 +6,17 @@
 // and add a <image-name>@2x.png image. Assumes jquery is loaded.
  
 function isRetina() {
-    var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
-                      (min--moz-device-pixel-ratio: 1.5),\
-                      (-o-min-device-pixel-ratio: 3/2),\
-                      (min-resolution: 1.5dppx)";
- 
-    if (window.devicePixelRatio > 1)
-        return true;
- 
-    if (window.matchMedia && window.matchMedia(mediaQuery).matches)
-        return true;
- 
-    return false;
+    if (window.matchMedia) {
+        var mq = window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+        return (mq && mq.matches || (window.devicePixelRatio > 1)); 
+    }
 };
  
  
 function retina() {
-    
-    if (!isRetina())
-        return;
+    if (!isRetina()) {
+      return;
+    }
     
     $("img.2x").map(function(i, image) {
         
@@ -105,42 +97,26 @@ $(function() {
 
 //guestbook sending
 function sendMessage() {
-    $('#contact').on('submit', function(){
-        var nameVal = $('#entry_367070669').val(),
-            emailVal = $('#entry_52027613').val(),
-            msgVal = $('#entry_1707629466').val();
-        
-        if (validateInput() == true) {
-            var name = encodeURIComponent(nameVal),
-                email = encodeURIComponent(emailVal),
-                msg = encodeURIComponent(msgVal);
-
-            var nameId = "entry.367070669",
-                emailId = "entry.52027613",
-                msgId = "entry.1707629466";
-
-            var baseUrl = 'https://docs.google.com/forms/d/1Ol5ykSAqSMjDZ8ykryZ8rEkosA6LtJimGszphld7zz8/formResponse?';
-
-            var submitRef = '&submit=Submit';
-            var submitUrl = (baseUrl + nameId + "=" + name + "&" + emailId + "=" + email + "&" + msgId + "=" + msg + submitRef);
-            console.log(submitUrl);
-            $(this)[0].action = submitUrl;
-            $(".submit-error").hide();
-            $(".submit-confirm").show();
+    $('#contact').submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+        url: '//formspree.io/sarah@sarahlim.com',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function() {
+          $('.submit-process').show();
+        },
+        success: function(data) {
+          $('.submit-error').hide();
+          $('.submit-process').hide();
+          $('.submit-confirm').show();
+        },
+        error: function(err) {
+          $('.submit-error').show();
         }
-        else return;
-    })
-}
-
-//input validation
-function validateInput(name, message) {
-    val = $('.input-val').val();
-    if (val == "10") {
-        return true;
-    }
-    else {
-        $(".submit-error").show();
-    }
+      });
+    });
 }
 
 // *******************************************
