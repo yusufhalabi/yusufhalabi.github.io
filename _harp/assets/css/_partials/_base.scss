@@ -200,17 +200,26 @@ a {
   margin-right: 1rem;
 }
 
+#gotcha {
+  display: none;
+}
+
 /***/
 
 .submit-confirm {
   display: none;
   text-align: center;
-  color: $primary;
   font-style: italic;
 }
 
-.submit-error {
+.submit-error,
+.submit-process {
   @extend .submit-confirm;
+}
+
+.submit-error,
+.submit-confirm {
+  color: $primary;
 }
 
 @media (min-width: 600px) {
