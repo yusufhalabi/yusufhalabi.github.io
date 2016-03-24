@@ -13,12 +13,15 @@ html
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="../assets/css/prism.css", type="text/css")
 
+    link(rel="stylesheet", href="../assets/css/notes.css", type="text/css")
+
     //- link(rel="canonical", href="")
 
     title= title
   body
     //- Header
-    != partial("./assets/_partials/header")
+    if current.path[0] !== "teaching"
+        != partial("./assets/_partials/header")
 
 
     //- Main content
@@ -34,7 +37,8 @@ html
 
 
     //- Footer
-    != partial("./assets/_partials/footer")
+    if current.path[0] !== "teaching"
+        != partial("./assets/_partials/footer")
 
     //- Scripts
     != partial("./assets/_partials/scripts")

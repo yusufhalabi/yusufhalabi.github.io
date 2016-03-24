@@ -53,9 +53,9 @@ Install [browser-sync](https://www.browsersync.io/) if you haven’t already:
 $ npm install -g browser-sync
 ```
 
-Then, from the main directory of your Harp application, run the following command:
+Then, from the main directory of your Harp application, run the following command in the terminal:
 ```sh
-$ browser-sync start --proxy 'localhost:9000' --files ‘.jade, .scss’
+browser-sync start --proxy 'localhost:9000' --files ‘.jade, .scss’
 ```
 
 (Obviously, you should modify the port and file extensions accordingly. For instance, if you use LESS, replace `*.scss` with `*.less`.)

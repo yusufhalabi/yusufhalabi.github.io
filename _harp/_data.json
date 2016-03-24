@@ -17,5 +17,8 @@
     },
     "404": {
         "title": "Page Not Found"
+    },
+    "teaching": {
+        "title": "Teaching"
     }
 }

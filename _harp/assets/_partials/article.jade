@@ -2,9 +2,8 @@ section.main
     .container.escape-header
         article.post-article
             header
-                h2.article-title.serif-tight= title
+                h2.article-title= title
                 span.article-date #{ date + ", " + year }
-                h3.article-headline= headline
 
             section.article-body
                 != yield
@@ -31,4 +30,4 @@ section.main
                     if typeof nextId === 'number'
                         - var next = posts[nextId]
                         a(href="/articles/#{ next }")
-                            span.arrow &rarr; #{ public.articles._data[next].title }
+                            span.arrow #{ public.articles._data[next].title } &rarr;

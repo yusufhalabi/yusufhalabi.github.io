@@ -78,6 +78,13 @@ a {
   visibility: hidden;
 }
 
+/* ===== LISTS ===== */
+
+.main ul,
+.main ol {
+  margin: 1.5rem 0 1.5rem 4rem;
+}
+
 /* ===== BUTTONS ===== */
 
 .btn {
@@ -255,12 +262,12 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 90%;
   -webkit-box-sizing: border-box;
 }
 
   @media (min-width: 400px) {
     .container {
-      width: 85%;
       padding: 0; }
   }
 
