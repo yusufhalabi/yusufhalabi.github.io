@@ -38,7 +38,10 @@ $tertiary: #d7dadb; /* grey
 /* ===== SIZING ===== */
 
 /* set rem measurements based on 10px sizing, e.g. 1.5rem = 15px */
-html { font-size: 62.55%; }
+html {
+  font-size: 62.55%;
+  box-sizing: border-box;
+}
 
 /* ===== COLORS ===== */
 
@@ -260,8 +263,8 @@ a {
 
 .container {
   max-width: 1140px;
+  padding: 0 5px;
   margin: 0 auto;
-  padding: 0 20px;
   width: 90%;
   -webkit-box-sizing: border-box;
 }
