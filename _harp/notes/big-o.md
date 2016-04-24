@@ -83,8 +83,8 @@ Now we've seen two common **complexity classes**: $O(1)$ and $O(n)$. Let's meet 
 | Notation     | Complexity class | Judgment  |
 |--------------|------------------|-----------|
 | $O(1)$       | Constant         | Awesome   |
-| $O(n)$       | Linear           | Good      |
-| $O(\log{n})$ | Logarithmic      | Decent    |
+| $O(\log{n})$ | Logarithmic      | Good      |
+| $O(n)$       | Linear           | Decent    |
 | $O(n^2)$     | Quadratic        | Bad       |
 | $O(2^n)$     | Exponential      | Awful     |
 
@@ -114,7 +114,7 @@ Look at the above graph again. We've already observed that each function grows s
 
 We can actually make an even stronger statement. Each successive function grows faster than not only its predecessor, but *all preceding functions*. That is,
 
-$$1 \leq n \leq \log{n} \leq n^2 \leq 2^n$$
+$$1 \leq \log{n} \leq n \leq n^2 \leq 2^n$$
 
 as $n$ grows infinitely large.
 

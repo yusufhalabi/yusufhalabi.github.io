@@ -62,13 +62,13 @@
 <td>Awesome</td>
 </tr>
 <tr>
-<td>$O(n)$</td>
-<td>Linear</td>
+<td>$O(\log{n})$</td>
+<td>Logarithmic</td>
 <td>Good</td>
 </tr>
 <tr>
-<td>$O(\log{n})$</td>
-<td>Logarithmic</td>
+<td>$O(n)$</td>
+<td>Linear</td>
 <td>Decent</td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@
 </ul>
 <h3>Complexity classes</h3><p>Look at the above graph again. We&#39;ve already observed that each function grows successively faster than its predecessor -- the linear function $n$ grows strictly faster than the constant function $1$, the quadratic function $n^2$ grows strictly faster than the linear function $n$, and so on.</p>
 <p>We can actually make an even stronger statement. Each successive function grows faster than not only its predecessor, but <em>all preceding functions</em>. That is,</p>
-<p>$$1 \leq n \leq \log{n} \leq n^2 \leq 2^n$$</p>
+<p>$$1 \leq \log{n} \leq n \leq n^2 \leq 2^n$$</p>
 <p>as $n$ grows infinitely large.</p>
 <p>Recall that big O notation expresses some function as the <em>upper bound</em> of another. (For instance, saying $T(n) = O(n^2)$ means that $T(n)$ is upper-bounded by the function $n^2$.)</p>
 <p>If we say that a function $f$ is $O(g)$, we are basically saying that $f$ has an upper bound $g$, or</p>
