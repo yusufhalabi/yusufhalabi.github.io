@@ -3,6 +3,8 @@
 *Sarah Lim*  (slim at northwestern dot edu)  
 24 April 2016
 
+> **Note:** A previous version of this article incorrectly ordered $log(n)$ as slower than $n$. This has since been fixed.
+
 ## Measuring performance
 
 To measure an algorithm's efficiency, one intuitive idea is to consider the amount of time it takes to solve a problem (transform the input into the desired output).
@@ -140,7 +142,7 @@ Translating this into big O notation, $f$ is $O(h)$, in addition to being $O(g)$
 
 This seemingly trivial example illustrates an important property: a function $f$ is $O(\text{all functions larger than $f$})$.
 
-For instance, if $T(n)$ is $O(n)$, it's technically *also* $O(\log{n})$, $O(n^2)$, $O(n^3)$, $O(2^n)$, etc. But since we're trying to describe $T(n)$ with an upper bound, we want to provide the lowest bound we can, in order to best approximate $T(n)$. So in practice, we just say $T(n)$ is $O(n)$.
+For instance, if $T(n)$ is $O(n)$, it's technically *also* $O(n^2)$, $O(n^3)$, $O(2^n)$, etc. But since we're trying to describe $T(n)$ with an upper bound, we want to provide the lowest bound we can, in order to best approximate $T(n)$. So in practice, we just say $T(n)$ is $O(n)$.
 
 The following image neatly summarizes the relationship between complexity classes of functions.
 

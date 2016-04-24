@@ -1,4 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="../assets/images/favicon.ico"><link rel="stylesheet" href="../assets/css/notes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700" type="text/css"><link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/14218448/assets/prism.css" type="text/css"><title></title></head><body><div class="content"><main><article><h1>ELI5: Big O</h1><p><em>Sarah Lim</em>  (slim at northwestern dot edu)<br>24 April 2016</p>
+<blockquote>
+<p><strong>Note:</strong> A previous version of this article incorrectly ordered $log(n)$ as slower than $n$. This has since been fixed.</p>
+</blockquote>
 <h2>Measuring performance</h2><p>To measure an algorithm&#39;s efficiency, one intuitive idea is to consider the amount of time it takes to solve a problem (transform the input into the desired output).</p>
 <p>Unfortunately, it&#39;s difficult to measure the <em>exact</em> runtime of an algorithm. In practice, runtimes are influenced by a lot of factors unrelated to the algorithm itself. For instance, the same function might run quickly on a state-of-the-art gaming PC, and much more slowly on an ancient Windows 98 machine.</p>
 <p>So instead of obsessing over nanosecond differences in runtime, computer scientists use <strong>complexity analysis</strong> to classify algorithms  according to their approximate efficiency. Complexity analysis investigates <em>how an algorithm&#39;s performance degrades as the input size grows</em>. Generally speaking, we are interested in two performance metrics:</p>
@@ -111,7 +114,7 @@
 <p>$$f \leq h$$</p>
 <p>Translating this into big O notation, $f$ is $O(h)$, in addition to being $O(g)$.</p>
 <p>This seemingly trivial example illustrates an important property: a function $f$ is $O(\text{all functions larger than $f$})$.</p>
-<p>For instance, if $T(n)$ is $O(n)$, it&#39;s technically <em>also</em> $O(\log{n})$, $O(n^2)$, $O(n^3)$, $O(2^n)$, etc. But since we&#39;re trying to describe $T(n)$ with an upper bound, we want to provide the lowest bound we can, in order to best approximate $T(n)$. So in practice, we just say $T(n)$ is $O(n)$.</p>
+<p>For instance, if $T(n)$ is $O(n)$, it&#39;s technically <em>also</em> $O(n^2)$, $O(n^3)$, $O(2^n)$, etc. But since we&#39;re trying to describe $T(n)$ with an upper bound, we want to provide the lowest bound we can, in order to best approximate $T(n)$. So in practice, we just say $T(n)$ is $O(n)$.</p>
 <p>The following image neatly summarizes the relationship between complexity classes of functions.</p>
 <p><img alt="Big O defines a partial ordering on the set of all functions" src="http://i.imgur.com/L5i1bjE.png" title="Big O complexity classes" height="400px"></p>
 <h3>Other asymptotic relationships</h3><p>Although big O is the most common notation used for comparing functions, there are two others worth knowing.</p>
