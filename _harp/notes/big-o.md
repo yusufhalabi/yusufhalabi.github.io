@@ -3,7 +3,7 @@
 *Sarah Lim*  (slim at northwestern dot edu)  
 24 April 2016
 
-> **Note:** A previous version of this article incorrectly ordered $log(n)$ as slower than $n$. This has since been fixed.
+> **Note:** A previous version of this article incorrectly ordered $log(n)$ as growing faster than $n$. This has since been fixed.
 
 ## Measuring performance
 

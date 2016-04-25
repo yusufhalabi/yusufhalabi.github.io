@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="../assets/images/favicon.ico"><link rel="stylesheet" href="../assets/css/notes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700" type="text/css"><link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/14218448/assets/prism.css" type="text/css"><title></title></head><body><div class="content"><main><article><h1>ELI5: Big O</h1><p><em>Sarah Lim</em>  (slim at northwestern dot edu)<br>24 April 2016</p>
 <blockquote>
-<p><strong>Note:</strong> A previous version of this article incorrectly ordered $log(n)$ as slower than $n$. This has since been fixed.</p>
+<p><strong>Note:</strong> A previous version of this article incorrectly ordered $log(n)$ as growing faster than $n$. This has since been fixed.</p>
 </blockquote>
 <h2>Measuring performance</h2><p>To measure an algorithm&#39;s efficiency, one intuitive idea is to consider the amount of time it takes to solve a problem (transform the input into the desired output).</p>
 <p>Unfortunately, it&#39;s difficult to measure the <em>exact</em> runtime of an algorithm. In practice, runtimes are influenced by a lot of factors unrelated to the algorithm itself. For instance, the same function might run quickly on a state-of-the-art gaming PC, and much more slowly on an ancient Windows 98 machine.</p>
