@@ -159,7 +159,7 @@ The "opposite" of big O is **big $\Omega$** (pronounced "big omega"), which defi
 * $g$ is a lower bound on $f$
 * $f(n) \geq kg(n)$, for some constant $k$
 
-For example, we know that $n$ is $O(\log{n})$ -- that is, $\log{n}$ upper bounds the function $n$. Conversely, $\log{n}$ is $\Omega(n)$ -- that is, the function $n$ lower bounds $\log{n}$.
+For example, we know that $\log{n}$ is $O(n)$ -- that is, $n$ upper bounds the function $\log{n}$. Conversely, $n$ is $\Omega(\log{n})$ -- that is, the function $\log{n}$ lower bounds $n$.
 
 Finally, **big $\Theta$** (pronounced "big theta") defines a function as "tight bound" to another function. Two functions are "tight bound" (and thus $\Theta$ of one another) if they grow the same way/at the same rate. By definition, $f$ is $\Theta(g)$ when we can "sandwich" $f$ between bounds $k_1 g$ and $k_2 g$, for some constants $k_1$ and $k_2$.
 

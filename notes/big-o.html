@@ -125,7 +125,7 @@
 <li>$g$ is a lower bound on $f$</li>
 <li>$f(n) \geq kg(n)$, for some constant $k$</li>
 </ul>
-<p>For example, we know that $n$ is $O(\log{n})$ -- that is, $\log{n}$ upper bounds the function $n$. Conversely, $\log{n}$ is $\Omega(n)$ -- that is, the function $n$ lower bounds $\log{n}$.</p>
+<p>For example, we know that $\log{n}$ is $O(n)$ -- that is, $n$ upper bounds the function $\log{n}$. Conversely, $n$ is $\Omega(\log{n})$ -- that is, the function $\log{n}$ lower bounds $n$.</p>
 <p>Finally, <strong>big $\Theta$</strong> (pronounced &quot;big theta&quot;) defines a function as &quot;tight bound&quot; to another function. Two functions are &quot;tight bound&quot; (and thus $\Theta$ of one another) if they grow the same way/at the same rate. By definition, $f$ is $\Theta(g)$ when we can &quot;sandwich&quot; $f$ between bounds $k_1 g$ and $k_2 g$, for some constants $k_1$ and $k_2$.</p>
 <p>For example, saying &quot;$T(n)$ is $\Theta(n^2)$&quot; means there exist constants $k_1$ and $k_2$ such that</p>
 <p>$$k_1 n^2 \leq T(n) \leq k_2 n^2$$</p>
