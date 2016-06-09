@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+    <style type="text/css">
+    code {
+        white-space: pre;
+    }
+    @page {
+      size: 8.5in 11in;
+      margin: 0.85in 0.75in 1in 0.75in;
+      
+      @footnotes {
+        columns: 2;
+        margin-top: 2em;
+        border-top: 0.5px solid #000000;
+        padding-top: 1em;
+      }
+    }
+    body {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: balance;
+      -moz-column-gap: balance;
+      column-gap: balance;
+      -webkit-column-gap: 0.33in;
+      -moz-column-gap: 0.33in;
+      column-gap: 0.33in;
+    }
+    .footnote {
+      float: prince-column-footnote;
+    }
+    caption {
+      caption-side: bottom;
+    }
+    html {
+      font-size: 10pt;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      text-align: justify;
+      hyphens: none;
+      padding: 20px;
+      max-width: 800px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      -webkit-column-break-after: avoid;
+      column-break-after: avoid;
+      break-after: avoid;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      hyphens: none;
+    }
+    h1 {
+      font-size: 9pt;
+    }
+    h2 {
+      font-size: 9pt;
+    }
+    h3 {
+      font-size: 9pt;
+    }
+    h4 {
+      font-size: 9pt;
+    }
+    h5 {
+      font-size: 9pt;
+    }
+    h6 {
+      font-size: 9pt;
+    }
+    p {
+      margin: 0 0 0.667em;
+      line-height: 1.17;
+      text-indent: 0;
+    }
+    small {
+      font-size: 8pt;
+    }
+    code {
+      font-family: Courier, monospace;
+      font-size: 9pt;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    q:before {
+      content: "“";
+    }
+    q:after {
+      content: "”";
+    }
+    q > q:before {
+      content: "‘";
+    }
+    q > q:after {
+      content: "’";
+    }
+    table {
+      width: 100%;
+      margin: 1em 0;
+      border-collapse: collapse;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      page-break-inside: avoid;
+    }
+    th {
+      border-bottom: 1px solid black;
+    }
+    th,
+    td {
+      padding: 0.333em;
+      // border: 2px solid #000000;
+      text-align: left;
+    }
+    caption {
+      margin: 0.667em 0 0;
+      font-weight: bold;
+    }
+    figure {
+      margin: 1em 0 2.333em;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+    figure img {
+      max-width: 100%;
+    }
+    figcaption {
+      font-weight: bold;
+    }
+    .footnote {
+      margin-left: 0.333em;
+      padding-left: 0.667em;
+    }
+    .footnote::footnote-call {
+      vertical-align: super;
+      line-height: none;
+      font-size: 66%;
+    }
+    .footnote::footnote-marker {
+      font-size: 66%;
+      footnote-style-position: inside;
+    }
+    cite {
+      display: block;
+      position: relative;
+      margin-left: 2.5em;
+      -webkit-column-break-inside: avoid;
+      column-break-inside: avoid;
+      break-inside: avoid;
+      font-style: normal;
+      text-align: left;
+    }
+    cite:before {
+      position: absolute;
+      display: inline-block;
+      margin-left: -2.5em;
+    }
+    cite a {
+      text-decoration: none;
+    }
+    a[href^="#"] {
+      color: inherit;
+      text-decoration: none;
+    }
+    @page {
+      
+    }
+    body > :first-child {
+      counter-reset: page 1;
+    }
+    table {
+      counter-increment: table;
+    }
+    caption:before {
+      content: "Table " counter(table) ". ";
+    }
+    figure {
+      counter-increment: figure;
+    }
+    figcaption:before {
+      content: "Figure " counter(figure) ". ";
+    }
+    .footnote {
+      counter-increment: footnote;
+    }
+    .footnote::footnote-call {
+      content: counter(footnote);
+    }
+    .footnote::footnote-marker {
+      content: counter(footnote);
+    }
+    a[href^="#"] {
+      content: target-counter(attr(href, url), reference);
+    }
+    a[href^="#"]:before {
+      content: "[";
+    }
+    a[href^="#"]:after {
+      content: "]";
+    }
+    a[href^="#"].section {
+      content: target-counter(attr(href, url), section);
+    }
+    a[href^="#"].section:before {
+      content: "";
+    }
+    a[href^="#"].section:after {
+      content: "";
+    }
+    a[href^="#"].subsection {
+      content: target-counter(attr(href, url), section) "." target-counter(attr(href, url), subsection);
+    }
+    a[href^="#"].subsection:before {
+      content: "";
+    }
+    a[href^="#"].subsection:after {
+      content: "";
+    }
+    a[href^="#"].subsubsection {
+      content: target-counter(attr(href, url), section) "." target-counter(attr(href, url), subsection) "." target-counter(attr(href, url), subsubsection);
+    }
+    a[href^="#"].subsubsection:before {
+      content: "";
+    }
+    a[href^="#"].subsubsection:after {
+      content: "";
+    }
+    a[href^="#"].subsubsubsection {
+      content: target-counter(attr(href, url), section) "." target-counter(attr(href, url), subsection) "." target-counter(attr(href, url), subsubsection) "." target-counter(attr(href, url), subsubsubsection);
+    }
+    a[href^="#"].subsubsubsection:before {
+      content: "";
+    }
+    a[href^="#"].subsubsubsection:after {
+      content: "";
+    }
+    a[href^="#"].figure {
+      content: target-counter(attr(href, url), figure);
+    }
+    a[href^="#"].figure:before {
+      content: "Figure ";
+    }
+    a[href^="#"].figure:after {
+      content: "";
+    }
+    a[href^="#"].table {
+      content: target-counter(attr(href, url), table);
+    }
+    a[href^="#"].table:before {
+      content: "Table ";
+    }
+    a[href^="#"].table:after {
+      content: "";
+    }
+    .cites > :not(:first-child):before {
+      content: none;
+    }
+    .cites > :not(:last-child):after {
+      content: ", ";
+    }
+    cite {
+      counter-increment: reference;
+    }
+    cite:before {
+      content: "" counter(reference) ".";
+    }
+    .col-1 {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+    .col-2 {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+    .col-3 {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+    .col-4 {
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      column-count: 4;
+    }
+    .col-span {
+      -webkit-column-span: all;
+      -moz-column-span: all;
+      column-span: all;
+    }
+    .page-break-after {
+      -webkit-column-break-after: always;
+      column-break-after: always;
+      break-after: always;
+    }
+    .page-break-before {
+      -webkit-column-break-after: always;
+      column-break-after: always;
+      break-after: always;
+    }
+    .col-break-after {
+      -webkit-column-break-after: always;
+      column-break-after: always;
+      break-after: always;
+    }
+    .col-break-before {
+      -webkit-column-break-after: always;
+      column-break-after: always;
+      break-after: always;
+    }
+    .counter-skip h1:before,
+    .counter-skip h2:before,
+    .counter-skip h3:before,
+    .counter-skip h4:before,
+    .counter-skip h5:before,
+    .counter-skip h6:before,
+    .counter-skip:before {
+      margin-right: 0 !important;
+      content: "" !important;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin: 1.333em 0 0 0;
+    }
+    h1 {
+      text-transform: uppercase;
+    }
+    h3 {
+      font-style: italic;
+      font-weight: normal;
+    }
+    header {
+      margin-bottom: 1em;
+    }
+    header h1 {
+      margin: 0 0 3pt;
+      text-align: center;
+      text-transform: none;
+      font-size: 18pt;
+    }
+    header h2 {
+      margin: 18pt 0;
+      text-align: center;
+      font-size: 12pt;
+      font-weight: normal;
+    }
+    ul,
+    ol {
+      margin-left: 2em;
+    }
+    li {
+      margin-left: -0.333em;
+      margin-bottom: 0.667em;
+    }
+    .authors {
+      column-gap: 0;
+    }
+    .authors + .authors {
+      margin-top: 0.667em;
+    }
+    .author {
+      break-inside: avoid;
+      column-break-after: always;
+      text-align: center;
+      font-size: 12pt;
+    }
+    .author > :first-child {
+      font-weight: bold;
+    }
+    .copyright {
+      height: 1.5in;
+      float: column-bottom;
+      font-size: 8pt;
+    }
+    .copyright > * {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3.333in;
+    }
+    .copyright li {
+      margin-bottom: 0;
+    }
+    caption,
+    figcaption {
+      font-size: 9pt;
+    }
+    .math.display {
+      text-align: center;
+      font-size: 120%;
+      margin: 10px 0;
+    }
+    </style>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body style="margin: 0 auto;"><div class="wrapper">
+    <header class="col-span">
+        <h1 class="title">Predicting popularity for user-generated discussion 
+  questions</h1>
+        <div class="authors">
+            <div class="author">
+                <div>Sarah Lim, Jennie Werner, Sameer Srivastava, Aiqi Liu</div>
+                <div>Northwestern University</div>
+                <div>{slim, jw18, sameersrivastava2017, aiqiliu2018}@u.northwestern.edu</div>
+            </div>
+        </div>
+    </header>
+    <h1 id="abstract">Abstract</h1>
+    <p>Social web communities often rely on user-generated questions and discussions to provide information and promote camaraderie. However, there is little understanding of what makes a question engaging in this context. We analyze questions submitted to a popular discussion website, AskReddit, using time-independent features to train a number of decision tree classifiers. Alternating decision trees achieve 72.9819 accuracy with 10-fold cross-validation, a reasonable improvement over the ZeroR baseline of 51.0708. Features related to the language of the question, time and day of posting, and initial commenting behavior prove most informative.</p>
+    <h1 id="introduction">Introduction</h1>
+    <p>Question-based discussion is a crucial user engagement mechanism across a variety of web services. Examples of such services include discussion communities organized around particular areas of interest, user research platforms, and Q&amp;A websites. Although question-based discussion has wide-ranging utility, there is little understanding of what makes particular questions more engaging or salient in a social web context.</p>
+    <p>In order to better understand what makes a question popular, we focus on a particular online community called AskReddit (http://reddit.com/r/AskReddit/). AskReddit is an online forum with over 11.5 million subscribers, where users submit open-ended questions for community discussion. Questions may relate to any topic, must be &quot;clear and direct,&quot; and include no more than &quot;two, short, necessary context sentences.&quot; AskReddit users interact with submissions by commenting, &quot;upvoting,&quot; or &quot;downvoting.&quot; An internal ranking algorithm computes a score for each submission based on factors including upvotes, downvotes, comments, and submission age; the homepage displays submissions ordered according to score.</p>
+    <p>Our main goals are (1) to predict whether a recently-submitted AskReddit question is currently popular, and (2) to understand which features and properties influence the popularity of a submission.</p>
+    <h1 id="task">Task</h1>
+    <h2 id="problem-statement">Problem statement</h2>
+    <p>We define our problem as a binary classification task. Given a time <span class="math inline">\(t\)</span>, and an AskReddit question <span class="math inline">\(\boldsymbol{x}\)</span> submitted within the 24 hours preceding <span class="math inline">\(t\)</span>, we would like to predict whether <span class="math inline">\(\boldsymbol{x}\)</span> is currently popular. A question is <em>popular</em> if it ranks within the top 25 AskReddit posts at time <span class="math inline">\(t\)</span>, according to the site's default (&quot;Hot&quot;) sorting mechanism. These top 25 posts are colloquially known as the &quot;front page,&quot; and community members generally consider reaching the front page to denote a meaningful threshold for a post's popularity.</p>
+    <h2 id="dataset">Dataset</h2>
+    <p>Our complete dataset consists of 674 examples, each representing a unique AskReddit submission with features captured at query time. We use the Reddit API to retrieve the top 25 questions at time <span class="math inline">\(t\)</span> of query (our positive examples), along with 25 other randomly-selected questions posted within the past 24 hours (our negative examples) of <span class="math inline">\(t\)</span>. Scrapes repeat as necessary until the dataset contains an equal number of positive and negative examples for the current day of the week (Sunday, Monday, Tuesday, etc.). Table 1 describes our chosen metadata features.</p>
+    
+    <h3 id="language-features">Language features</h3>
+    <p>To extract features based on question wording, we randomly partition our dataset into 90% and 10%, using the 10% subset to train natural language models. The resulting models perform comparably to those trained on 20% and 30% partitions of the dataset.</p>
+    <p>Let <span class="math inline">\(L\)</span> denote the subset reserved for language modeling, with bipartition <span class="math inline">\(L_{pos}\)</span> and <span class="math inline">\(L_{rand}\)</span>. We train dictionaries for each of the following features using <span class="math inline">\(L_{pos}\)</span>, and an equally-sized set <span class="math inline">\(L_{rand}\)</span> of examples randomly chosen from <span class="math inline">\(L\)</span>.</p>
+    <p>The <code>token_score</code> feature represents each question as a &quot;bag of words.&quot; More formally, for some instance <span class="math inline">\(\boldsymbol{l}\)</span> in <span class="math inline">\(\boldsymbol{L}\)</span>, we tokenize its title, and remove common articles and punctuation. Let <span class="math inline">\(\boldsymbol{t}\)</span> denote the resulting vector of tokens. We train dictionaries <span class="math inline">\(D_{token,pos}\)</span> and <span class="math inline">\(D_{token,rand}\)</span> by iterating through <span class="math inline">\(L_{pos}\)</span> and <span class="math inline">\(L_{rand}\)</span> respectively, and storing the cumulative frequency of each token from all titles in the class. Given a new instance <span class="math inline">\(\boldsymbol{x}\)</span>, we first obtain its corresponding vector of <span class="math inline">\(k\)</span> title tokens, <span class="math inline">\(\boldsymbol{t}_\boldsymbol{x}\)</span>. Then its <code>token_score</code> for class <span class="math inline">\(c\)</span> is given by</p>
+    <p><span class="math display">\[\frac{\sum_i^k P(t_i \mid c)}{k}\]</span></p>
+    <p>where <span class="math inline">\(t_i\)</span> denotes the <span class="math inline">\(i\)</span>th token in <span class="math inline">\(\boldsymbol{t}_{\boldsymbol{x}}\)</span>, and <span class="math inline">\(P(t\_i \mid c)\)</span> is computed by checking the dictionary <span class="math inline">\(D\_{token,c}\)</span>.</p>
+    <p>Since <code>token_score</code> fails to account for the different meanings of individual tokens, we also compute a <code>sense_score</code> feature. Training for <span class="math inline">\(D_{sense,pos}\)</span> and <span class="math inline">\(D_{sense,rand}\)</span> follows the same process outlined for the token-based dictionaries, with one additional step: for each title token, we first compute its synset using the <code>pyWSD</code> implementation of the Lesk Word Sense Disambiguation algorithm. Each word in the resulting synset is then added to the dictionary, resulting in a dictionary that more accurately captures the meaning of question titles. Given a new instance <span class="math inline">\(\boldsymbol{x}\)</span> with title token vector <span class="math inline">\(\boldsymbol{t}_\boldsymbol{x}\)</span>, its <code>sense_score</code> for class <span class="math inline">\(c\)</span> is then</p>
+    <p><span class="math display">\[\sum_i^k s(t_i, D_{sense,c})\]</span></p>
+    <p>where <span class="math inline">\(s\)</span> denotes the path similarity between the synset of <span class="math inline">\(t_i\)</span> and the sense dictionary for the corresponding class.</p>
+
+    <h1 id="methods">Methods</h1>
+    <p>We use Weka to train and evaluate a number of models using the remaining 90% of our original dataset. All models use 10-fold cross-validation. Our ZeroR baseline achieves 51.0708 accuracy, as we take care to balance the frequency of positive and negative instances throughout our dataset. The following section describes our selected classifiers.</p>
+    <h2 id="one-level-decision-trees">One-level decision trees</h2>
+    <p>We use one-level decision tree algorithms to understand which features provide the most information gain with respect to question performance.</p>
+    <ul>
+        <li><strong>OneR</strong> produces a multi-way split on a single attribute.</li>
+        <li><strong>DecisionStump</strong>, conversely, splits on a single attribute/value combination.</li>
+    </ul>
+    <h2 id="full-decision-trees">Full decision trees</h2>
+    <p>Decision trees are especially well-suited for our task, because they are supervised concept-learners, and we would like to understand more about the relative information gains provided by various attribute/value splits. With the possible exception of hybrid Naive Bayes/Decision Trees, decision tree models also encode conditional dependencies between features very well.</p>
+    <ul>
+        <li><strong>J48Tree</strong>, Weka's implementation of Quinlan's C4.5 algorithm, chooses splits that maximize information gain measured in terms of Shannon entropy.</li>
+        <li><strong>NBTree</strong> is a Naive Bayes and Decision Tree hybrid learning model. We would like to understand how this affects attribute selection, since a number of our features (e.g. all the temporal ones) seem intuitively dependent.</li>
+    </ul>
+    <table class="col-span" style="width:100%;">
+        <caption>Summary of metadata-based features.</caption>
+        <colgroup>
+            <col style="width: 27%" />
+            <col style="width: 13%" />
+            <col style="width: 58%" />
+        </colgroup>
+        <thead>
+            <tr class="header">
+                <th>Feature</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td>post_localTime</td>
+                <td>Numerical</td>
+                <td>Post time, author's local time zone</td>
+            </tr>
+            <tr class="even">
+                <td>post_utcTime</td>
+                <td>Numerical</td>
+                <td>Post time, UTC</td>
+            </tr>
+            <tr class="odd">
+                <td>day_of _week</td>
+                <td>Nominal</td>
+                <td>Day of the week posted</td>
+            </tr>
+            <tr class="even">
+                <td>question_type</td>
+                <td>Nominal</td>
+                <td>First question word in title</td>
+            </tr>
+            <tr class="odd">
+                <td>title_length</td>
+                <td>Numerical</td>
+                <td>Characters in title, excluding tags</td>
+            </tr>
+            <tr class="even">
+                <td>nsfw</td>
+                <td>Boolean</td>
+                <td>Not Safe For Work flair added</td>
+            </tr>
+            <tr class="odd">
+                <td>serious</td>
+                <td>Boolean</td>
+                <td>Serious flair added</td>
+            </tr>
+            <tr class="even">
+                <td>author_link _karma</td>
+                <td>Numerical</td>
+                <td>Net upvotes on author's prior link submissions</td>
+            </tr>
+            <tr class="odd">
+                <td>author_comment _karma</td>
+                <td>Numerical</td>
+                <td>Net upvotes on author's prior comments</td>
+            </tr>
+            <tr class="even">
+                <td>author_account _age</td>
+                <td>Numerical</td>
+                <td>Time between author account creation and posting</td>
+            </tr>
+            <tr class="odd">
+                <td>author_gold</td>
+                <td>Boolean</td>
+                <td>Author has Reddit Gold status</td>
+            </tr>
+            <tr class="even">
+                <td>time_ to_ first_comment</td>
+                <td>Numerical</td>
+                <td>Time between posting and first comment</td>
+            </tr>
+            <tr class="odd">
+                <td>10min_comment</td>
+                <td>Numerical</td>
+                <td>Number of comments, ten minutes after posting</td>
+            </tr>
+            <tr class="even">
+                <td>hot</td>
+                <td>Boolean</td>
+                <td>Categorical variable</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li><strong>REPTree</strong> is similar to other decision tree learners, except that in the case of numeric values, the algorithm tries to minimize the total variance.</li>
+        <li><strong>ADTree</strong> implements the alternating decision tree algorithm, which incorporates boosting into decision tree generation by treating each predicate node as a &quot;weak hypothesis&quot; and generating a real-valued prediction for that node. At test time, an instance traverses the tree based on the conditions it matches, and the cumulative sum over the corresponding predictions designates its final classification.</li>
+    </ul>
+
+    <h2 id="other">Other</h2>
+    <ul>
+        <li><strong>NaiveBayesSimple</strong>, a Naive Bayes classifier, applies Bayes' theorem and makes strong conditional independence assumptions between features. Again, we would like to understand to what extent our feature space is linearly independent.</li>
+        <li><strong>Logistic</strong> implements a multinomial logistic regression model, which we will use to interpret the extent to which our numerical features and output classification are monotonically-related.</li>
+    </ul>
+    <h1 id="results">Results</h1>
+    <p>Alternating decision trees with 7 boosting iterations (as opposed to 10, the default setting) achieve the best performance of attempted classifiers. 10-fold cross-validation accuracy is 72.9819, an improvement of 21.911 over the ZeroR baseline. Table 2 gives the confusion matrix for our ADTree classifier with <code>numBoostingIterations</code> set to 7.</p>
+    <table>
+        <caption>Confusion matrix for ADTree with <code>numBoostingIterations</code> set to 7.</caption>
+        <thead>
+            <tr class="header">
+                <th>Negative</th>
+                <th>Positive</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td>204</td>
+                <td>106</td>
+                <td><strong>Negative = 0</strong></td>
+            </tr>
+            <tr class="even">
+                <td>64</td>
+                <td>233</td>
+                <td><strong>Positive = 1</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Table 3 summarizes the performance of all attempted classifiers, evaluated using 10-fold cross-validation.</p>
+    <table>
+        <caption>Summary of classifiers attempted, and correctly classified instances using 10-fold cross-validation. For the AD Tree classifier, <code>n</code> denotes the value of the <code>numBoostingIterations</code> parameter.</caption>
+        <thead>
+            <tr class="header">
+                <th>Classifier</th>
+                <th>% Accuracy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td>ZeroR</td>
+                <td>51.0708</td>
+            </tr>
+            <tr class="even">
+                <td>OneR</td>
+                <td>56.8369</td>
+            </tr>
+            <tr class="odd">
+                <td>DecisionStump</td>
+                <td>63.0972</td>
+            </tr>
+            <tr class="even">
+                <td>J48Tree</td>
+                <td>69.028</td>
+            </tr>
+            <tr class="odd">
+                <td>NBTree</td>
+                <td>70.346</td>
+            </tr>
+            <tr class="even">
+                <td>REPTree</td>
+                <td>70.6755</td>
+            </tr>
+            <tr class="odd">
+                <td>NaiveBayesSimple</td>
+                <td>62.603</td>
+            </tr>
+            <tr class="even">
+                <td>Logistic</td>
+                <td>70.0165</td>
+            </tr>
+            <tr class="odd">
+                <td>ADTree, <span class="math inline">\(n = 10\)</span> (default)</td>
+                <td>71.9934</td>
+            </tr>
+            <tr class="even">
+                <td>ADTree, <span class="math inline">\(n = 7\)</span></td>
+                <td>72.9819</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="discussion">Discussion</h1>
+    <h2 id="prediction-accuracy">Prediction accuracy</h2>
+    <p>Given the limited size of our dataset and somewhat informal sampling methods, achieving a 21.911 improvement over ZeroR is a promising result. The performance gains provided by alternating decision trees appear consistent with prior theoretical and empirical work on the effective nature of boosting procedures. Decreasing the number of boosting iterations by 30% (from 10 to 7) yields a 1% performance increase, which indicates that too many iterations causes overfitting to the training data.</p>
+    <p>All multi-ply decision tree methods achieve roughly comparable accuracy, and furthermore perform strictly better than Naive Bayes classification. This confirms our intuition that conditional dependencies exist within our chosen features (for instance, the time and day of posting might impact how many comments a question receives within the first ten minutes).</p>
+    <p>OneR and Decision Stump perform significantly worse than other approaches. This is likely due to the fact that single-layer decision trees are inherently less expressive than their multi-layer counterparts.</p>
+    <h2 id="attribute-importance">Attribute importance</h2>
+    <p>Across all our decision tree algorithms, the following attributes prove consistently informative:</p>
+
+    <figure class="col-span">
+        <img src="http://imgh.us/hottoken.png" alt="Splitting on hot_token_score significantly increased the purity of resulting data." />
+        <figcaption>Splitting on <code>hot_token_score</code> significantly increased the purity of resulting data.</figcaption>
+    </figure>
+    
+    <ul>
+        <li><em>Title language.</em> Token-based language features provide significant information gain. Decision stumps choose <code>hot_token_score</code> as the single split, and both alternating decision trees and REP Tree split on <code>hot_token_score</code> first. C4.5 first splits on <code>random_token_score</code>. Figure 1 illustrates the information gain yielded by splitting on <code>hot_token_score</code>.</li>
+        <li><em>Day of posting.</em> For the three full decision tree algorithms, <code>day_of_week</code> is among the first three splits. In general, questions posted during the weekend were much more likely to become popular. Different classifiers chose slightly different splitting thresholds for discrete values (e.g. C4.5 chooses <span class="math inline">\(\{Friday, Saturday\}\)</span> as the &quot;popular&quot; subset of days, while REP Tree chooses <span class="math inline">\(\{Thursday, Friday, Saturday\}\)</span>.</li>
+        <li><em>Time of posting.</em> <code>post_localTime</code> is the single attribute chosen by OneR, and one subtree of C4.5 only splits three times, with <code>post_utcTime</code> being one of these splits. Alternating decision trees likewise split on both features.</li>
+        <li><em>Early commenting behavior.</em> Questions receiving more engagement within minutes of posting are significantly more likely to achieve longer-term popularity. C4.5, alternating decision trees, and Naive Bayes Tree both split on <code>time_to_first_comment</code> within the first three levels, and likewise for Naive Bayes Tree and REP Tree with <code>10min_comments</code>.</li>
+    </ul>
+    <p>Figure 2 summarizes the first four splits of alternating decision trees with 7 boosting iterations.</p>
+    <figure class="col-span">
+        <img src="http://imgh.us/adt_1.png" alt="First four boosting iterations of our alternating decision tree classifier. hot_token_score and day_of_week are consistently informative features." />
+        <figcaption>First four boosting iterations of our alternating decision tree classifier. Green arrows denote the half of the split with the higher likelihood of positive classification, and red arrows indicate the opposite. <code>hot_token_score</code> and <code>day_of_week</code> are consistently informative features.</figcaption>
+    </figure>
+    <h2 id="limitations-and-future-work">Limitations and future work</h2>
+    <p>Our dataset is relatively small. Our chosen threshold for positive versus negative classification means each query can only contain 25 positive examples, and in order to preserve categorical parity within our dataset, we limit each query to the same number of negative examples. More data would not only improve the external validity of our machine learning experiments, but also create more representative dictionaries for our natural language features.</p>
+    <p>More broadly, our chosen problem framework inherently limits the predictive power of our model. We define our task using binary classification for the sake of feasibility, but the popularity of user-generated content (and a number of potentially valuable features, such as comment and upvote <em>rates</em>) can be much better understood as a function of time. As such, a regression task involving time-slicing could potentially provide a significantly more robust understanding of question popularity and engagement.</p>
+    <h1 id="who-did-what">Who did what</h1>
+    <p>For the data collection and pre-processing stage, Sarah wrote the script to query the Reddit API, retrieve metadata features, and output the results to CSV. Sameer and Aiqi implemented natural language processing for our language-based features, and trained the necessary dictionaries. Jennie implemented a random scraping procedure used to obtain non-popular examples.</p>
+    <p>For the machine learning analysis stage, Aiqi and Jennie scraped data at regular intervals. Jennie ran the data through multiple Weka experiments and recorded the results. Sarah synthesized the results and wrote the report, and Sameer and Aiqi built the webpage and wrote the extended abstract.</p>
+    <p>All group members participated in all method-related decisions (e.g. feature selection, model selection, training strategy and dataset division, etc.).</p>
+</div></body>
+
+</html>
