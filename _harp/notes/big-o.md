@@ -1,9 +1,11 @@
-# ELI5: Big O
-
-*Sarah Lim*  (slim at northwestern dot edu)  
-24 April 2016
-
-> **Note:** A previous version of this article incorrectly ordered $log(n)$ as growing faster than $n$. This has since been fixed.
+---
+title: "ELI5: Big O"
+author:
+- name: Sarah Lim
+- affiliation: Northwestern University
+- email: slim@u.northwestern.edu
+date: 24 April 2016
+---
 
 ## Measuring performance
 
@@ -11,7 +13,7 @@ To measure an algorithm's efficiency, one intuitive idea is to consider the amou
 
 Unfortunately, it's difficult to measure the *exact* runtime of an algorithm. In practice, runtimes are influenced by a lot of factors unrelated to the algorithm itself. For instance, the same function might run quickly on a state-of-the-art gaming PC, and much more slowly on an ancient Windows 98 machine.
 
-So instead of obsessing over nanosecond differences in runtime, computer scientists use **complexity analysis** to classify algorithms  according to their approximate efficiency. Complexity analysis investigates *how an algorithm's performance degrades as the input size grows*. Generally speaking, we are interested in two performance metrics:
+So instead of obsessing over nanosecond differences in runtime, computer scientists use **asymptotic analysis** to classify algorithms  according to their approximate efficiency. Asymptotic analysis investigates *how an algorithm's performance degrades as the input size grows*. Generally speaking, we are interested in two performance factors:
 
 * **Time complexity:** as the input grows infinitely large, how much *longer* does it take to solve the problem?
 * **Space complexity:** as the input grows infinitely large, how much *more memory* does it take to solve the problem?
@@ -54,7 +56,7 @@ function search(list, target):
 
 Suppose our input list contains $n$ items. Since our algorithm spends the same amount of time on each item, the total worst-case runtime is *directly proportional to the length of the input list*. In other words, if we express runtime $T$ as a function of input size $n$, then $T(n)$ is *linear*. **Equivalently, we say that the time complexity of our algorithm is $O(n)$**, pronounced "oh-N" or "oh of N."
 
-This is an example of **big O notation**, which is the most common way computer scientists talk about algorithmic efficiency. Big O notation expresses an *upper bound* on a function. In particular, it expresses an upper bound in terms of *another function* that will always be *greater than or equal to* the first function.
+This is an example of **big O notation**, which is the most common way computer scientists talk about algorithmic efficiency. Big O notation expresses an *upper bound* on a function. In particular, it expresses an upper bound in terms of *another function* that will always be *greater than or equal to* the first function, for any given value in both functions' domains.
 
 When we analyze algorithms, we are interested in $T(n)$, or runtime as a function of input size. Specifically, we care about how quickly $T(n)$ grows. Saying $T$ is $O(n)$ means that $T$ grows *no faster than* the linear function $n$. This is the same as saying the linear function $n$ is an *upper bound* on $T$.
 

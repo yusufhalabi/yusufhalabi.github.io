@@ -1,10 +1,16 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="../assets/images/favicon.ico"><link rel="stylesheet" href="../assets/css/notes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700" type="text/css"><link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/14218448/assets/prism.css" type="text/css"><title></title></head><body><div class="content"><main><article><h1>ELI5: Big O</h1><p><em>Sarah Lim</em>  (slim at northwestern dot edu)<br>24 April 2016</p>
-<blockquote>
-<p><strong>Note:</strong> A previous version of this article incorrectly ordered $log(n)$ as growing faster than $n$. This has since been fixed.</p>
-</blockquote>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="../assets/images/favicon.ico"><link rel="stylesheet" href="../assets/css/notes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700" type="text/css"><link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/14218448/assets/prism.css" type="text/css"><title></title></head><body><div class="content"><main><article><hr>
+<p>title: &quot;ELI5: Big O&quot;
+author:</p>
+<ul>
+<li>name: Sarah Lim</li>
+<li>affiliation: Northwestern University</li>
+<li>email: slim@u.northwestern.edu
+date: 24 April 2016</li>
+</ul>
+<hr>
 <h2>Measuring performance</h2><p>To measure an algorithm&#39;s efficiency, one intuitive idea is to consider the amount of time it takes to solve a problem (transform the input into the desired output).</p>
 <p>Unfortunately, it&#39;s difficult to measure the <em>exact</em> runtime of an algorithm. In practice, runtimes are influenced by a lot of factors unrelated to the algorithm itself. For instance, the same function might run quickly on a state-of-the-art gaming PC, and much more slowly on an ancient Windows 98 machine.</p>
-<p>So instead of obsessing over nanosecond differences in runtime, computer scientists use <strong>complexity analysis</strong> to classify algorithms  according to their approximate efficiency. Complexity analysis investigates <em>how an algorithm&#39;s performance degrades as the input size grows</em>. Generally speaking, we are interested in two performance metrics:</p>
+<p>So instead of obsessing over nanosecond differences in runtime, computer scientists use <strong>asymptotic analysis</strong> to classify algorithms  according to their approximate efficiency. Asymptotic analysis investigates <em>how an algorithm&#39;s performance degrades as the input size grows</em>. Generally speaking, we are interested in two performance factors:</p>
 <ul>
 <li><strong>Time complexity:</strong> as the input grows infinitely large, how much <em>longer</em> does it take to solve the problem?</li>
 <li><strong>Space complexity:</strong> as the input grows infinitely large, how much <em>more memory</em> does it take to solve the problem?</li>
@@ -30,7 +36,7 @@
     if item == target then return true
   return false
 </code></pre><p>Suppose our input list contains $n$ items. Since our algorithm spends the same amount of time on each item, the total worst-case runtime is <em>directly proportional to the length of the input list</em>. In other words, if we express runtime $T$ as a function of input size $n$, then $T(n)$ is <em>linear</em>. <strong>Equivalently, we say that the time complexity of our algorithm is $O(n)$</strong>, pronounced &quot;oh-N&quot; or &quot;oh of N.&quot;</p>
-<p>This is an example of <strong>big O notation</strong>, which is the most common way computer scientists talk about algorithmic efficiency. Big O notation expresses an <em>upper bound</em> on a function. In particular, it expresses an upper bound in terms of <em>another function</em> that will always be <em>greater than or equal to</em> the first function.</p>
+<p>This is an example of <strong>big O notation</strong>, which is the most common way computer scientists talk about algorithmic efficiency. Big O notation expresses an <em>upper bound</em> on a function. In particular, it expresses an upper bound in terms of <em>another function</em> that will always be <em>greater than or equal to</em> the first function, for any given value in both functions&#39; domains.</p>
 <p>When we analyze algorithms, we are interested in $T(n)$, or runtime as a function of input size. Specifically, we care about how quickly $T(n)$ grows. Saying $T$ is $O(n)$ means that $T$ grows <em>no faster than</em> the linear function $n$. This is the same as saying the linear function $n$ is an <em>upper bound</em> on $T$.</p>
 <blockquote>
 <p><strong>Note:</strong> Big O expresses relationships between different functions of some variable, as that variable grows infinitely large. In other words, it compares the <em>asymptotic behavior</em> of functions.</p>
