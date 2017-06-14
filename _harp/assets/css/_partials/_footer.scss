@@ -3,9 +3,11 @@
   font-size: 0.9rem;
 
   > .container {
-    display: flex;
-    justify-content: space-between;
     font-style: italic;
+  }
+
+  p {
+    margin-bottom: ($spacer / 2);
   }
 
   &__links {
@@ -19,6 +21,17 @@
 
   .fa:hover {
     color: darken(white, 20%);
+  }
+
+  @media (min-width: 500px) { 
+    > .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
