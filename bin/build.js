@@ -54,8 +54,6 @@ function build(andThen) {
   });
 }
 
-function beautify() {}
-
 function copyBuild() {
   // Copy recursively from build directory.
   fs.readdir(BUILD_DIR, (err, contents) => {
