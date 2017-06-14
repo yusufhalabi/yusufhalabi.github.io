@@ -13,6 +13,7 @@ const whitelist = new Set([
   'build',
   '_harp',
   'bin',
+  'CNAME',
 ]);
 
 // Remove everything that isn't whitelisted or hidden.
