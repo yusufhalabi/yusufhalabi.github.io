@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-items: center;
+
+  @media (min-width: 500px) {
+    padding: ($spacer * 2);
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 750px) {
+    padding-top: ($spacer * 3);
+  }
+
+  &__intro {
+    margin-bottom: ($spacer / 2);
+  }
+
+  &__title {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    margin-bottom: ($spacer / 2);
+    position: relative;
+    display: table; // shrinkwrap
+    padding: 0 10px;
+
+    &::after {
+      content: '';
+      background-color: #f5c0a2;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    @media (min-width: 500px) {
+      font-size: 2.5rem;
+      // Undo center
+      margin: 0;
+    }
+  }
+
+  &__affiliation {
+    @extend .font-secondary;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+
+  &__contact {
+    font-family: $monospace-stack;
+    margin: ( $spacer / 2 ) 0;
+  }
+
+  &__links {
+    justify-content: center;
+    margin: ($spacer / 2) 0;
+
+    @media (min-width: 500px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__quote {
+    font-style: italic;
+    position: absolute;
+
+    width: 200%;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    margin-top: 20px;
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $spacer 0;
+    justify-content: center;
+
+    > a {
+      margin-right: $spacer;
+    }
+
+    @media (min-width: 500px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__photo {
+    max-width: 200px;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -20%;
+      transform: rotate(-45deg);
+      height: 200px;
+      width: 200px;
+      background-color: hsl(150, 55%, 83%);
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4%;
+      left: 6%;
+      background-color: #f5c0a2;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    > img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

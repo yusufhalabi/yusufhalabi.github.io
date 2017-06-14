@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+  }
+
+  &__links {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa {
+    margin-right: 0.5em;
+  }
+
+  .fa:hover {
+    color: darken(white, 20%);
+  }
+}
+
+.dark {
+  background-color: $cinder;
+  color: $white;
+
+  a {
+    color: $white;
+    background-color: transparent;
+  }
+}

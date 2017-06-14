@@ -1,24 +1,169 @@
 {
-    "CNAME": {
-        "layout": false
+  "news": [
+    {
+      "period": "May 2017",
+      "description": "Spoke at the Northwestern Big Ideas Forum, \"How We Learn About Learning,\" with professors Nell O'Rourke and David Uttal, and fellow undergrad Gabby Ashenafi."
     },
-    "work": {
-        "layout": false
+    {
+      "period": "May 2017",
+      "description": "Ply wins the CHI 2017 Student Research Competition! Northwestern Engineering has a <a href=\"http://www.mccormick.northwestern.edu/eecs/news/articles/2017/sarah-lim-wins-student-research-competition.html\">nice write-up</a> about the whole thing."
     },
-    "index": {
-        "title": "Sarah Lim"
+    {
+      "period": "April 2017",
+      "description": "Received a Microsoft Tuition Scholarship for 2017-18."
     },
-    "about": {
-        "title": "About",
-        "headerInverted": true
-    },
-    "contact": {
-        "title": "Contact"
-    },
-    "404": {
-        "title": "Page Not Found"
-    },
-    "teaching": {
-        "title": "Teaching"
+    {
+      "period": "Jan 2017",
+      "description": "<a href=\"http://users.eecs.northwestern.edu/~scl025/files/ply.pdf\">Ply: Visual Regression Pruning for Web Design Source Inspection</a> is accepted to the CHI 2017 SRC."
     }
+  ],
+  "about": {
+    "links": [
+      {
+        "title": "Resume",
+        "url": "http://users.eecs.northwestern.edu/~scl025/files/resume.pdf",
+        "icon": "fa-file-text-o"
+      },
+      {
+        "title": "GitHub",
+        "url": "http://github.com/sarahlim",
+        "icon": "fa-github-alt"
+      },
+      {
+        "title": "Twitter",
+        "url": "http://twitter.com/soylentqueen",
+        "icon": "fa-twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "http://linkedin.com/in/sarahclim",
+        "icon": "fa-linkedin"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Visual Regression Pruning",
+      "location": "Delta Lab",
+      "tags": [
+        "research",
+        "development"
+      ],
+      "description": "We introduce a visual significance heuristic for removing irrelevant HTML and CSS source code during web design reverse-engineering tasks. CHI 2017 Student Research Competition Winner, Denver, Colorado.",
+      "links": {
+        "paper": "http://users.eecs.northwestern.edu/~scl025/files/ply.pdf",
+        "slides": "http://slides.com/soylentqueen/ply-chi-src",
+        "code": "https://github.com/NUDelta/chrome-pdiff"
+      }
+    },
+    {
+      "title": "Guiding Web Inspection with Tutorial Keyword Frequency",
+      "location": "Delta Lab",
+      "tags": [
+        "research",
+        "development"
+      ],
+      "description": "In order to bridge the gap between web design tutorials and real-world examples, we extend a web inspector to highlight CSS properties frequently mentioned across a given set of tutorials. Presented at 2016 Google Scholars' Retreat, Mountain View, California.",
+      "links": {
+        "demo": "https://jsbin.com/zadomo/3",
+        "code": "http://github.com/nudelta/http://github.com/nudelta/ply-utils",
+        "poster": "http://users.eecs.northwestern.edu/~scl025/files/googlescholars.pdf"
+      }
+    },
+    {
+      "title": "SVG Charting Library",
+      "location": "LinkedIn",
+      "tags": [
+        "development"
+      ],
+      "description": "An opinionated Ember.js addon to replace Highcharts with native SVG and DOM APIs. Released addon as a company-wide multiproduct. I worked on this project during my internship at LinkedIn, under the mentorship of <a href=\"http://codycoats.codes/\">Cody Coats</a> and <a href=\"http://yasonik.com\">Michail Yasonik</a>.",
+      "links": {
+        "video": "https://business.linkedin.com/talent-solutions/product-update/recruiter/inmail-reporting"
+      }
+    },
+    {
+      "title": "Predicting the Popularity of User-Generated Discussion Questions",
+      "location": "EECS 349: Machine Learning",
+      "tags": [
+        "coursework",
+        "development"
+      ],
+      "description": "Using Python with the Reddit API and NLTK library, we collect information about <a href=\"http://reddit.com/r/askreddit\">AskReddit</a> posts over a two-week period to analyze what makes a question popular. Alternating decision trees achieve 72.9819 accuracy with 10-fold cross-validation, an improvement over the ZeroR baseline of 51.0708. Features related to the language of the question, time and day of posting, and initial commenting behavior prove most informative. With <a href=\"http://sameersrivastava.com/\">Sameer Srivastava</a>, <a href=\"http://jenniewerner.com/\">Jennie Werner</a>, and <a href=\"https://github.com/aiqiliu\">Aiqi Liu</a>.",
+      "links": {
+        "paper": "./files/askreddit-final.pdf",
+        "code": "https://github.com/aiqiliu/AskReddit-analytics"
+      }
+    },
+    {
+      "title": "Commentator",
+      "location": "Northwestern Debate Institute",
+      "tags": [
+        "development"
+      ],
+      "description": "End-to-end Google Apps Script-based pipeline for publishing practice debate comments to individual students' feedback pages. Previously, instructors needed to manually edit the feedback pages for all four students in order to provide feedback from practice rounds. Deployed at the 2015 <a href=\"https://nhsi.northwestern.edu/debate-division/\">Northwestern Debate Institute</a> and subsequently adopted for the entire program in 2016.",
+      "links": {
+        "code": "https://github.com/sarahlim/commentator",
+        "demo": "https://sites.google.com/a/sarahlim.com/commentator-demo/"
+      }
+    }
+  ],
+  "teaching": [
+    {
+      "title": "EECS 474: Probabilistic Graphical Models",
+      "period": "Fall 2017",
+      "description": "Graduate-level Bayesian and Markov network representation, inference, and learning. With Doug Downey."
+    },
+    {
+      "title": "EECS 111: Fundamentals of Computer Programming I",
+      "period": "Fall 2015, Winter 2016, Fall 2016*, Winter 2017*",
+      "description": "Functional programming using the Racket Student Languages. With Ian Horswill and Sara Sood.",
+      "links": [
+        {
+          "title": "Fall 2016 Recitation Notes",
+          "url": "http://sarahlim.com/eecs-111/"
+        },
+        {
+          "title": "Quiz 1 Review",
+          "url": "http://sarahlim.com/eecs-111/Quiz-1-Review.html"
+        },
+        {
+          "title": "Quiz 2 Review",
+          "url": "http://sarahlim.com/eecs-111/Quiz-2-Review.html"
+        },
+        {
+          "title": "Structural Inheritance Review",
+          "url": "http://sarahlim.com/eecs-111/6-Inheritance.html"
+        },
+        {
+          "title": "Guide for new EECS 111 TAs",
+          "url": "http://sarahlim.com/eecs-111-ta-guide/"
+        }
+      ]
+    },
+    {
+      "title": "EECS 214: Data Structures and Data Management",
+      "period": "Spring 2016, Spring 2017",
+      "description": "Data structures and algorithms in C#. With Ian Horswill.",
+      "links": [
+        {
+          "title": "BFS vs. Dijkstra Slides",
+          "url": "https://docs.google.com/presentation/d/1TSb953X882vC_f54xRzpKQG0uHnJoxnJlay_AxNChvQ/pub?start=false&loop=false&delayms=3000"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "title": "News",
+      "url": "#news"
+    },
+    {
+      "title": "Projects",
+      "url": "#projects"
+    },
+    {
+      "title": "Teaching",
+      "url": "#teaching"
+    }
+  ]
 }

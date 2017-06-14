@@ -1,0 +1,26 @@
+header.header.container
+  .header__intro
+    h1.header__title Sarah Lim
+    p.header__affiliation Computer Science
+    p.header__affiliation Northwestern University
+    p.header__contact slim [at] u.northwestern [dot] edu
+
+    ul.header__links.list-unstyled.list-inline
+      for link in public._data.about.links
+        li
+          a(href="#{link.url}").no-highlight
+            i.fa(class="#{link.icon}" aria-hidden="true" title="#{link.title}")
+
+
+    nav
+      ul.header__nav.list-unstyled.list-inline
+        for link in public._data.nav
+          li
+            a(data-scroll href="#{link.url}") #{link.title}
+
+  .header__photo
+    figure.header__photo-wrapper
+      img(src="assets/img/fish.jpg" alt="me standing in front of a wall painted with fish")
+      figcaption.header__quote Sk8er Boi was a pretty good song
+
+

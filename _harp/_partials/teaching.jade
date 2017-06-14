@@ -1,0 +1,27 @@
+section.teaching#teaching
+  .container
+    h2.section-title Teaching
+
+    p I serve as a teaching assistant for the following courses at Northwestern. Terms marked with an asterisk (*) denote a head teaching assistant role.
+
+    ul
+      for course in public._data.teaching
+        li.teaching__course
+          if course.link
+            a(href="#{course.link}")
+              h3.teaching__course-title= course.title
+          else
+              h3.teaching__course-title= course.title
+
+          if course.period
+            p.teaching__course-period= course.period
+
+          if course.description
+            p.teaching__course-description= course.description
+
+          if course.links
+            ul.teaching__course-links
+              for link in course.links
+                li
+                  a(href="#{link.url}")= link.title
+

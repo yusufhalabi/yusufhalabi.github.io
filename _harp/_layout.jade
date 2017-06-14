@@ -1,43 +1,27 @@
-doctype
+doctype html
 html
-  head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-
-    //- Favicon
-    link(rel="shortcut icon", href="../assets/images/favicon.ico")
-
-    //- Stylesheets
-    link(rel="stylesheet", href="../assets/css/style.css", type="text/css")
-    //- link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic|Montserrat|Raleway:400,500,700,600", type="text/css")
-    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700', rel='stylesheet', type='text/css')
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
-    link(rel="stylesheet", href="../assets/css/prism.css", type="text/css")
-
-    //- link(rel="canonical", href="")
-
-    title= title
+  != partial("_partials/head")
   body
-    //- Header
-    if current.path[0] !== "teaching"
-        != partial("./assets/_partials/header")
+    != partial("_partials/header")
 
+    main
+      section.about
+        svg.curved-divider(
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none")
+          path(d="M0 100 C 20 0 50 0 100 100 Z")
 
-    //- Main content
-    if current.path[0] === "articles" && current.path[1] != "index"
-        //- Render article decorator if needed
-        != partial("./assets/_partials/article")
-    else if current.path[0] === "projects" && current.path[1] != "index"
-        //- Render project decorator if needed
-        != partial("./assets/_partials/project")
-    else 
-        //- Otherwise load content normally
-        != yield
+        .container
+          h2.section-title About
+          != yield
+      != partial("_partials/news")
+      != partial("_partials/resume")
+      != partial("_partials/teaching")
 
-
-    //- Footer
-    if current.path[0] !== "teaching"
-        != partial("./assets/_partials/footer")
-
-    //- Scripts
-    != partial("./assets/_partials/scripts")
+  != partial("_partials/footer")
+  != partial("_partials/scripts")
+    
