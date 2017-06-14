@@ -1,10 +1,7 @@
 ---
 title: "ELI5: Big O"
-author:
-- name: Sarah Lim
-- affiliation: Northwestern University
-- email: slim@u.northwestern.edu
-date: 24 April 2016
+author: Sarah Lim
+date: 24 April 2016 (edited 23 April 2017)
 ---
 
 ## Measuring performance
@@ -13,7 +10,9 @@ To measure an algorithm's efficiency, one intuitive idea is to consider the amou
 
 Unfortunately, it's difficult to measure the *exact* runtime of an algorithm. In practice, runtimes are influenced by a lot of factors unrelated to the algorithm itself. For instance, the same function might run quickly on a state-of-the-art gaming PC, and much more slowly on an ancient Windows 98 machine.
 
-So instead of obsessing over nanosecond differences in runtime, computer scientists use **asymptotic analysis** to classify algorithms  according to their approximate efficiency. Asymptotic analysis investigates *how an algorithm's performance degrades as the input size grows*. Generally speaking, we are interested in two performance factors:
+So instead of obsessing over nanosecond differences in runtime, many computer scientists like to use **asymptotic analysis** to classify algorithms according to their approximate efficiency.
+
+Asymptotic analysis investigates *how an algorithm's performance degrades as the input size grows*. Generally speaking, we are interested in two performance factors:
 
 * **Time complexity:** as the input grows infinitely large, how much *longer* does it take to solve the problem?
 * **Space complexity:** as the input grows infinitely large, how much *more memory* does it take to solve the problem?
