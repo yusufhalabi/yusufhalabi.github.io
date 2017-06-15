@@ -1,7 +1,6 @@
 .header {
   display: flex;
   flex-direction: column;
-
   text-align: center;
   align-items: center;
 
@@ -72,7 +71,7 @@
     font-style: italic;
     position: absolute;
 
-    width: 200%;
+    width: 100%;
     transform: translateX(-50%);
     left: 50%;
     text-align: center;
@@ -103,7 +102,7 @@
   }
 
   &__photo {
-    max-width: 200px;
+    max-width: 150px;
   }
 
   &__photo-wrapper {
@@ -115,8 +114,8 @@
       top: 0;
       left: -20%;
       transform: rotate(-45deg);
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
       background-color: hsl(150, 55%, 83%);
       z-index: -1;
     }
