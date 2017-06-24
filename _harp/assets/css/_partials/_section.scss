@@ -88,8 +88,10 @@
     font-style: italic;
   }
 
-  &__course-links {
-    list-style-type: circle;
-    margin-left: 50px;
+  &__course-link--inactive {
+    &::after {
+      content: ' (to be ported)';
+      font-style: italic;
+    }
   }
 }

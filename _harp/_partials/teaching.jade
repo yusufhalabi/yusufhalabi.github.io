@@ -17,11 +17,14 @@ section.teaching#teaching
             p.teaching__course-period= course.period
 
           if course.description
-            p.teaching__course-description= course.description
+            p.teaching__course-description!= course.description
 
           if course.links
             ul.list-default
               for link in course.links
-                li
-                  a(href="#{link.url}")= link.title
+                if link.url
+                  li
+                    a(href="#{link.url}")= link.title
+                else
+                  li.teaching__course-link--inactive= link.title
 
