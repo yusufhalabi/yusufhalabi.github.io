@@ -20,7 +20,7 @@ section.teaching#teaching
             p.teaching__course-description= course.description
 
           if course.links
-            ul.teaching__course-links
+            ul.list-default
               for link in course.links
                 li
                   a(href="#{link.url}")= link.title

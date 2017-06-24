@@ -12,6 +12,17 @@
   > .container {
     padding-top: 0;
   }
+
+  h3 {
+    @extend .font-secondary;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    @extend ul.list-default;
+  }
 }
 
 /**

@@ -64,6 +64,11 @@ a.no-highlight {
   }
 }
 
+ul.list-default {
+  list-style: initial;
+  margin-left: 2em;
+}
+
 section {
   p {
     margin-bottom: $spacer;
