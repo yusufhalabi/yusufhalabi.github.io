@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Oct 2017",
+      "description": "I'm <a href=\"http://sarahlim.com/ka\">joining</a> <a href=\"http://khanacademy.org\">Khan Academy</a> as a full-time software engineer after graduation!"
+    },
+    {
       "period": "May 2017",
       "description": "Spoke at the Northwestern Big Ideas Forum, \"How We Learn About Learning,\" with professors Nell O'Rourke and David Uttal, and fellow undergrad Gabby Ashenafi."
     },

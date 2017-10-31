@@ -1,8 +1,10 @@
 I am an undergraduate senior in [Computer Science](http://eecs.northwestern.edu) at Northwestern University, supervised by [Haoqi Zhang](http://users.eecs.northwestern.edu/~hq) and [Nell O'Rourke](http://www.eleanorourke.com) through [Design, Technology, and Research](http://dtr.northwestern.edu) (DTR) and the [Delta Lab](http://delta.northwestern.edu). 
 
-I work on **developer tools** and **programming environments** to scaffold and support **non-expert programmers**. My research interests are broadly in the areas of human-computer interaction (HCI), computing education, programming languages, and software engineering (PLSE). My technical interests include functional programming and all aspects of engineering the web, from CSS semantics to browser engine internals.
+I work on **developer tools** and **programming environments** to scaffold and support **non-expert programmers**. My research interests are broadly in the areas of human-computer interaction (HCI), computing education, programming languages, and software engineering. My technical interests include functional programming and all aspects of engineering the web, from CSS semantics to browser engine internals.
 
 I am generously supported by the Google Lime Scholarship, Palantir Women in Technology Scholarship, Microsoft Tuition Scholarship, and Box Engineering Diversity Scholarship.
+
+In Fall 2018, I will join [Khan Academy](http://khanacademy.org) as a software engineer!
 
 ### Service
 
