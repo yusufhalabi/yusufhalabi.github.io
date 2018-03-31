@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "February 2018",
+      "description": "Accepted an internship with <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a> for summer 2018."
+    },
+    {
       "period": "Oct 2017",
       "description": "I'm <a href=\"http://sarahlim.com/ka\">joining</a> <a href=\"http://khanacademy.org\">Khan Academy</a> as a full-time software engineer after graduation!"
     },

@@ -4,7 +4,7 @@ My research interests broadly intersect HCI, computing education, programming la
 
 I've been generously supported by the Google Lime Scholarship, Palantir Women in Technology Scholarship, Microsoft Tuition Scholarship, and Box Engineering Diversity Scholarship. Thanks, companies!
 
-This summer, I will intern with [Human Experience and Design](https://hxd.research.microsoft.com/) at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/), UK. I will join [Khan Academy](http://khanacademy.org) as a software engineer in Fall 2018, helping to build a free, world-class education for anyone, anywhere. [#YouCanLearnAnything](https://www.khanacademy.org/youcanlearnanything)
+This summer, I'll be working with [Gavin Smyth](https://www.microsoft.com/en-us/research/people/gavinsmy/) and [Siân Lindley](https://www.microsoft.com/en-us/research/people/sianl/) as an intern at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/), UK. I will join [Khan Academy](http://khanacademy.org) as a software engineer in October, helping to build a free, world-class education for anyone, anywhere.
 
 ### Service and Teaching
 
