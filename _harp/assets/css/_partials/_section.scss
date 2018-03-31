@@ -1,17 +1,9 @@
 /**
  * ABOUT
  */
-.curved-divider {
-  background-color: $mint;
-  fill: #fafafa;
-}
 
 .about {
   background-color: hsl(0, 0%, 98%);
-
-  > .container {
-    padding-top: 0;
-  }
 
   h3 {
     @extend .font-secondary;

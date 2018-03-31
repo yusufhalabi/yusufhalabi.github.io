@@ -1,11 +1,14 @@
+$photo-bp: 500px;
+
 .header {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding-bottom: $spacer * 4;
 
-  @media (min-width: 500px) {
-    padding: ($spacer * 2);
+  @media (min-width: #{$photo-bp}) {
+    padding: ($spacer * 3);
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
@@ -40,7 +43,7 @@
       z-index: -1;
     }
 
-    @media (min-width: 500px) {
+    @media (min-width: $photo-bp) {
       font-size: 2.5rem;
       // Undo center
       margin: 0;
@@ -62,13 +65,15 @@
     justify-content: center;
     margin: ($spacer / 2) 0;
 
-    @media (min-width: 500px) {
+    @media (min-width: $photo-bp) {
       justify-content: flex-start;
     }
   }
 
   &__quote {
     font-style: italic;
+    // Position this absolutely so that the red
+    // background rectangle is the size of the image.
     position: absolute;
 
     width: 100%;
@@ -96,13 +101,17 @@
       margin-right: $spacer;
     }
 
-    @media (min-width: 500px) {
+    @media (min-width: $photo-bp) {
       justify-content: flex-start;
     }
   }
 
   &__photo {
     max-width: 150px;
+
+    @media (min-width: 750px) {
+      max-width: 200px;
+    }
   }
 
   &__photo-wrapper {
