@@ -1,12 +1,16 @@
 {
   "news": [
     {
-      "period": "February 2018",
-      "description": "Accepted an internship with <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a> for summer 2018."
+      "period": "August 2018",
+      "description": "New paper at UIST 2018. <a href=\"https://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
+    },
+    {
+      "period": "July 2018",
+      "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>."
     },
     {
       "period": "Oct 2017",
-      "description": "I'm <a href=\"http://sarahlim.com/ka\">joining</a> <a href=\"http://khanacademy.org\">Khan Academy</a> as a full-time software engineer after graduation!"
+      "description": "I'm <a href=\"http://sarahlim.com/ka\">joining</a> <a href=\"http://klr.tumblr.com\">Khan Academy Early Product Development</a> full-time after graduation!"
     },
     {
       "period": "May 2017",
@@ -28,8 +32,8 @@
   "about": {
     "links": [
       {
-        "title": "Resume",
-        "url": "http://users.eecs.northwestern.edu/~scl025/files/resume.pdf",
+        "title": "CV",
+        "url": "http://users.eecs.northwestern.edu/~scl025/files/cv.pdf",
         "icon": "fa-file-text-o"
       },
       {
@@ -51,17 +55,60 @@
   },
   "projects": [
     {
-      "title": "Visual Regression Pruning",
+      "title": "Ply: Visual web inspection",
       "location": "Delta Lab",
       "tags": [
         "research",
         "development"
       ],
-      "description": "We introduce a visual significance heuristic for removing irrelevant HTML and CSS source code during web design reverse-engineering tasks. CHI 2017 Student Research Competition Winner, Denver, Colorado.",
+      "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool capable of pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O'Rourke. UIST 2018, Berlin, Germany.",
+      "links": {
+        "paper": "http://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf",
+        "code": "https://github.com/sarahlim/ply"
+      }
+    },
+    {
+      "title": "Evaluating peer graders",
+      "location": "Northwestern University",
+      "tags": [
+        "research"
+      ],
+      "description": "Most of the literature on peer grading focuses on inferring a true grade from a set of noisy reports. We study a different problem: inferring the skill and effort of reviewers, from the same reports. Supervised by Jason Hartline.",
+      "links": {}
+    },
+    {
+      "title": "Tracing WebAssembly function calls",
+      "location": "EECS 396: Systems Programming in Rust",
+      "tags": [
+        "development"
+      ],
+      "description": "With <a href=\"https://github.com/meggrasse\">Meg Grasse</a> and mentorship from <a href=\"http://fitzgeraldnick.com/\">Nick Fitzgerald</a> and <a href=\"https://www.red-bean.com/jimb/\">Jim Blandy</a>, we developed a proof-of-concept tool for instrumenting <a href=\"https://webassembly.org/\">WebAssembly</a> binaries written in Rust to log function calls at runtime.",
+      "links": {
+        "code": "https://github.com/sarahlim/wasm-trace"
+      }
+    },
+    {
+      "title": "Classroom exercise reports",
+      "location": "Khan Academy",
+      "tags": [
+        "development"
+      ],
+      "description": "I developed new exercise reports to help teachers visualize student progress and work through problems in the classroom. Mentored by <a href=\"https://johnresig.com/\">John Resig</a> during my internship at Khan Academy.",
+      "links": {
+        "demo": "https://www.khanacademy.org/resources/k-12-teachers-1/assignments/a/how-to-view-and-use-assignment-reports"
+      }
+    },
+    {
+      "title": "Visual regression pruning",
+      "location": "Delta Lab",
+      "tags": [
+        "research",
+        "development"
+      ],
+      "description": "We introduce a visual significance heuristic for removing irrelevant CSS source code during web design reverse-engineering tasks. CHI 2017 Student Research Competition Winner, Denver, Colorado.",
       "links": {
         "paper": "http://users.eecs.northwestern.edu/~scl025/files/ply.pdf",
-        "slides": "http://slides.com/soylentqueen/ply-chi-src",
-        "code": "https://github.com/sarahlim/ply"
+        "slides": "http://slides.com/soylentqueen/ply-chi-src"
       }
     },
     {
@@ -71,7 +118,7 @@
         "research",
         "development"
       ],
-      "description": "In order to bridge the gap between web design tutorials and real-world examples, we extend a web inspector to highlight CSS properties frequently mentioned across a given set of tutorials. Presented at 2016 Google Scholars' Retreat, Mountain View, California.",
+      "description": "In order to bridge the gap between web design tutorials and real-world examples, we extend a web inspector to highlight CSS properties frequently mentioned across a given set of tutorials. Google Scholars' Retreat 2016, Mountain View, California.",
       "links": {
         "demo": "https://jsbin.com/zadomo/3",
         "code": "http://github.com/nudelta/http://github.com/nudelta/ply-utils",
@@ -117,9 +164,16 @@
   ],
   "teaching": [
     {
+      "title": "EECS 396: Software Construction",
+      "link": "https://www.eecs.northwestern.edu/~robby/courses/397-2018-spring/",
+      "period": "Spring 2018",
+      "description": "Software engineering project-based course with an emphasis on codewalks inspired by art crits. With <a href=\"https://www.eecs.northwestern.edu/~robby/\">Robby Findler</a> and <a href=\"https://users.eecs.northwestern.edu/~chrdimo/\">Christos Dimoulas</a>."
+    },
+    {
       "title": "EECS 474: Probabilistic Graphical Models",
       "period": "Fall 2017",
-      "description": "Graduate-level Bayesian and Markov network representation, inference, and learning. With Doug Downey."
+      "link": "http://www.cs.northwestern.edu/~ddowney/courses/474_Fall2017/",
+      "description": "Graduate-level Bayesian and Markov network representation, inference, and learning. With <a href=\"https://www.cs.northwestern.edu/~ddowney/\">Doug Downey</a>."
     },
     {
       "title": "EECS 111: Fundamentals of Computer Programming I",
