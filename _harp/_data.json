@@ -177,7 +177,7 @@
     },
     {
       "title": "EECS 111: Fundamentals of Computer Programming I",
-      "period": "Fall 2015, Winter 2016, Fall 2016*, Winter 2017*, Fall 2017*",
+      "period": "Fall 2015, Winter 2016, Fall 2016*, Winter 2017*, Fall 2017*, Winter 2018*",
       "description": "Functional programming using the Racket Student Languages, vacillating between <a href=\"http://www.ccs.neu.edu/home/matthias/HtDP2e/\">How to Design Programs</a> and <a href=\"https://mitpress.mit.edu/sicp/full-text/book/book.html\">SICP</a>. With Ian Horswill and Sara Sood.",
       "links": [
         {
@@ -221,7 +221,7 @@
     },
     {
       "title": "EECS 214: Data Structures and Data Management",
-      "period": "Spring 2016, Spring 2017",
+      "period": "Spring 2016, Spring 2017, Spring 2018",
       "description": "Data structures and algorithms in C#. With Ian Horswill.",
       "links": [
         {
