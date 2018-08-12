@@ -1,11 +1,11 @@
 {
   "news": [
     {
-      "period": "August 2018",
-      "description": "New paper at UIST 2018. <a href=\"https://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
+      "period": "Aug 2018",
+      "description": "New paper at UIST 2018! <a href=\"https://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
     },
     {
-      "period": "July 2018",
+      "period": "Jul 2018",
       "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>."
     },
     {
@@ -21,7 +21,7 @@
       "description": "Ply wins the CHI 2017 Student Research Competition! Northwestern Engineering has a <a href=\"http://www.mccormick.northwestern.edu/eecs/news/articles/2017/sarah-lim-wins-student-research-competition.html\">nice write-up</a> about the whole thing."
     },
     {
-      "period": "April 2017",
+      "period": "Apr 2017",
       "description": "Received a Microsoft Tuition Scholarship for 2017-18."
     },
     {
