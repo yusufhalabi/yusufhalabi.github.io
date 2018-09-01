@@ -2,7 +2,7 @@
   "news": [
     {
       "period": "Sep 2018",
-      "description": "I'm excited to be attending <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a> at ICFP, along with <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a> and <a href=\"https://con.racket-lang.org/\">RacketCon</a>."
+      "description": "I&rsquo;m excited to be attending <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a> at ICFP, along with <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a> and <a href=\"https://con.racket-lang.org/\">RacketCon</a>."
     },
     {
       "period": "Aug 2018",
@@ -10,15 +10,15 @@
     },
     {
       "period": "Jul 2018",
-      "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>. Here, arugula is &ldquo;rocket&rdquo;, which is kind of fun."
+      "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>. Here, arugula is &ldquo;rocket,&rdquo; which is kind of fun."
     },
     {
       "period": "Oct 2017",
-      "description": "I'm <a href=\"http://sarahlim.com/ka\">joining</a> Khan Academy <a href=\"https://medium.com/khan-academy-early-product-development\">Early Product Development</a> full-time after graduation!"
+      "description": "I&rsquo;m <a href=\"http://sarahlim.com/ka\">joining</a> Khan Academy <a href=\"https://medium.com/khan-academy-early-product-development\">Early Product Development</a> full-time after graduation!"
     },
     {
       "period": "May 2017",
-      "description": "Spoke at the Northwestern Big Ideas Forum, \"How We Learn About Learning,\" with professors Nell O'Rourke and David Uttal, and fellow undergrad Gabby Ashenafi."
+      "description": "Spoke at the Northwestern Big Ideas Forum, &ldquo;How We Learn About Learning,&rdquo; with professors Nell O&rsquo;Rourke and David Uttal, and fellow undergrad Gabby Ashenafi."
     },
     {
       "period": "May 2017",
@@ -65,7 +65,7 @@
         "research",
         "development"
       ],
-      "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool capable of pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O'Rourke. UIST 2018, Berlin, Germany.",
+      "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool capable of pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O&rsquo;Rourke. UIST 2018, Berlin, Germany.",
       "links": {
         "paper": "http://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf",
         "code": "https://github.com/sarahlim/ply"
@@ -122,7 +122,7 @@
         "research",
         "development"
       ],
-      "description": "In order to bridge the gap between web design tutorials and real-world examples, we extend a web inspector to highlight CSS properties frequently mentioned across a given set of tutorials. Google Scholars' Retreat 2016, Mountain View, California.",
+      "description": "In order to bridge the gap between web design tutorials and real-world examples, we extend a web inspector to highlight CSS properties frequently mentioned across a given set of tutorials. Google Scholars&rsquo; Retreat 2016, Mountain View, California.",
       "links": {
         "demo": "https://jsbin.com/zadomo/3",
         "code": "http://github.com/nudelta/http://github.com/nudelta/ply-utils",
@@ -159,7 +159,7 @@
       "tags": [
         "development"
       ],
-      "description": "End-to-end Google Apps Script-based pipeline for publishing practice debate comments to individual students' feedback pages. Previously, instructors needed to manually edit the feedback pages for all four students in order to provide feedback from practice rounds. Deployed at the 2015 <a href=\"https://nhsi.northwestern.edu/debate-division/\">Northwestern Debate Institute</a> and subsequently adopted for the entire program in 2016.",
+      "description": "End-to-end Google Apps Script-based pipeline for publishing practice debate comments to individual students&rsquo; feedback pages. Previously, instructors needed to manually edit the feedback pages for all four students in order to provide feedback from practice rounds. Deployed at the 2015 <a href=\"https://nhsi.northwestern.edu/debate-division/\">Northwestern Debate Institute</a> and subsequently adopted for the entire program in 2016.",
       "links": {
         "code": "https://github.com/sarahlim/commentator",
         "demo": "https://sites.google.com/a/sarahlim.com/commentator-demo/"
@@ -171,7 +171,7 @@
       "title": "EECS 396: Software Construction",
       "link": "https://www.eecs.northwestern.edu/~robby/courses/397-2018-spring/",
       "period": "Spring 2018",
-      "description": "Software engineering project-based course with an emphasis on codewalks inspired by art crits. With <a href=\"https://www.eecs.northwestern.edu/~robby/\">Robby Findler</a> and <a href=\"https://users.eecs.northwestern.edu/~chrdimo/\">Christos Dimoulas</a>."
+      "description": "Software engineering project-based course with an emphasis on codewalks. With <a href=\"https://www.eecs.northwestern.edu/~robby/\">Robby Findler</a> and <a href=\"https://users.eecs.northwestern.edu/~chrdimo/\">Christos Dimoulas</a>."
     },
     {
       "title": "EECS 474: Probabilistic Graphical Models",
