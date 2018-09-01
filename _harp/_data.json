@@ -1,12 +1,16 @@
 {
   "news": [
     {
+      "period": "Sep 2018",
+      "description": "I'm excited to be attending <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a> at ICFP, along with <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a> and <a href=\"https://con.racket-lang.org/\">RacketCon</a>."
+    },
+    {
       "period": "Aug 2018",
       "description": "New paper at UIST 2018! <a href=\"https://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
     },
     {
       "period": "Jul 2018",
-      "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>. Here, \"rocket\" is arugula and \"maths\" is math."
+      "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>. Here, arugula is &ldquo;rocket&rdquo;, which is kind of fun."
     },
     {
       "period": "Oct 2017",
