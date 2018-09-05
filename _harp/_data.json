@@ -2,11 +2,15 @@
   "news": [
     {
       "period": "Sep 2018",
+      "description": "Watch me <a href=\"https://www.youtube.com/watch?v=M7nRN_bhfaE\">shill the growth mindset</a> in glorious 1080p! Thanks to <a href=\"https://www.weinberg.northwestern.edu/\">Weinberg College</a> for the video profile."
+    },
+    {
+      "period": "",
       "description": "I&rsquo;m excited to be attending <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a> at ICFP, along with <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a> and <a href=\"https://con.racket-lang.org/\">RacketCon</a>."
     },
     {
       "period": "Aug 2018",
-      "description": "New paper at UIST 2018! <a href=\"https://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
+      "description": "New paper at UIST 2018! <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
     },
     {
       "period": "Jul 2018",
@@ -21,7 +25,7 @@
       "description": "Spoke at the Northwestern Big Ideas Forum, &ldquo;How We Learn About Learning,&rdquo; with professors Nell O&rsquo;Rourke and David Uttal, and fellow undergrad Gabby Ashenafi."
     },
     {
-      "period": "May 2017",
+      "period": "",
       "description": "Ply wins the CHI 2017 Student Research Competition! Northwestern Engineering has a <a href=\"http://www.mccormick.northwestern.edu/eecs/news/articles/2017/sarah-lim-wins-student-research-competition.html\">nice write-up</a> about the whole thing."
     },
     {
@@ -30,7 +34,7 @@
     },
     {
       "period": "Jan 2017",
-      "description": "<a href=\"http://users.eecs.northwestern.edu/~scl025/files/ply.pdf\">Ply: Visual Regression Pruning for Web Design Source Inspection</a> is accepted to the CHI 2017 SRC."
+      "description": "<a href=\"assets/papers/ply-src.pdf\">Ply: Visual Regression Pruning for Web Design Source Inspection</a> is accepted to the CHI 2017 SRC."
     }
   ],
   "about": {
@@ -67,7 +71,7 @@
       ],
       "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool capable of pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O&rsquo;Rourke. UIST 2018, Berlin, Germany.",
       "links": {
-        "paper": "http://users.eecs.northwestern.edu/~scl025/files/ply-uist.pdf",
+        "paper": "assets/papers/ply-uist.pdf",
         "code": "https://github.com/sarahlim/ply"
       }
     },
@@ -111,7 +115,7 @@
       ],
       "description": "We introduce a visual significance heuristic for removing irrelevant CSS source code during web design reverse-engineering tasks. CHI 2017 Student Research Competition Winner, Denver, Colorado.",
       "links": {
-        "paper": "http://users.eecs.northwestern.edu/~scl025/files/ply.pdf",
+        "paper": "assets/papers/ply-src.pdf",
         "slides": "http://slides.com/soylentqueen/ply-chi-src"
       }
     },
@@ -175,13 +179,13 @@
     },
     {
       "title": "EECS 474: Probabilistic Graphical Models",
-      "period": "Fall 2017",
+      "period": "Fall 2017*",
       "link": "http://www.cs.northwestern.edu/~ddowney/courses/474_Fall2017/",
       "description": "Graduate-level Bayesian and Markov network representation, inference, and learning. With <a href=\"https://www.cs.northwestern.edu/~ddowney/\">Doug Downey</a>."
     },
     {
       "title": "EECS 111: Fundamentals of Computer Programming I",
-      "period": "Fall 2015, Winter 2016, Fall 2016*, Winter 2017*, Fall 2017*",
+      "period": "Fall 2015, Winter 2016, Fall 2016*, Winter 2017*, Fall 2017*, Winter 2018*",
       "description": "Functional programming using the Racket Student Languages, vacillating between <a href=\"http://www.ccs.neu.edu/home/matthias/HtDP2e/\">How to Design Programs</a> and <a href=\"https://mitpress.mit.edu/sicp/full-text/book/book.html\">SICP</a>. With Ian Horswill and Sara Sood.",
       "links": [
         {
