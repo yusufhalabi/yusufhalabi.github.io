@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Oct 2018",
+      "description": "Our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received an Honorable Mention Paper Award at <a href=\"https://uist.acm.org/uist2018/\">UIST 2018</a>! I'm presenting this work in Berlin."
+    },
+    {
       "period": "Sep 2018",
       "description": "Watch me <a href=\"https://www.youtube.com/watch?v=M7nRN_bhfaE\">plug the growth mindset</a> in glorious 1080p! Thanks to <a href=\"https://www.weinberg.northwestern.edu/\">Weinberg College</a> for the video profile."
     },
@@ -9,16 +13,8 @@
       "description": "I&rsquo;m excited to be attending <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a> at ICFP, along with <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a> and <a href=\"https://con.racket-lang.org/\">RacketCon</a>."
     },
     {
-      "period": "Aug 2018",
-      "description": "New paper at UIST 2018! <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> significantly extends our previous work on visual regression pruning."
-    },
-    {
       "period": "Jul 2018",
       "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>. Here, arugula is &ldquo;rocket,&rdquo; which is kind of fun."
-    },
-    {
-      "period": "Oct 2017",
-      "description": "I&rsquo;m <a href=\"http://sarahlim.com/ka\">joining</a> Khan Academy <a href=\"https://medium.com/khan-academy-early-product-development\">Early Product Development</a> full-time after graduation!"
     },
     {
       "period": "May 2017",
@@ -69,7 +65,7 @@
         "research",
         "development"
       ],
-      "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool capable of pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O&rsquo;Rourke. UIST 2018, Berlin, Germany.",
+      "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool and set of techniques for pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O&rsquo;Rourke. Honorable Mention Paper at UIST 2018, Berlin.",
       "links": {
         "paper": "assets/papers/ply-uist.pdf",
         "code": "https://github.com/sarahlim/ply"
