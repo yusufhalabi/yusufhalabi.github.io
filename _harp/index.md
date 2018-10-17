@@ -1,5 +1,5 @@
 I go by Slim. I am a software engineer and researcher in the [Early Product Development](https://medium.com/khan-academy-early-product-development) group at [Khan Academy](http://khanacademy.org), working on open problems in education technology.
-Previously, I interned at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/), where I collaborated with [Sean Rintel](https://www.microsoft.com/en-us/research/people/serintel/) and [Gavin Smyth](https://www.microsoft.com/en-us/research/people/gavinsmy/) on projects related to the future of work.
+Previously, I interned at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) where I collaborated with [Gavin Smyth](https://www.microsoft.com/en-us/research/people/gavinsmy/) and [Sean Rintel](https://www.microsoft.com/en-us/research/people/serintel/) on projects related to the future of work.
 
 My research interests span programming languages, human factors, and computing education.
 I'm interested in _programming languages as user interfaces_: in short, how language design affects the way people think about and write programs.

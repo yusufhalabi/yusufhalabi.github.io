@@ -2,7 +2,7 @@
   "news": [
     {
       "period": "Oct 2018",
-      "description": "Our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received an Honorable Mention Paper Award at <a href=\"https://uist.acm.org/uist2018/\">UIST 2018</a>! I'm presenting this work in Berlin."
+      "description": "Our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received an Honorable Mention Paper Award at <a href=\"https://uist.acm.org/uist2018/\">UIST 2018</a>! I'm presenting this work in Berlin (see my <a href=\"http://sarahlim.com/ply-uist-2018/\">slides</a>)."
     },
     {
       "period": "Sep 2018",
@@ -68,7 +68,8 @@
       "description": "CSS is syntactically straightforward, but has a steep learning curve and complicated semantics. Inspecting the source of existing webpages can help illustrate concepts, but such webpages are typically too complex to serve as useful learning materials. Drawing inspiration from prior research in both software engineering and the learning sciences, we present a new web inspection tool and set of techniques for pruning irrelevant CSS and identifying implicit dependencies between properties. Supervised by Haoqi Zhang and Nell O&rsquo;Rourke. Honorable Mention Paper at UIST 2018, Berlin.",
       "links": {
         "paper": "assets/papers/ply-uist.pdf",
-        "code": "https://github.com/sarahlim/ply"
+        "code": "https://github.com/sarahlim/ply",
+        "slides": "http://sarahlim.com/ply-uist-2018/"
       }
     },
     {
@@ -225,7 +226,7 @@
     },
     {
       "title": "EECS 214: Data Structures and Data Management",
-      "period": "Spring 2016, Spring 2017",
+      "period": "Spring 2016, Spring 2017, Spring 2018",
       "description": "Data structures and algorithms in C#. With Ian Horswill.",
       "links": [
         {
