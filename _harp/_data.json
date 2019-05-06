@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "period": "Apr 2018",
+      "description": "New CSS inspection features <a href=\"https://twitter.com/patrickbrosset/status/1118965266698985472\">inspired by Ply</a> are coming soon to a Firefox release near you!"
+    },
+    {
+      "period": "Mar 2018",
+      "description": "I&rsquo;m attending this year&rsquo;s <a href=\"https://www.cs.uoregon.edu/research/summerschool/summer19\">Oregon Programming Languages Summer School</a>. Be my friend in Eugene please"
+    },
+    
+    {
       "period": "Oct 2018",
       "description": "Our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received an Honorable Mention Award at <a href=\"https://uist.acm.org/uist2018/\">UIST 2018</a>! I presented this work in Berlin (see the <a href=\"https://www.youtube.com/watch?v=n2dFxxBh2K4\">recording</a> and my <a href=\"http://sarahlim.com/ply-uist-2018/\">slides</a>)."
     },
@@ -15,6 +24,10 @@
     {
       "period": "Jul 2018",
       "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>. Here, arugula is &ldquo;rocket,&rdquo; which is kind of fun."
+    },
+    {
+      "period": "Jun 2018",
+      "description": "I graduated! I was honored to be named <a href=\"https://www.mccormick.northwestern.edu/computer-science/news/articles/2018/2018-eecs-annual-awards-winners.html\">Outstanding Senior in Computer Science</a>."
     },
     {
       "period": "May 2017",
