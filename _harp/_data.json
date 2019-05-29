@@ -1,12 +1,16 @@
 {
   "news": [
     {
+      "period": "Jun 2019",
+      "description": "Returning to my roots as a toolmaker at <a href=\"http://notion.so/about\">Notion</a>, where I will be joining as an engineer and designer!"
+    },
+    {
       "period": "May 2019",
-      "description": "Very pleased to be an <a href=\"https://twitter.com/ReactRally/status/1128680519351263233\">invited speaker</a> at <a href=\"https://www.reactrally.com/\">React Rally</a> this year."
+      "description": "Very tickled to be an <a href=\"https://twitter.com/ReactRally/status/1128680519351263233\">invited speaker</a> at <a href=\"http://www.reactrally.com/\">React Rally</a> this year."
     },
     {
       "period": "Apr 2019",
-      "description": "New CSS inspection features <a href=\"https://twitter.com/patrickbrosset/status/1118965266698985472\">inspired by Ply</a> are coming soon to a Firefox release near you!"
+      "description": "New CSS inspection features <a href=\"https://twitter.com/patrickbrosset/status/1118965266698985472\">inspired by my research</a> are coming soon to a Firefox release near you!"
     },
     {
       "period": "Mar 2019",
