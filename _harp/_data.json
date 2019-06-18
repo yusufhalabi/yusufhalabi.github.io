@@ -2,7 +2,11 @@
   "news": [
     {
       "period": "Jun 2019",
-      "description": "Returning to my roots as a toolmaker at <a href=\"http://notion.so/about\">Notion</a>, where I will be joining as an engineer and designer!"
+      "description": "Attending <a href=\"https://www.cs.uoregon.edu/research/summerschool/summer19\">OPLSS</a> in Eugene. Say hi if you&rsquo;re around!"
+    },
+    {
+      "period": "",
+      "description": "Started a new job at <a href=\"http://notion.so/about\">Notion</a> as an engineer, designer, and all-around product person."
     },
     {
       "period": "May 2019",
@@ -12,11 +16,6 @@
       "period": "Apr 2019",
       "description": "New CSS inspection features <a href=\"https://twitter.com/patrickbrosset/status/1118965266698985472\">inspired by my research</a> are coming soon to a Firefox release near you!"
     },
-    {
-      "period": "Mar 2019",
-      "description": "I&rsquo;m attending this year&rsquo;s <a href=\"https://www.cs.uoregon.edu/research/summerschool/summer19\">Oregon Programming Languages Summer School</a>. Be my friend in Eugene please"
-    },
-    
     {
       "period": "Oct 2018",
       "description": "Our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received an Honorable Mention Award at <a href=\"https://uist.acm.org/uist2018/\">UIST 2018</a>! I presented this work in Berlin (see the <a href=\"https://www.youtube.com/watch?v=n2dFxxBh2K4\">recording</a> and my <a href=\"http://sarahlim.com/ply-uist-2018/\">slides</a>)."
