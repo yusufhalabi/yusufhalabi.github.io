@@ -1,5 +1,5 @@
 I am a researcher, software engineer, and designer living in San Francisco.
-I work on tools for thought at [Notion](https://notion.so/about).
+I work on tools for thought at [Notion Labs](https://notion.so/about), inspired by [Douglas Engelbart](http://dougengelbart.org/)&rsquo;s vision of better computing for everyone.
 Previously, I was part of the [Early Product Development](https://early.khanacademy.org/) R&D group at [Khan Academy](https://khanacademy.org) and the [Human Experience and Design](https://hxd.research.microsoft.com/) group at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). Here is my [CV](assets/cv-lim.pdf).
 
 My research interests span programming languages, human factors, learning sciences, and personal computing.
