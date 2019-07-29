@@ -7,7 +7,7 @@ I&rsquo;m interested in _programming languages as user interfaces_: in short, ho
 For instance, I ask questions about the usability of static and gradual [type systems](https://twitter.com/soylentqueen/status/1140838786043002881), the role of functional programming within computing education, and how provable guarantees might alleviate cognitive load while writing software. 
 
 I received my BA in Computer Science from [Northwestern University](http://northwestern.edu), concentrating in human-computer interaction and theoretical computer science.
-My studies were generously supported by scholarships from [Google](https://buildyourfuture.withgoogle.com/scholarships/google-lime-scholarship/), [Microsoft](https://careers.microsoft.com/us/en/usscholarshipprogram), [Palantir](https://www.palantir.com/students/scholarship/wit-north-america/), [Box](http://www.boxdiversityscholarship.com/), [Quip](https://quip.com/scholarship), and others.
+My studies were supported by scholarships from [Google](https://buildyourfuture.withgoogle.com/scholarships/google-lime-scholarship/), [Microsoft](https://careers.microsoft.com/us/en/usscholarshipprogram), [Palantir](https://www.palantir.com/students/scholarship/wit-north-america/), [Box](http://www.boxdiversityscholarship.com/), [Quip](https://quip.com/scholarship), and others, for which I am grateful, though these companies do not necessarily represent my views.
 During school I was affiliated with the following research groups:
 
 - [Design, Technology, and Research](http://dtr.northwestern.edu/), where I researched [CSS inspection](https://www.youtube.com/watch?v=n2dFxxBh2K4) with my co-advisors [Haoqi Zhang](http://users.eecs.northwestern.edu/~hq) and [Nell O&rsquo;Rourke](http://www.eleanorourke.com).
