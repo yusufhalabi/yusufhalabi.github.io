@@ -2,7 +2,7 @@
   "news": [
     {
       "period": "Jul 2019",
-      "description": "I will be attending <a href=\"https://pwlconf.org\">Papers We Love Conf</a> and <a href=\"https://thestrangeloop.com\">Strange Loop</a>."
+      "description": "I will be attending <a href=\"https://pwlconf.org\">Papers We Love Conf</a> and <a href=\"https://thestrangeloop.com\">Strange Loop</a> in St. Louis this coming September, through generous support from <a href=\"https://www.projectalloy.org\">Project Alloy</a>."
     },
     {
       "period": "Jun 2019",
@@ -18,14 +18,18 @@
     },
     {
       "period": "Oct 2018",
-      "description": "Our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received an Honorable Mention Award at <a href=\"https://uist.acm.org/uist2018/\">UIST</a>. I presented this work in Berlin (<a href=\"https://www.youtube.com/watch?v=n2dFxxBh2K4\">video</a>; <a href=\"http://sarahlim.com/ply-uist-2018/\">slides</a>)."
+      "description": "Attending <a href=\"https://uist.acm.org/uist2018/\">UIST</a> in Berlin, where our paper <a href=\"assets/papers/ply-uist.pdf\">Ply: A Visual Web Inspector for Learning from Professional Webpages</a> received Best Paper Honorable Mention. I presented this work (<a href=\"https://www.youtube.com/watch?v=n2dFxxBh2K4\">recording</a>; <a href=\"http://sarahlim.com/ply-uist-2018/\">slides</a>)."
     },
     {
-      "period": "",
-      "description": "Attending <a href=\"https://icfp18.sigplan.org/\">ICFP</a>, <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a>, and <a href=\"https://con.racket-lang.org/\">RacketCon</a> via <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a>."
+      "period": "Sep 2018",
+      "description": "Attending <a href=\"https://icfp18.sigplan.org/\">ICFP</a>, <a href=\"https://www.thestrangeloop.com/\">Strange Loop</a>, and <a href=\"https://con.racket-lang.org/\">RacketCon</a> in St. Louis, via <a href=\"https://icfp18.sigplan.org/track/PLMW-ICFP-2018\">PLMW</a>."
     },
     {
       "period": "Jul 2018",
+      "description": "Attending <a href=\"https://www.curry-on.org/2018/\">Curry On!</a> in Amsterdam."
+    },
+    {
+      "period": "",
       "description": "Started an internship at <a href=\"https://hxd.research.microsoft.com/\">MSR Cambridge</a>."
     },
     {
@@ -38,7 +42,7 @@
     },
     {
       "period": "",
-      "description": "Ply <a href=\"http://www.mccormick.northwestern.edu/eecs/news/articles/2017/sarah-lim-wins-student-research-competition.html\">wins</a> the <a href=\"https://chi2017.acm.org/\">CHI</a> Student Research Competition!"
+      "description": "Attending <a href=\"https://chi2017.acm.org/\">CHI</a> in Denver. Ply <a href=\"http://www.mccormick.northwestern.edu/eecs/news/articles/2017/sarah-lim-wins-student-research-competition.html\">won first place</a> in the Student Research Competition!"
     },
     {
       "period": "Apr 2017",
