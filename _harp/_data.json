@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Jul 2019",
+      "description": "I will be attending <a href=\"https://pwlconf.org\">Papers We Love Conf</a> and <a href=\"https://thestrangeloop.com\">Strange Loop</a>."
+    },
+    {
       "period": "Jun 2019",
       "description": "Attending <a href=\"https://www.cs.uoregon.edu/research/summerschool/summer19\">OPLSS</a> in Eugene. Say hi if you&rsquo;re around!"
     },
