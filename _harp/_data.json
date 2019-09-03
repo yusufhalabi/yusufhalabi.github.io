@@ -89,7 +89,8 @@
       "links": {
         "paper": "assets/papers/ply-uist.pdf",
         "talk": "https://www.youtube.com/watch?v=n2dFxxBh2K4",
-        "code": "https://github.com/sarahlim/ply"
+        "code": "https://github.com/sarahlim/ply",
+        "slides": "http://sarahlim.com/ply-uist-2018"
       }
     },
     {
