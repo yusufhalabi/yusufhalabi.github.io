@@ -94,17 +94,7 @@
       }
     },
     {
-      "title": "Evaluating peer graders",
-      "location": "Northwestern University",
-      "tags": [
-        "research"
-      ],
-      "description": "Most of the literature on peer grading focuses on inferring a true grade from a set of noisy reports. We study a different problem: inferring the skill and effort of reviewers, from the same reports. Supervised by Jason Hartline.",
-      "links": {}
-    },
-    {
       "title": "Tracing WebAssembly function calls",
-      "location": "EECS 396: Systems Programming in Rust",
       "tags": [
         "development"
       ],
@@ -114,6 +104,46 @@
         "talk": "https://www.youtube.com/watch?v=NtTybfTlj58",
         "slides": "http://sarahlim.com/react-rally-2019/"
       }
+    },
+    {
+      "title": "Spelling correction with prefix tries",
+      "tags": [
+        "development"
+      ],
+      "description": "A more performant implementation of Peter Norvig's <a href=\"http://norvig.com/spell-correct.html\">statistical spelling corrector</a>, written in Go using prefix tries.",
+      "links": {
+        "code": "https://github.com/sarahlim/correct-go"
+      }
+    },
+    {
+      "title": "Theorems in Markdown",
+      "tags": [
+        "development"
+      ],
+      "description": "<a href=\"https://pandoc.org/\">Pandoc</a> is my single favorite piece of software. I use it to compile Markdown documents into slideshows, academic papers, course notes, blog posts, and more. Pandoc already handles L<sup>a</sup>T<sub>e</sub>X very well, but I wanted to typeset my notes with proper definition, theorem, and lemma environments using Markdown. This filter compiles <a href=\"https://pandoc.org/MANUAL.html#definition-lists\">definition lists</a> into <a href=\"https://www.ctan.org/pkg/amsthm\">amsthm</a> environments. It's written in Haskell.",
+      "links": {
+        "code": "https://github.com/sarahlim/pandoc-theorem"
+      }
+    },
+    {
+      "title": "Designing a structured activity platform to scaffold complex skills",
+      "location": "Khan Academy",
+      "tags": [
+        "research"
+      ],
+      "description": "Secondary school students must learn to solve complex, ill-defined problems, but providing formative feedback imposes an intractable orchestration burden on teachers. Peer feedback and discussion systems can reduce this burden, but little is known about the design constraints associated with adopting such a system in the classroom. In this design research project, the Early Product Development team at Khan Academy iteratively developed and piloted a web-based system for open-ended writing activities through interviews and classroom pilots with 36 teachers and 562 students at middle and high schools across the United States. By adapting techniques from both traditional and technology-enhanced discussion and feedback settings, our prototype enables teachers to conduct scalable, semi-synchronous classroom activities aimed at developing specific complex problem-solving skills.",
+      "links": {
+        "paper": "assets/papers/peer-review-cscl.pdf"
+      }
+    },
+    {
+      "title": "Evaluating peer graders",
+      "location": "Northwestern University",
+      "tags": [
+        "research"
+      ],
+      "description": "Most of the literature on peer grading focuses on inferring a true grade from a set of noisy reports. We study a different problem: inferring the skill and effort of reviewers, based on the same grade reports. Our approach builds on the <code>vancouver</code> algorithm introduced by <a href=\"https://www.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-SOE-13-11.pdf\">Luca de Alfaro and Michael Shavlovsky</a>, using low-rank approximations to factor out reviewer skill and submission clarity. Supervised by <a href=\"https://sites.northwestern.edu/hartline/eecs-497-peer-grading/\">Jason Hartline</a>; paper in progress.",
+      "links": {}
     },
     {
       "title": "Classroom exercise reports",
