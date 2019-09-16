@@ -126,17 +126,6 @@
       }
     },
     {
-      "title": "Designing a structured activity platform to scaffold complex skills",
-      "location": "Khan Academy",
-      "tags": [
-        "research"
-      ],
-      "description": "Secondary school students must learn to solve complex, ill-defined problems, but providing formative feedback imposes an intractable orchestration burden on teachers. Peer feedback and discussion systems can reduce this burden, but little is known about the design constraints associated with adopting such a system in the classroom. In this design research project, the Early Product Development team at Khan Academy iteratively developed and piloted a web-based system for open-ended writing activities through interviews and classroom pilots with 36 teachers and 562 students at middle and high schools across the United States. By adapting techniques from both traditional and technology-enhanced discussion and feedback settings, our prototype enables teachers to conduct scalable, semi-synchronous classroom activities aimed at developing specific complex problem-solving skills.",
-      "links": {
-        "paper": "assets/papers/peer-review-cscl.pdf"
-      }
-    },
-    {
       "title": "Evaluating peer graders",
       "location": "Northwestern University",
       "tags": [
