@@ -2,7 +2,7 @@
   "news": [
     {
       "period": "Oct 2019",
-      "description": "Firefox 70 is released with <a href=\"https://hacks.mozilla.org/2019/10/firefox-70-a-bountiful-release-for-all/#developertools\">Inactive CSS</a>, a new inspection feature which highlights ineffective CSS properties arising from unsatisfied implicit dependencies. This work directly inspired by <a href=\"assets/papers/ply-uist.pdf\">Ply</a>. Give it a try!"
+      "description": "Firefox 70 is released with <a href=\"https://hacks.mozilla.org/2019/10/firefox-70-a-bountiful-release-for-all/#developertools\">Inactive CSS</a>, a new inspection feature which highlights ineffective CSS properties arising from unsatisfied implicit dependencies. This work was directly inspired by <a href=\"assets/papers/ply-uist.pdf\">Ply</a>. Give it a try!"
     },
     {
       "period": "Sep 2019",
