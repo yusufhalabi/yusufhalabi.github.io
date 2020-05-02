@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Apr 2020",
+      "description": "I will be joining the <a href=\"https://eecs.berkeley.edu/\">UC Berkeley EECS</a> PhD program in 2021, working with <a href=\"https://schasins.com/\">Sarah Chasins</a> and supported by a Chancellor’s Fellowship. I’m very excited!"
+    },
+    {
       "period": "Jan 2020",
       "description": "<a href=\"https://www.notion.so/notion/What-s-New-157765353f2c4705bd45474e5ba8b46c#9b5a20899ea149bf8ef5a19054ac8c41\">Notion 2.7</a> is released, featuring search that actually works. Previously, Notion search was a major pain point: it was slow, inaccurate, and the interface was clunky. I spent the past several months rethinking and rewriting this feature from head to toe, and I&rsquo;m really proud of what we came up with!"
     },
