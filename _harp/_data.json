@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Jun 2020",
+      "description": "I’ve finally implemented <a href=\"https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c#fefc6c54c0db47e29ceef8cd02b78503\">inline mathematics</a> in Notion! (See the <a href=\"https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c#fefc6c54c0db47e29ceef8cd02b78503\">release notes</a>.) This was a very personally satisfying project, given my longstanding interests in mathematics and document preparation. We’re using the wonderful <a href=\"https://katex.org/\">KaTeX</a> library created by my alma mater, <a href=\"https://www.khanacademy.org/\">Khan Academy</a>."
+    },
+    {
       "period": "Apr 2020",
       "description": "I will be joining the <a href=\"https://cs.berkeley.edu/\">UC Berkeley</a> Computer Science PhD program in 2021, working with <a href=\"https://schasins.com/\">Sarah Chasins</a> and supported by a Chancellor’s Fellowship. I’m very excited!"
     },
