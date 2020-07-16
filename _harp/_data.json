@@ -2,7 +2,7 @@
   "news": [
     {
       "period": "Jun 2020",
-      "description": "I’ve finally implemented <a href=\"https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c#fefc6c54c0db47e29ceef8cd02b78503\">inline mathematics</a> in Notion! (See the <a href=\"https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c#fefc6c54c0db47e29ceef8cd02b78503\">release notes</a>.) This was a very personally satisfying project, given my longstanding interests in mathematics and document preparation. We’re using the wonderful <a href=\"https://katex.org/\">KaTeX</a> library created by my alma mater, <a href=\"https://www.khanacademy.org/\">Khan Academy</a>."
+      "description": "I’ve finally implemented <a href=\"https://twitter.com/NotionHQ/status/1270445764062228480\">inline mathematics</a> in Notion! (See the <a href=\"https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c#fefc6c54c0db47e29ceef8cd02b78503\">release notes</a>.) This was a very personally satisfying project, given my longstanding interests in mathematics and document preparation. We’re using the wonderful <a href=\"https://katex.org/\">KaTeX</a> library created by my alma mater, <a href=\"https://www.khanacademy.org/\">Khan Academy</a>."
     },
     {
       "period": "Apr 2020",
