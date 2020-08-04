@@ -2,7 +2,7 @@ I am a computer scientist, researcher, and software engineer living in San Franc
 
 My research interests span programming languages, human factors, learning sciences, and personal computing.
 I&rsquo;m interested in _programming languages as user interfaces_: in short, how language design affects the way people think about and write programs.
-For instance, I ask questions about the [usability of static and gradual type systems](https://twitter.com/soylentqueen/status/1140838786043002881), the role of functional programming within computing education, and how provable guarantees might alleviate cognitive load while writing software. 
+For instance, I ask questions about the [usability of static and gradual type systems](https://twitter.com/soylentqueen/status/1140838786043002881), [recovering structure in code review](https://twitter.com/sliminality/status/1275922682895192065), [document layout primitives](https://twitter.com/sliminality/status/1285324183413518337), the role of functional programming within computing education, and how provable guarantees might alleviate cognitive load while writing software. 
 
 I received my BA in Computer Science from [Northwestern University](http://northwestern.edu), concentrating in human-computer interaction and theoretical computer science.
 My studies were supported by scholarships from [Google](https://buildyourfuture.withgoogle.com/scholarships/google-lime-scholarship/), [Microsoft](https://careers.microsoft.com/us/en/usscholarshipprogram), [Palantir](https://www.palantir.com/students/scholarship/wit-north-america/), [Box](http://www.boxdiversityscholarship.com/), [Quip](https://quip.com/scholarship), and others, for which I am grateful, though these companies do not necessarily represent my views.
