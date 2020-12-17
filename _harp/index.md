@@ -1,8 +1,9 @@
-I am a computer scientist, researcher, and software engineer living in San Francisco. I work at [Notion Labs](https://notion.so/about), striving to create better computing for everyone, and will be joining [Sarah Chasins](https://schasins.com/)’s group next year as a PhD student at [UC Berkeley](https://cs.berkeley.edu/). Previously I worked in the [Early Product Development](https://early.khanacademy.org/) group at [Khan Academy](https://khanacademy.org) and interned with the [Human Experience and Design](https://hxd.research.microsoft.com/) group at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/).
+My name is Slim. I am a computer scientist, researcher, and software engineer living in San Francisco. I build tools for personal computing and collaboration at [Notion](https://notion.so/about) and [Ink and Switch](https://www.inkandswitch.com/), and will be joining [Sarah Chasins](https://schasins.com/)’s group as a PhD student at [UC Berkeley](https://cs.berkeley.edu/) next year.
+Previously I worked in the [Early Product Development](https://early.khanacademy.org/) group at [Khan Academy](https://khanacademy.org) and interned with the [Human Experience and Design](https://hxd.research.microsoft.com/) group at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/).
 
 My research interests span programming languages, human factors, learning sciences, and personal computing.
 I&rsquo;m interested in _programming languages as user interfaces_: in short, how language design affects the way people think about and write programs.
-For instance, I ask questions about the [usability of static and gradual type systems](https://twitter.com/soylentqueen/status/1140838786043002881), [recovering structure in code review](https://twitter.com/sliminality/status/1275922682895192065), [document layout primitives](https://twitter.com/sliminality/status/1285324183413518337), the role of functional programming within computing education, and how provable guarantees might alleviate cognitive load while writing software. 
+For instance, I ask questions about the usability of static type systems, the role of functional programming within computing education, and how provable guarantees might alleviate cognitive load while writing software.
 
 I received my BA in Computer Science from [Northwestern University](http://northwestern.edu), concentrating in human-computer interaction and theoretical computer science.
 My studies were supported by scholarships from [Google](https://buildyourfuture.withgoogle.com/scholarships/google-lime-scholarship/), [Microsoft](https://careers.microsoft.com/us/en/usscholarshipprogram), [Palantir](https://www.palantir.com/students/scholarship/wit-north-america/), [Box](http://www.boxdiversityscholarship.com/), [Quip](https://quip.com/scholarship), and others, for which I am grateful, though these companies do not necessarily represent my views.
@@ -12,6 +13,15 @@ During school I was affiliated with the following research groups:
 - [CS Theory Group](https://theory.cs.northwestern.edu/), where I researched [peer grading algorithms](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733860) with [Jason Hartline](https://sites.northwestern.edu/hartline).
 - [Center for Connected Learning](http://ccl.northwestern.edu/), where I worked on [NetLogo Web](https://netlogoweb.org/) with [Jason Bertsche](https://github.com/TheBizzle).
 
-I really like [browser engines](https://servo.org/), type systems, public transit, [WebAssembly](https://webassembly.org/), [Rust](https://www.rust-lang.org/en-US/), [Haskell](https://www.haskell.org), [crossword puzzles](https://twitter.com/soylentqueen/status/1002202872266874880), classical music, policy debate, [document preparation](https://pandoc.org/), cognitive disability advocacy, Nintendo Switch video games, hiking, and critical theory.
+I really like [browser engines](https://servo.org/), type systems, text editors, trains, [WebAssembly](https://webassembly.org/), [Rust](https://www.rust-lang.org/en-US/), [Haskell](https://www.haskell.org), [crossword puzzles](https://twitter.com/soylentqueen/status/1002202872266874880), classical music, policy debate, [document preparation](https://pandoc.org/), cognitive disability advocacy, Nintendo Switch video games, hiking, and critical theory.
 
-Most people call me Slim; you should feel free to do the same.
+Here are a few of my 99 theses:
+
+- [Stop using “uni-typed” pejoratively to dunk on dynamically-typed languages](https://twitter.com/sliminality/status/1317331148360437760)
+- [I wish we understood why programmers have such poor intuitions about performance](https://twitter.com/sliminality/status/1313614499736297472)
+- [Block vs. inline is a leaky and unintuitive abstraction for document editors](https://twitter.com/sliminality/status/1285324183413518337)
+- [“Listening and learning” is the new “thoughts and prayers”](https://twitter.com/sliminality/status/1282736177305403392)
+- [Code review should use a directed graph, not a linked list](https://twitter.com/sliminality/status/1275922682895192065)
+- [Articulating injustice is more important than, but not mutually exclusive with, preserving your intellectual brand](https://twitter.com/sliminality/status/1267228511233667072)
+- [Type errors are our friends and teachers](https://twitter.com/sliminality/status/1140838786043002881) (*and corollary:* [Better error messages help users conceptualize compilers as friendly guides rather than angry jerks](https://twitter.com/sliminality/status/1334654707575353345))
+
