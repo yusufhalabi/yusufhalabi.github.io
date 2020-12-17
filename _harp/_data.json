@@ -99,6 +99,28 @@
   },
   "projects": [
     {
+      "title": "RNG mechanics in Pokémon Sword and Shield",
+      "tags": [
+        "development"
+      ],
+      "description": "Raidtomi is a tool for <a href=\"https://www.pokemonrng.com/retail-swsh-raid\">RNG manipulation</a> in Pokémon Sword and Shield, written using <a href=\"https://github.com/rustwasm/wasm-bindgen\">wasm-bindgen</a>. Users enter a seed for an active raid den and Raidtomi calculates the corresponding stats for each possible encounter. Raid generation is implemented in Rust, making Raidtomi much faster than other Web-based seed searching tools.",
+      "links": {
+        "link": "https://raidtomi.com",
+        "code": "https://github.com/sliminality/raidtomi"
+      }
+    },
+    {
+      "title": "RNG mechanics in Pokémon Sword and Shield",
+      "tags": [
+        "development"
+      ],
+      "description": "Raidtomi is a tool for <a href=\"https://www.pokemonrng.com/retail-swsh-raid\">RNG manipulation</a> in Pokémon Sword and Shield, written using <a href=\"https://github.com/rustwasm/wasm-bindgen\">wasm-bindgen</a>. Users enter a seed for an active raid den and Raidtomi calculates the corresponding stats for each possible encounter. Raid generation is implemented in Rust, making Raidtomi much faster than other Web-based seed searching tools.",
+      "links": {
+        "link": "https://raidtomi.com",
+        "code": "https://github.com/sliminality/raidtomi"
+      }
+    },
+    {
       "title": "Ply: Visual Web Inspection",
       "location": "Delta Lab",
       "tags": [
@@ -151,19 +173,8 @@
       "tags": [
         "research"
       ],
-      "description": "Most of the literature on peer grading focuses on inferring a true grade from a set of noisy reports. We study a different problem: inferring the skill and effort of reviewers, based on the same grade reports. Our approach builds on the <code>vancouver</code> algorithm introduced by <a href=\"https://www.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-SOE-13-11.pdf\">Luca de Alfaro and Michael Shavlovsky</a>, using low-rank approximations to factor out reviewer skill and submission clarity. Supervised by <a href=\"https://sites.northwestern.edu/hartline/eecs-497-peer-grading/\">Jason Hartline</a>; paper in progress.",
+      "description": "Existing models for peer grading borrow from the literature on crowdsourcing and forecasting, using a random variable to represent the score reported by a peer reviewer on a given submission. Most models attribute error in reporting solely to the skill of the peer reviewer, which unfairly penalizes peers who report noisy scores on unclear submissions. Building on the <a href=\"https://www.soe.ucsc.edu/sites/default/files/technical-reports/UCSC-SOE-13-11.pdf\"><code>vancouver</code></a> algorithm by de Alfaro and Shavlovsky, we use low-rank approximations to factor out reviewer skill and submission clarity. Supervised by <a href=\"https://sites.northwestern.edu/hartline/eecs-497-peer-grading/\">Jason Hartline</a>; paper in progress.",
       "links": {}
-    },
-    {
-      "title": "Classroom exercise reports",
-      "location": "Khan Academy",
-      "tags": [
-        "development"
-      ],
-      "description": "I developed new exercise reports to help teachers visualize student progress and work through problems in the classroom. Mentored by <a href=\"https://johnresig.com/\">John Resig</a> during my internship at Khan Academy.",
-      "links": {
-        "demo": "https://www.khanacademy.org/resources/k-12-teachers-1/assignments/a/how-to-view-and-use-assignment-reports"
-      }
     },
     {
       "title": "Visual regression pruning",
@@ -190,42 +201,6 @@
         "demo": "https://jsbin.com/zadomo/3",
         "code": "http://github.com/nudelta/http://github.com/nudelta/ply-utils",
         "poster": "http://users.eecs.northwestern.edu/~scl025/files/googlescholars.pdf"
-      }
-    },
-    {
-      "title": "SVG Charting Library",
-      "location": "LinkedIn",
-      "tags": [
-        "development"
-      ],
-      "description": "An opinionated Ember.js addon to replace Highcharts with native SVG and DOM APIs. Released addon as a company-wide multiproduct. I worked on this project during my internship at LinkedIn, under the mentorship of <a href=\"http://codycoats.codes/\">Cody Coats</a> and <a href=\"http://yasonik.com\">Michail Yasonik</a>.",
-      "links": {
-        "video": "https://business.linkedin.com/talent-solutions/product-update/recruiter/inmail-reporting"
-      }
-    },
-    {
-      "title": "Predicting the Popularity of User-Generated Discussion Questions",
-      "location": "EECS 349: Machine Learning",
-      "tags": [
-        "coursework",
-        "development"
-      ],
-      "description": "Using Python with the Reddit API and NLTK library, we collect information about <a href=\"http://reddit.com/r/askreddit\">AskReddit</a> posts over a two-week period to analyze what makes a question popular. Alternating decision trees achieve 72.9819 accuracy with 10-fold cross-validation, an improvement over the ZeroR baseline of 51.0708. Features related to the language of the question, time and day of posting, and initial commenting behavior prove most informative. With <a href=\"http://sameersrivastava.com/\">Sameer Srivastava</a>, <a href=\"http://jenniewerner.com/\">Jennie Werner</a>, and <a href=\"https://github.com/aiqiliu\">Aiqi Liu</a>.",
-      "links": {
-        "paper": "./files/askreddit-final.pdf",
-        "code": "https://github.com/aiqiliu/AskReddit-analytics"
-      }
-    },
-    {
-      "title": "Commentator",
-      "location": "Northwestern Debate Institute",
-      "tags": [
-        "development"
-      ],
-      "description": "End-to-end Google Apps Script-based pipeline for publishing practice debate comments to individual students&rsquo; feedback pages. Previously, instructors needed to manually edit the feedback pages for all four students in order to provide feedback from practice rounds. Deployed at the 2015 <a href=\"https://nhsi.northwestern.edu/debate-division/\">Northwestern Debate Institute</a> and subsequently adopted for the entire program in 2016.",
-      "links": {
-        "code": "https://github.com/sliminality/commentator",
-        "demo": "https://sites.google.com/a/sarahlim.com/commentator-demo/"
       }
     }
   ],
