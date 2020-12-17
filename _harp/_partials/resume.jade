@@ -2,7 +2,7 @@ section.resume#projects
   .container
     h2.section-title Projects
 
-    p Recent escapades in research, development, and coursework.
+    p Escapades in research and development, ranging from serious research projects to one-off diversions.
 
     dl
       for project in public._data.projects
@@ -31,6 +31,8 @@ section.resume#projects
                   i.fa.fa-film
                 else if slug == "talk"
                   i.fa.fa-video-camera
+                else if slug == "link"
+                  i.fa.fa-link
 
                 a(href="#{link}" class="resume__link--#{slug}")= slug
 
