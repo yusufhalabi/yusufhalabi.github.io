@@ -110,17 +110,6 @@
       }
     },
     {
-      "title": "RNG mechanics in Pokémon Sword and Shield",
-      "tags": [
-        "development"
-      ],
-      "description": "Raidtomi is a tool for <a href=\"https://www.pokemonrng.com/retail-swsh-raid\">RNG manipulation</a> in Pokémon Sword and Shield, written using <a href=\"https://github.com/rustwasm/wasm-bindgen\">wasm-bindgen</a>. Users enter a seed for an active raid den and Raidtomi calculates the corresponding stats for each possible encounter. Raid generation is implemented in Rust, making Raidtomi much faster than other Web-based seed searching tools.",
-      "links": {
-        "link": "https://raidtomi.com",
-        "code": "https://github.com/sliminality/raidtomi"
-      }
-    },
-    {
       "title": "Ply: Visual Web Inspection",
       "location": "Delta Lab",
       "tags": [
