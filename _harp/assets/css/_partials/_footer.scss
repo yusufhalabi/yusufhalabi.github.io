@@ -6,8 +6,15 @@
     font-style: italic;
   }
 
-  p {
+  .blurb {
+    display: flex;
+    flex-direction: column;
     margin-bottom: ($spacer / 2);
+
+    > p {
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
   }
 
   &__links {
@@ -24,13 +31,17 @@
   }
 
   @media (min-width: 500px) { 
+    text-align: left;
+    
     > .container {
       display: flex;
       justify-content: space-between;
     }
 
-    p {
+    .blurb {
+      align-items: flex-start;
       margin-bottom: 0;
+      margin-right: $spacer;
     }
   }
 }
