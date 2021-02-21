@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-li, a, button {
+li, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -26,14 +26,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    width: 94%;
+    position: fixed;
+    width: 50%;
     padding: 20px 10%; 
 }
 
 .nav_links li {
     display: inline-block;
     padding: 0px 15px;
+    position: relative;
+    left: 15%;
 }
 
 .nav_links li a {
@@ -41,18 +43,6 @@ header {
 }
 
 .nav_links a:hover {
-    color: #0088a9;
+    color: #063970;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgb(138, 201, 226, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3 ease 0s;
-}
-
-button:hover {
-    background-color: rgb(138, 201, 226, 0.8);
-}
