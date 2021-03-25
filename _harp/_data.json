@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Mar 2021",
+      "description": "I received an <a href=\"http://www.nsfgrfp.org/\">NSF Graduate Research Fellowship</a> to support my forthcoming PhD."
+    },
+    {
       "period": "Aug 2020",
       "description": "I’m co-organizing social sessions for the <a href=\"https://shriram.github.io/pl-hci-school-2020/\">PL/HCI Swimmer School</a>, along with <a href=\"https://yanyanr.github.io/\">Yanyan Ren</a> and <a href=\"https://twitter.com/zeeshanlakhani\">Zeeshan Lakhani</a>."
     },
