@@ -1,4 +1,4 @@
-My name is Slim. I am a computer scientist and 17th grader at [UC Berkeley](https://cs.berkeley.edu/), advised by [Sarah Chasins](https://schasins.com/) under the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). 
+My name is Slim. I am a computer scientist and 17th grade student at [UC Berkeley](https://cs.berkeley.edu/), advised by [Sarah Chasins](https://schasins.com/) under the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). 
 
 My research interests span programming languages, human factors, learning sciences, and personal computing.
 I&rsquo;m interested in _programming languages as user interfaces_: in short, how language design affects the way people think about and write programs.
