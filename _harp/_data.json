@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Aug 2021",
+      "description": "I started my PhD at Berkeley and transitioned to a contracting role at Notion."
+    },
+    {
       "period": "Mar 2021",
       "description": "I received an <a href=\"http://www.nsfgrfp.org/\">NSF Graduate Research Fellowship</a> to support my forthcoming PhD."
     },
