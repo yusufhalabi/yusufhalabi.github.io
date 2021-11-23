@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "period": "Nov 2021",
+      "description": "New essay with <a href=\"https://www.geoffreylitt.com/\">Geoffrey Litt</a>, <a href=\"https://martin.kleppmann.com/\">Martin Kleppman</a>, and <a href=\"https://www.pvh.ca/\">Peter van Hardenberg</a>: <a href=\"https://www.inkandswitch.com/peritext/\">Peritext: A CRDT for Rich-Text Collaboration</a> chronicles our efforts to create a working CRDT for rich text."
+    },
+    {
+      "period": "Oct 2021",
+      "description": "Attending <a href=\"https://2021.splashcon.org/\">SPLASH</a> in Chicago. It’s good to be back!"
+    },
+    {
       "period": "Aug 2021",
       "description": "I started my PhD at Berkeley and transitioned to a contracting role at Notion."
     },
