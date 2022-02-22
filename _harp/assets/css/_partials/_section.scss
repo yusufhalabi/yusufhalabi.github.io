@@ -13,7 +13,7 @@
   }
 
   ul {
-    @extend ul.list-default;
+    @extend .list-default;
   }
 }
 
@@ -38,7 +38,7 @@
   }
 
   &__item-description {
-    margin-bottom: ($spacer / 2);
+    margin-bottom: calc($spacer / 2);
   }
 
   @media (min-width: 640px) {

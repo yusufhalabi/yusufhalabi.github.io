@@ -5,10 +5,10 @@ $photo-bp: 500px;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-bottom: $spacer * 4;
+  padding-bottom: calc($spacer * 4);
 
   @media (min-width: #{$photo-bp}) {
-    padding: ($spacer * 3);
+    padding: calc($spacer * 3);
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
@@ -16,17 +16,17 @@ $photo-bp: 500px;
   }
 
   @media (min-width: 750px) {
-    padding-top: ($spacer * 3);
+    padding-top: calc($spacer * 3);
   }
 
   &__intro {
-    margin-bottom: ($spacer / 2);
+    margin-bottom: calc($spacer / 2);
   }
 
   &__title {
     margin: 0 auto;
     font-size: 1.8rem;
-    margin-bottom: ($spacer / 2);
+    margin-bottom: calc($spacer / 2);
     position: relative;
     display: table; // shrinkwrap
     padding: 0 10px;
@@ -58,12 +58,12 @@ $photo-bp: 500px;
 
   &__contact {
     font-family: $monospace-stack;
-    margin: ($spacer / 2) 0;
+    margin: calc($spacer / 2) 0;
   }
 
   &__links {
     justify-content: center;
-    margin: ($spacer / 2) 0;
+    margin: calc($spacer / 2) 0;
 
     @media (min-width: $photo-bp) {
       justify-content: flex-start;

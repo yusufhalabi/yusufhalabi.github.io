@@ -13,7 +13,7 @@
     font-size: 1.2rem;
 
     @media (min-width: 500px) {
-      margin-bottom: ($spacer / 4);
+      margin-bottom: calc($spacer / 4);
     }
   }
 
@@ -21,7 +21,7 @@
     @extend .font-secondary;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    margin-bottom: ($spacer / 2);
+    margin-bottom: calc($spacer / 2);
   }
 
   &__tag {
@@ -55,7 +55,7 @@
   &__item-links {
     @extend .font-secondary;
     letter-spacing: 1px;
-    margin-top: ($spacer / 2);
+    margin-top: calc($spacer / 2);
 
     .fa {
       margin-right: 0.5em;
@@ -80,7 +80,7 @@
 
     &__item-summary {
       width: 30%;
-      padding-right: ($spacer * 2);
+      padding-right: calc($spacer * 2);
     }
     &__item-description {
       width: 70%;

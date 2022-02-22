@@ -37,7 +37,7 @@ function clearRoot(andThen) {
 
 function build(andThen) {
   const cmd = path.resolve(__dirname, '../node_modules/.bin/harp');
-  const args = ['compile', APP_DIR, BUILD_DIR];
+  const args = [APP_DIR, BUILD_DIR];
   const proc = spawn(cmd, args);
   proc.stdout.on('data', data => console.log(`${data}`));
   proc.stderr.on('data', data => console.log(`stderr: ${data}`));
