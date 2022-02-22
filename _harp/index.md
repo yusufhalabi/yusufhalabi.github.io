@@ -1,7 +1,7 @@
 My name is Slim. I am a computer scientist and 17th grade student at [UC Berkeley](https://cs.berkeley.edu/), advised by [Sarah Chasins](https://schasins.com/) under the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). I have also been known to collaborate with [Ink & Switch](https://www.inkandswitch.com/) and [Notion](https://notion.so/about).
 
 My research interests span programming languages, human factors, learning sciences, and personal computing.
-I&rsquo;m interested in _programming languages as user interfaces_: in short, how language design affects the way people think about and write programs.
+I’m interested in _programming languages as user interfaces_: in short, how language design affects the way people think about and write programs.
 For instance, I ask questions about the usability of static type systems, the role of functional programming within computing education, and how provable guarantees might alleviate cognitive load while writing software.
 
 Previously I helped build tools for personal computing and collaboration at [Notion](https://notion.so/about); worked in the [Early Product Development](https://early.khanacademy.org/) group at [Khan Academy](https://khanacademy.org); and interned with the [Human Experience and Design](https://www.microsoft.com/en-us/research/theme/future-of-work/) group at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). 
@@ -14,7 +14,7 @@ During school I was affiliated with the following research groups:
 - [CS Theory Group](https://theory.cs.northwestern.edu/), where I researched [peer grading algorithms](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733860) with [Jason Hartline](https://sites.northwestern.edu/hartline).
 - [Center for Connected Learning](http://ccl.northwestern.edu/), where I worked on [NetLogo Web](https://netlogoweb.org/) with [Jason Bertsche](https://github.com/TheBizzle).
 
-I am a classically-trained flutist, currently studying with Evan Pengra Sult. I spend the rest of my time enjoying [browser engines](https://servo.org/), type systems, text editors, Amtrak long-distance routes, [WebAssembly](https://webassembly.org/), [Rust](https://www.rust-lang.org/en-US/), [Haskell](https://www.haskell.org), [crossword puzzles](https://twitter.com/soylentqueen/status/1002202872266874880), jazz, policy debate, [document preparation](https://pandoc.org/), the Nintendo Switch, backpacking, and critical theory.
+I am a classically-trained flutist, currently studying with Evan Pengra Sult. I’m also enthusiastic about wilderness medicine, and received my [Wilderness First Responder](http://wfr-sop.org/) certification from [NOLS](https://nols.edu/). I spend the rest of my time enjoying [browser engines](https://servo.org/), type systems, text editors, Amtrak long-distance routes, [WebAssembly](https://webassembly.org/), [Rust](https://www.rust-lang.org/en-US/), [Haskell](https://www.haskell.org), [crossword puzzles](https://twitter.com/soylentqueen/status/1002202872266874880), jazz, policy debate, [document preparation](https://pandoc.org/), the Nintendo Switch, backpacking, and critical theory.
 
 Here are a few of my 99 theses:
 
