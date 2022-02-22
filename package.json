@@ -16,7 +16,7 @@
   },
   "scripts": {
     "livereload": "browser-sync start --proxy localhost:9000 --files _harp/**/* --no-notify",
-    "server": "harp server _harp --port 9000",
+    "server": "harp _harp --port 9000",
     "start": "npm-run-all --parallel server livereload",
     "build": "node ./bin/build.js"
   }
