@@ -9,6 +9,7 @@ const ROOT = path.resolve(__dirname, '../');
 const whitelist = new Set([
   'node_modules',
   'package.json',
+  'package-lock.json',
   'yarn.lock',
   'build',
   '_harp',
