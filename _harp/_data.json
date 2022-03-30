@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "period": "Jun 2022",
+      "description": "I will be attending the <a href=\"https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231\">Dagstuhl Seminar on Theories of Programming</a> in June."
+    },
+    {
       "period": "Jan 2022",
       "description": "I joined the <a href=\"https://museapp.com/podcast/48-rich-text/\">Metamuse</a> podcast to talk about rich text editing with <a href=\"https://adamwiggins.com/\">Adam Wiggins</a> and <a href=\"https://markmcgranaghan.com/\">Mark McGranaghan</a>."
     },
@@ -122,6 +126,17 @@
     ]
   },
   "projects": [
+    {
+      "title": "Peritext: A CRDT for Rich-Text Collaboration",
+      "tags": [
+        "research"
+      ],
+      "description": "Conflict-free Replicated Data Types (CRDTs) are commonly viewed as the holy grail of collaboration algorithms because they are mathematically well-behaved in comparison to approaches based on Operational Transforms (OT). Yet few CRDTs provide first-class support for rich text collaboration. We study the design principles for a rich text CRDT and present a prototype implementation, including algorithms for inserting and deleting text with formatting annotations. Collaboration with <a href=\"https://www.geoffreylitt.com/\">Geoffrey Litt</a>, <a href=\"https://martin.kleppmann.com/\">Martin Kleppman</a>, and <a href=\"https://www.pvh.ca/\">Peter van Hardenberg</a>.",
+      "links": {
+        "paper": "https://www.inkandswitch.com/peritext",
+        "code": "https://github.com/inkandswitch/peritext"
+      }
+    },
     {
       "title": "RNG mechanics in Pokémon Sword and Shield",
       "tags": [
