@@ -17,6 +17,10 @@
       "description": "Attending <a href=\"https://2021.splashcon.org/\">SPLASH</a> in Chicago. It’s good to be back!"
     },
     {
+      "period": "",
+      "description": "New ghostwritten blog post about our work <a href=\"https://www.notion.so/blog/sharding-postgres-at-notion\">sharding Postgres</a> at Notion."
+    },
+    {
       "period": "Aug 2021",
       "description": "I started my PhD at Berkeley and transitioned to a contracting role at Notion."
     },
