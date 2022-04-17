@@ -68,6 +68,14 @@ ul.list-default {
   list-style: initial;
   margin-left: 2em;
   margin-bottom: $spacer;
+
+  p {
+      margin-bottom: calc($spacer / 4);
+  }
+
+  ul.list-default {
+      margin-bottom: calc($spacer / 2);
+  }
 }
 
 section {
