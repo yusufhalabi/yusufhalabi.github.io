@@ -76,7 +76,7 @@ $photo-bp: 500px;
     // background rectangle is the size of the image.
     position: absolute;
 
-    width: 100%;
+    width: 120%; // Extra width for longer quote.
     transform: translateX(-50%);
     left: 50%;
     text-align: center;
