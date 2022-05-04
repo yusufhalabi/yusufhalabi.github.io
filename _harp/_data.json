@@ -5,6 +5,10 @@
       "description": "I will be attending the <a href=\"https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231\">Dagstuhl Seminar on Theories of Programming</a> in June."
     },
     {
+      "period": "May 2022",
+      "description": "<a href=\"https://www.geoffreylitt.com/\">Geoffrey Litt</a> and I gave a talk on <a href=\"https://www.inkandswitch.com/peritext/\">Peritext</a> at the UC Santa Cruz <a href=\"https://lsd.ucsc.edu/lsd-seminar/2022sp/\">Languages, Systems, and Data Seminar</a>."
+    },
+    {
       "period": "Jan 2022",
       "description": "I joined the <a href=\"https://museapp.com/podcast/48-rich-text/\">Metamuse</a> podcast to talk about rich text editing with <a href=\"https://adamwiggins.com/\">Adam Wiggins</a> and <a href=\"https://markmcgranaghan.com/\">Mark McGranaghan</a>."
     },
