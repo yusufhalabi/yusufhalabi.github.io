@@ -17,6 +17,10 @@
       "description": "I joined the <a href=\"https://museapp.com/podcast/48-rich-text/\">Metamuse</a> podcast to talk about rich text editing with <a href=\"https://adamwiggins.com/\">Adam Wiggins</a> and <a href=\"https://markmcgranaghan.com/\">Mark McGranaghan</a>."
     },
     {
+      "period": "",
+      "description": "I ghostwrote a blog post on designing the <a href=\"https://www.notion.so/blog/creating-the-notion-api/\">Notion public API</a>."
+    },
+    {
       "period": "Nov 2021",
       "description": "New essay with <a href=\"https://www.geoffreylitt.com/\">Geoffrey Litt</a>, <a href=\"https://martin.kleppmann.com/\">Martin Kleppman</a>, and <a href=\"https://www.pvh.ca/\">Peter van Hardenberg</a>: <a href=\"https://www.inkandswitch.com/peritext/\">Peritext: A CRDT for Rich-Text Collaboration</a> chronicles our efforts to create a working CRDT for rich text."
     },
@@ -26,7 +30,7 @@
     },
     {
       "period": "",
-      "description": "New ghostwritten blog post about our work <a href=\"https://www.notion.so/blog/sharding-postgres-at-notion\">sharding Postgres</a> at Notion."
+      "description": "I ghostwrote a blog post about my team’s work <a href=\"https://www.notion.so/blog/sharding-postgres-at-notion\">sharding Postgres</a> at Notion."
     },
     {
       "period": "Aug 2021",
