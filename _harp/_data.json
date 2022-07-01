@@ -2,7 +2,11 @@
   "news": [
     {
       "period": "Jun 2022",
-      "description": "I will be attending the <a href=\"https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231\">Dagstuhl Seminar on Theories of Programming</a> in June."
+      "description": "I’m back at <a href=\"https://www.cs.uoregon.edu/research/summerschool/summer22/\">OPLSS 2022</a> in Eugene!"
+    },
+    {
+      "period": "",
+      "description": "I attended the <a href=\"https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231\">Dagstuhl Seminar on Theories of Programming</a> organized by <a href=\"http://faculty.washington.edu/ajko/\">Amy Ko</a>, <a href=\"http://cs.gmu.edu/~tlatoza/\">Thomas LaToza</a>, <a href=\"http://davidshepherd.weebly.com/\">David C. Shepherd</a>, and <a href=\"http://www.mn.uio.no/ifi/english/people/aca/dagsj/\">Dag Sjøberg</a>."
     },
     {
       "period": "May 2022",
