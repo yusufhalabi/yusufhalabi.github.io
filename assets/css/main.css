@@ -456,10 +456,9 @@ section p:last-child{
 .footer{
     text-align:center;
     font-size:.9rem;
-    position:absolute;
-    bottom:0%;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    -webkit-backface-visibility: hidden;
 }
 .footer>.container{
     font-style:italic
