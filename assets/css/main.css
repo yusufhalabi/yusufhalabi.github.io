@@ -459,6 +459,7 @@ section p:last-child{
     position:absolute;
     bottom:0%;
     width: 100%;
+    -webkit-backface-visibility: hidden;
 }
 .footer>.container{
     font-style:italic
