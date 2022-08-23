@@ -457,7 +457,7 @@ section p:last-child{
     text-align:center;
     font-size:.9rem;
     position:absolute;
-    bottom:0;
+    bottom:0%;
     width: 100%;
 }
 .footer>.container{
