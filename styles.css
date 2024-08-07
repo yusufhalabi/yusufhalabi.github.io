@@ -1,0 +1,79 @@
+body {
+    font-family: 'fonts/LeituraNews-Roman1', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.header_links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.header_links li {
+    margin: 0 10px;
+}
+
+.header_links a {
+    color: black;
+    font-size: 1.2em;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.news, .about-me, .in-progress {
+    margin-top: 1rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: .5rem 0;
+}
+
+ul li ul {
+    margin-left: 20px;
+}
+ul li ul li {
+    list-style-type: circle;
+}
+
+ul li ul li::marker {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
