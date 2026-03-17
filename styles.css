@@ -3,14 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f7f4ee;
+    color: #2d261f;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f7f4ee;
     border-bottom: 1px solid #ddd;
 }
 
@@ -32,7 +33,7 @@ body {
 }
 
 .header_links a {
-    color: black;
+    color: #9a3f14;
     font-size: 1.2em;
 }
 
@@ -71,10 +72,10 @@ ul li ul li::marker {
 
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #9a3f14;
 }
 
 a:hover {
+    color: #c5521f;
     text-decoration: underline;
 }
-
