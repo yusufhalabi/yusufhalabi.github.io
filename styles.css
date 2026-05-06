@@ -79,3 +79,9 @@ a:hover {
     color: #c5521f;
     text-decoration: underline;
 }
+
+.post-date {
+    color: #8a7e6e;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}

@@ -43,12 +43,51 @@
 
         <section class="in-progress">
             <h2>Writing</h2>
-            <ul>
-                <li> <a href="/writing/communication-flation/"> Communication-flation </a> </li>
-                <li> <a href="/writing/all-the-books/"> The books I've read and what I've learned from them </a> </li>
-                <li> <a href="/writing/first-principles-islam/"> First Principles Thinking and Islam </a> </li>
-            </ul>
+            <ul id="writing-list"></ul>
         </section>
     </div>
+    <script>
+    const dateOverrides = {
+        'First Principles Thinking and Islam': '2024',
+        'The books I’ve read and what I’ve learned from them': '∞',
+    };
+
+    (async function loadWriting() {
+        const list = document.getElementById('writing-list');
+        const renderFallback = () => {
+            const li = document.createElement('li');
+            li.innerHTML = 'Posts at <a href="https://yusufhalabi.substack.com">yusufhalabi.substack.com</a>';
+            list.replaceChildren(li);
+        };
+        try {
+            const feedUrl = 'https://yusufhalabi.substack.com/feed';
+            const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl));
+            if (!res.ok) throw new Error('feed fetch failed');
+            const data = await res.json();
+            if (data.status !== 'ok' || !data.items?.length) return renderFallback();
+            data.items.forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = item.link ?? '#';
+                a.target = '_blank';
+                a.textContent = item.title ?? '';
+                const date = document.createElement('span');
+                date.className = 'post-date';
+                date.textContent = dateOverrides[item.title] ?? formatDate(item.pubDate ?? '');
+                li.append(a, ' ', date);
+                list.appendChild(li);
+            });
+        } catch (e) {
+            renderFallback();
+        }
+    })();
+
+    function formatDate(pubDate) {
+        if (!pubDate) return '';
+        const d = new Date(pubDate.replace(' ', 'T'));
+        if (isNaN(d)) return '';
+        return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+    </script>
 </body>
 </html>
