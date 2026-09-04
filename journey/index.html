@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0c1c1d">
+    <meta name="description" content="A visual timeline of the places Yusuf Halabi has lived, from Northville to San Francisco.">
+    <link rel="canonical" href="https://yusufhalabi.com/journey/">
+    <link rel="icon" href="/assets/yandex-international-brands-solid.svg" type="image/x-icon">
+    <link rel="preload" href="/assets/journey/fonts/newsreader-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/journey/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/journey/world.geojson" as="fetch" type="application/geo+json" crossorigin>
+    <link rel="stylesheet" href="/journey/styles.css">
+    <script src="/journey/journey.js" defer></script>
+    <title>A life, in places — Yusuf Halabi</title>
+</head>
+<body>
+    <main class="journey" id="journey">
+        <header class="journey-header">
+            <a class="brand" href="/" aria-label="Back to Yusuf Halabi’s homepage">
+                <span class="brand__mark" aria-hidden="true"></span>
+                <span>Yusuf Halabi</span>
+                <span class="brand__section">/ Journey</span>
+            </a>
+            <p class="journey-progress" id="journey-progress" aria-hidden="true">2002—NOW</p>
+        </header>
+
+        <section class="story" aria-label="Journey chapter">
+            <div class="intro" id="intro">
+                <p class="eyebrow">A personal atlas · 2002—now</p>
+                <h1 id="story-title">A life,<br><em>in places.</em></h1>
+                <p class="intro__route">Northville, Michigan <span aria-hidden="true">→</span><br>San Francisco, California</p>
+                <button class="start-button" id="start-button" type="button">
+                    <span>Play journey</span>
+                    <svg viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M6.75 4.9 13.2 10l-6.45 5.1V4.9Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <article class="chapter-copy" id="chapter-copy" aria-live="off">
+                <p class="chapter-copy__date chapter-copy__beat" id="chapter-date"></p>
+                <div class="chapter-copy__place chapter-copy__beat">
+                    <h2 id="chapter-city"></h2>
+                    <p id="chapter-region"></p>
+                </div>
+                <p class="chapter-copy__duration chapter-copy__beat" id="chapter-duration"></p>
+                <p class="chapter-copy__note chapter-copy__beat" id="chapter-note"></p>
+                <div class="chapter-copy__final chapter-copy__beat" id="final-actions">
+                    <button class="text-action" id="replay-button" type="button">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.4 6.5A6 6 0 1 1 4 10h1.7a4.3 4.3 0 1 0 1.1-2.9L9 9.2H3.2V3.4l2.2 2.2v.9Z" fill="currentColor"/></svg>
+                        Replay
+                    </button>
+                    <a class="text-action" href="/">
+                        Back home
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="map" id="map" role="img" aria-label="World map, ready to begin Yusuf’s journey in Northville, Michigan">
+            <svg class="map__plane" id="map-plane" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+                <g class="map__graticule" id="map-graticule"></g>
+                <path class="map__land" id="map-land"></path>
+                <g class="map__routes" id="map-routes"></g>
+                <g class="map__points" id="map-points"></g>
+            </svg>
+
+            <div class="map__reticle" aria-hidden="true">
+                <span class="map__reticle-line map__reticle-line--top"></span>
+                <span class="map__reticle-line map__reticle-line--right"></span>
+                <span class="map__reticle-line map__reticle-line--bottom"></span>
+                <span class="map__reticle-line map__reticle-line--left"></span>
+                <span class="map__reticle-dot"></span>
+            </div>
+
+            <div class="map__hud" id="map-hud" aria-hidden="true">
+                <span class="map__hud-label">City center</span>
+                <span class="map__hud-coordinate" id="map-coordinate">42.4311° N / 083.4833° W</span>
+            </div>
+
+            <p class="map__status" id="map-status" aria-hidden="true">Drawing the atlas…</p>
+        </section>
+
+        <footer class="transport" id="transport" aria-label="Journey playback">
+            <div class="transport__controls">
+                <button class="icon-button" id="previous-button" type="button" aria-label="Previous place" title="Previous place" disabled>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="icon-button icon-button--play" id="play-button" type="button" aria-label="Play journey" title="Play journey" disabled>
+                    <span class="icon-swap">
+                        <svg class="icon-swap__icon icon-swap__icon--play" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.75 4.9 13.2 10l-6.45 5.1V4.9Z" fill="currentColor"/></svg>
+                        <svg class="icon-swap__icon icon-swap__icon--pause" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.7 5h2v10h-2V5Zm4.6 0h2v10h-2V5Z" fill="currentColor"/></svg>
+                    </span>
+                </button>
+                <button class="icon-button" id="next-button" type="button" aria-label="Next place" title="Next place" disabled>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+
+            <div class="scrubber">
+                <div class="scrubber__track" aria-hidden="true">
+                    <span class="scrubber__progress" id="scrubber-progress"></span>
+                    <span class="scrubber__ticks" id="scrubber-ticks"></span>
+                </div>
+                <input id="scrubber" type="range" min="0" max="14" step="1" value="0" aria-label="Journey chapter" disabled>
+                <div class="scrubber__labels" aria-hidden="true">
+                    <span>2002</span>
+                    <span id="scrubber-place">Northville</span>
+                    <span>Now</span>
+                </div>
+            </div>
+        </footer>
+
+        <p class="sr-only" id="journey-announcement" aria-live="polite" aria-atomic="true"></p>
+
+        <section class="sr-only" aria-labelledby="full-itinerary-title">
+            <h2 id="full-itinerary-title">Complete journey</h2>
+            <ol>
+                <li>Northville, Michigan. September 22, 2002 to 2015. Approximately thirteen years.</li>
+                <li>Mountain View, California. 2015 to August 2020. Approximately five years.</li>
+                <li>Ann Arbor, Michigan. September to December 2020. Four months.</li>
+                <li>Hanalei, Kauaʻi. January to May 2021. Four months.</li>
+                <li>Mountain View, California. Summer 2021. Three months.</li>
+                <li>Ann Arbor, Michigan. September 2021 to May 2022. Nine months.</li>
+                <li>San Francisco, California. Summer 2022. Three months.</li>
+                <li>Ann Arbor, Michigan. September to December 2022. Four months.</li>
+                <li>Amman, Jordan. January to May 2023. Four months.</li>
+                <li>Hinsdale, Illinois. Summer 2023. Three months.</li>
+                <li>Ann Arbor, Michigan. September 2023 to May 2024. Nine months.</li>
+                <li>Hinsdale, Illinois. May 2024 to fall 2024. Approximately four to five months.</li>
+                <li>Williamsburg, Brooklyn. Fall 2024. One month.</li>
+                <li>Hinsdale, Illinois. Fall 2024 to April 2025. Approximately five to six months.</li>
+                <li>San Francisco, California. Since April 2025.</li>
+            </ol>
+        </section>
+    </main>
+
+    <noscript>
+        <section class="noscript-itinerary">
+            <p class="eyebrow">Yusuf Halabi · 2002—now</p>
+            <h1>A life, in places.</h1>
+            <p>This visual journey needs JavaScript for playback. The complete itinerary is below.</p>
+            <ol>
+                <li><strong>Northville, Michigan</strong><span>Sep 22, 2002–2015 · ≈13 years</span></li>
+                <li><strong>Mountain View, California</strong><span>2015–Aug 2020 · ≈5 years</span></li>
+                <li><strong>Ann Arbor, Michigan</strong><span>Sep–Dec 2020 · 4 months</span></li>
+                <li><strong>Hanalei, Kauaʻi</strong><span>Jan–May 2021 · 4 months</span></li>
+                <li><strong>Mountain View, California</strong><span>Summer 2021 · 3 months</span></li>
+                <li><strong>Ann Arbor, Michigan</strong><span>Sep 2021–May 2022 · 9 months</span></li>
+                <li><strong>San Francisco, California</strong><span>Summer 2022 · 3 months</span></li>
+                <li><strong>Ann Arbor, Michigan</strong><span>Sep–Dec 2022 · 4 months</span></li>
+                <li><strong>Amman, Jordan</strong><span>Jan–May 2023 · 4 months</span></li>
+                <li><strong>Hinsdale, Illinois</strong><span>Summer 2023 · 3 months</span></li>
+                <li><strong>Ann Arbor, Michigan</strong><span>Sep 2023–May 2024 · 9 months</span></li>
+                <li><strong>Hinsdale, Illinois</strong><span>May 2024–Fall 2024 · ≈4–5 months</span></li>
+                <li><strong>Williamsburg, Brooklyn</strong><span>Fall 2024 · 1 month</span></li>
+                <li><strong>Hinsdale, Illinois</strong><span>Fall 2024–Apr 2025 · ≈5–6 months</span></li>
+                <li><strong>San Francisco, California</strong><span>Since Apr 2025 · Here now</span></li>
+            </ol>
+            <a href="/">Back to Yusuf Halabi</a>
+        </section>
+    </noscript>
+</body>
+</html>
