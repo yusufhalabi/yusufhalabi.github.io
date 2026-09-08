@@ -5,10 +5,10 @@
         {
             city: "Northville",
             region: "Michigan",
-            date: "September 22, 2002 — 2015",
+            date: "September 20, 2002 — 2015",
             duration: "≈13 years here",
             months: 156,
-            note: "Born here on September 22, 2002.",
+            note: "Born here on September 20, 2002.",
             lat: 42.4311,
             lon: -83.4833,
             scale: 7.2
